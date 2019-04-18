@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?><xb:digital_entity_call xmlns:xb="http://com/exlibris/digitool/repository/api/xmlbeans"><xb:digital_entity><pid>45084</pid><control><label>Environmentálna politika Európskej Únie</label><note>FSV_IES</note><ingest_id xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><ingest_name xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><entity_type xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><entity_group xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><usage_type>VIEW</usage_type><preservation_level>any</preservation_level><partition_a xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><partition_b xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><partition_c xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><status xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><creation_date>2008-12-08 14:52:06</creation_date><creator>super:STRUNCOV</creator><modification_date>2014-12-01 15:29:21</modification_date><modified_by>viewer:internal</modified_by><admin_unit>DUR01</admin_unit></control><mds><md shared="false"><mid>73497</mid><description xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><name>changehistory</name><type>changehistory_md</type><value><![CDATA[<xb:history xmlns:xb="http://com/exlibris/digitool/repository/api/xmlbeans"><events><event xmlID="1"><eventIdentifier><eventIdentifierType>Service</eventIdentifierType><eventIdentifierValue>TechnicalMetadataExtractor</eventIdentifierValue></eventIdentifier><eventType>Technical Metadata Extraction</eventType><eventDateTime>2008-12-08T14:52:55.042+01:00</eventDateTime><eventDetail>Add some metadata to the digital entity using jhove</eventDetail><linkingAgentIdentifier><linkingAgentIdentifierType>software_used</linkingAgentIdentifierType><linkingAgentIdentifierValue>JHove</linkingAgentIdentifierValue></linkingAgentIdentifier></event></events></xb:history>]]></value></md><md shared="false"><mid>73500</mid><description> </description><name>descriptive</name><type>dc</type><value><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/"><dc:title xsi:type="dcterms:sk">Environmentálna politika Európskej Únie</dc:title><dcterms:translated xsi:type="dcterms:en">Environmental politics in the European Union</dcterms:translated><dcterms:alternative></dcterms:alternative><dcterms:alternativeTranslated></dcterms:alternativeTranslated><dc:studyID>	</dc:studyID><dc:creator>Ondrejková, Lenka</dc:creator><dcterms:dateofbirth></dcterms:dateofbirth><dc:subject></dc:subject><dc:description xsi:type="dcterms:sk">Práca sa zaoberá environmentálnou problematikou a činnosťou Európskej únie v tejto sfére. Hlavným cieľom je charakteristika a analýza využívaných environmentálnych nástrojov a ich efektivita v konkrétnych situáciách. Predstavuje čitateľovi environmentálnu daňovú reformu, ktorá bola začiatkom roku 2008 zavedená do praxe už i v Českej republike. Súčasne sa pokúša načrtnúť možný vývoj situácie na trhu emisných povolení po odstúpení Spojených štátov amerických od Kjótskeho protokolu. Pre vytvorenie lepšieho obrazu o diskutovanej problematike je samostatná kapitola venovaná popisu životného prostredia a zdrojom znečistenia. K základným informáciám o aktuálnom stave je pridaný aj prehľad histórie environmentálnej politiky, najdôležitejších medzinárodných zmlúv a dohôd, vrátene ich základných princípov a zásad.</dc:description><dc:publisher>Univerzita Karlova v Praze</dc:publisher><dcterms:advisor>Tegze, Miron</dcterms:advisor><dcterms:referee></dcterms:referee><dcterms:created xsi:type="dcterms:W3CDTF">2008</dcterms:created><dcterms:dateAccepted xsi:type="dcterms:W3CDTF">2008</dcterms:dateAccepted><dc:status></dc:status><dc:type>bakalářská práce</dc:type><dc:format xsi:type="dcterms:IMT">application.pdf</dc:format><dc:identifier></dc:identifier><dc:language xsi:type="dcterms:ISO 639-1">sk</dc:language><dc:rights></dc:rights><dcterms:name>Bc.</dcterms:name><dcterms:level>bakalářský</dcterms:level><dcterms:discipline></dcterms:discipline><dcterms:grantor>Univerzita Karlova v Praze. Fakulta sociálních věd. Institut ekonomických studií</dcterms:grantor><dc:collection>bc</dc:collection><dc:collection>bc</dc:collection><dc:description xsi:type="dcterms:en">This work is focusing on environmental problamatic and on activities of EuropeanUnion in this area. The main purpose of this work is to charachterize any analyze the mostimportant environmental tools, that are beeing used, and their effectivity in specificsituations. In also presents the environmental tax reform, which has been, in the begining ofthe year 2008, put into praxis also in the Czech Republic: together with it, this work istrying to show the possible progress of the situation on the emissionpermit market, after the United States have been withdrawn from the Kyoto Protocol. In order to create a better picture of the given problematic, a separate chapter isdedicated to tde description of the world environment factors of pollution. The basicinformation about the actual situation is completed with an historical overview of theenvironmental policy and with the most important international contracts and agreements, including their principles.</dc:description></record>]]></value></md><md shared="false"><mid>2080197</mid><description xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><name>technical</name><type>text_md</type><value><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<textmd:textMD xmlns:textmd="http://www.loc.gov/METS/" xmlns:jhove="http://hul.harvard.edu/ois/xml/ns/jhove" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.loc.gov/METS/" xsi:schemaLocation="http://www.loc.gov/METS http://dlib.nyu.edu/METS/textmd.xsd">
+<textmd:encoding QUALITY="1">
+<textmd:encoding_software/>
+<textmd:encoding_platform linebreak=""/>
+<textmd:encoding_software/>
+<textmd:encoding_agent role=""/>
+</textmd:encoding>
+<textmd:character_info>
+<textmd:charset/>
+<textmd:byte_order/>
+<textmd:character_size encoding=""/>
+<textmd:linebreak/>
+</textmd:character_info>
+<textmd:language/>
+<textmd:alt_language authority=""/>
+<textmd:font_script/>
+<textmd:markup_basis version=""/>
+<textmd:markup_language version=""/>
+<textmd:processingNote/>
+<textmd:printRequirements/>
+<textmd:textNote/>
+<textmd:viewingRequirements/>
+<textmd:file>
+<textmd:fileSize>674132</textmd:fileSize>
+<textmd:checksum>
+<textmd:checksumMethod>CRC32</textmd:checksumMethod>
+<textmd:checksumValue>fb076350</textmd:checksumValue>
+</textmd:checksum>
+<textmd:checksum>
+<textmd:checksumMethod>MD5</textmd:checksumMethod>
+<textmd:checksumValue>47139676869dc315e246206e8847c889</textmd:checksumValue>
+</textmd:checksum>
+<textmd:checksum>
+<textmd:checksumMethod>SHA-1</textmd:checksumMethod>
+<textmd:checksumValue>b8ecbc7c501acd5dcfc529fecad702deaff24122</textmd:checksumValue>
+</textmd:checksum>
+<textmd:mimeType>application/pdf</textmd:mimeType>
+<textmd:extension/>
+</textmd:file>
+</textmd:textMD>
+]]></value></md><md shared="false"><mid>248995</mid><description xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><name>preservation</name><type>preservation_md</type><value><![CDATA[<object xmlns="http://www.loc.gov/standards/premis">
+  <objectIdentifier>
+    <objectIdentifierType>handle</objectIdentifierType>
+    <objectIdentifierValue>123.45/733</objectIdentifierValue>
+  </objectIdentifier>
+</object>]]></value></md></mds><relations><relation><type>manifestation</type><pid>45085</pid></relation><relation><type>manifestation</type><pid>45086</pid></relation></relations><stream_ref><file_name>45084_Ondrejkova_BP_2008_IES.pdf</file_name><file_extension>pdf</file_extension><mime_type>application/pdf</mime_type><directory_path>/exlibris/dtl/j3_1/digitool/home/system/bin/../../profile/storage/2008/12/08/file_1/45084</directory_path><file_id xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><storage_id>1000</storage_id><external_type>-1</external_type><file_size_bytes>674132</file_size_bytes></stream_ref></xb:digital_entity></xb:digital_entity_call>
