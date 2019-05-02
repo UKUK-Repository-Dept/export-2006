@@ -52,8 +52,11 @@ def prepare_xml_filename_list():
 # část druha z xml dostávám přílohy
 
 def get_filenames(interni_id):
-    print("intern_id",interni_id)
-    tree = ET.parse('digital_entities/'+str(interni_id)+".xml")
+    try:
+        tree = ET.parse('digital_entities/'+str(interni_id)+".xml")
+    except:
+        #print(interni_id)
+        return
     root = tree.getroot()
     for stream_ref in root.findall("./*stream_ref"):
         filename = stream_ref.find('file_name').text
@@ -65,27 +68,27 @@ def get_filenames(interni_id):
             relation_type = relation.find('type').text
             if relation_type == "include":
                 pid = relation.find('pid').text
-                if pid == 527322:
-                    print("nadrazene",interni_id)
                 subrecords.append(pid)
     for record in subrecords:
         yield from get_filenames(record)
 
 
-
-def dspace_item_id_from_digitoll_interni_id(interni_id):
-        # TODO zatim nefunkcni
-        for i in range(len(collection_ids)):
-                for item_id in get_items_id(collection_ids[i]):
-                        if get_interni_id == interni_id:
-                                print(item_id, ": ", get_interni_id(item_id))
-    
 def print_all_filenames(source_files):
     for xml_filename in open(source_files,"r"):
         filenames = get_filenames(xml_filename[:-5])
         for filename in filenames:
             print(filename)
 
+#print(list(get_filenames(100452)))
+#print(list(get_filenames(64040)))
+#print(list(get_filenames(69568)))
 print_all_filenames("xml_filenames.txt")
 
 
+# debug a pomocné
+def dspace_item_id_from_digitoll_interni_id(interni_id):
+        # TODO zatim nefunkcni
+        for i in range(len(collection_ids)):
+                for item_id in get_items_id(collection_ids[i]):
+                        if get_interni_id == interni_id:
+                                print(item_id, ": ", get_interni_id(item_id))
