@@ -1,0 +1,31 @@
+<record>
+    <header>
+        <identifier>oai:DURCharlesUniPrague.cz:98751</identifier>
+        <datestamp>2018-06-12T13:35:08Z</datestamp>
+        <setSpec>oai_kval</setSpec>
+    </header>
+    <metadata>
+        <oai_dc:dc xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+            <dc:title>Kirche für die Grosstadt [rukopis] /</dc:title>
+            <dc:creator>Borggrefe, Friedhelmdis</dc:creator>
+            <dc:creator>Univerzita Karlova.Evangelická teologická fakultakn20010710335dgg</dc:creator>
+            <dc:type>manuscripttext</dc:type>
+            <dc:publisher>Ludwigshafen,</dc:publisher>
+            <dc:date>1971</dc:date>
+            <dc:language>ger</dc:language>
+            <dc:description>Disertační práce (ThDr.) - Komenského evangelická bohoslovecká fakulta, 1971</dc:description>
+            <dc:subject>Cox, Harvey</dc:subject>
+            <dc:subject>20. století</dc:subject>
+            <dc:subject>Bible</dc:subject>
+            <dc:subject>evangelické církve</dc:subject>
+            <dc:subject>města</dc:subject>
+            <dc:subject>reformace</dc:subject>
+            <dc:subject>sekularizace</dc:subject>
+            <dc:subject>dizertační práce</dc:subject>
+            <dc:subject>urbanizace</dc:subject>
+            <dc:subject>velkoměsta</dc:subject>
+            <dc:subject>vnitřní misie</dc:subject>
+            <dc:identifier>http://digitool.is.cuni.cz:80/R/?func=dbin-jump-full&object_id=90331</dc:identifier>
+        </oai_dc:dc>
+    </metadata>
+</record>

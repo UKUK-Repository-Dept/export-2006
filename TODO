@@ -1,0 +1,10 @@
+* 98751 neni v gull je v oai-pmh
+* https://gull.is.cuni.cz/handle/123456789/10094 není v xml souborech
+
+
+automaticky kontrolovat:
+dc:type
+název souboru
+
+ruční:
+* 104691 divný typ
