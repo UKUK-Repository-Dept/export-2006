@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?><xb:digital_entity_call xmlns:xb="http://com/exlibris/digitool/repository/api/xmlbeans"><xb:digital_entity><pid>20533</pid><control><label>integrace_deti_s_vyvojovou_dysfazii</label><note>PEDF</note><ingest_id xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><ingest_name xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><entity_type xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><entity_group xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><usage_type>VIEW</usage_type><preservation_level>any</preservation_level><partition_a xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><partition_b xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><partition_c xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><status xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><creation_date>2008-01-18 15:35:13</creation_date><creator>super:FEIL</creator><modification_date>2014-12-01 16:05:18</modification_date><modified_by>viewer:internal</modified_by><admin_unit>DUR01</admin_unit></control><mds><md shared="false"><mid>23165</mid><description xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><name>changehistory</name><type>changehistory_md</type><value><![CDATA[<xb:history xmlns:xb="http://com/exlibris/digitool/repository/api/xmlbeans"><events><event xmlID="1"><eventIdentifier><eventIdentifierType>Service</eventIdentifierType><eventIdentifierValue>TechnicalMetadataExtractor</eventIdentifierValue></eventIdentifier><eventType>Technical Metadata Extraction</eventType><eventDateTime>2008-01-18T15:35:51.009+01:00</eventDateTime><eventDetail>Add some metadata to the digital entity using jhove</eventDetail><linkingAgentIdentifier><linkingAgentIdentifierType>User</linkingAgentIdentifierType><linkingAgentIdentifierValue>viewer:internal</linkingAgentIdentifierValue></linkingAgentIdentifier></event></events></xb:history>]]></value></md><md shared="false"><mid>23168</mid><description> </description><name>descriptive</name><type>dc</type><value><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/"><dc:title xsi:type="dcterms:cs">Integrace dětí s vývojovou dysfázií na začátku školní docházky</dc:title><dcterms:translated xsi:type="dcterms:en">Development dysphasia of children of early pupilage</dcterms:translated><dcterms:alternative></dcterms:alternative><dcterms:alternativeTranslated></dcterms:alternativeTranslated><dc:studyID>	</dc:studyID><dc:creator>Blovská, Markéta</dc:creator><dcterms:dateofbirth></dcterms:dateofbirth><dc:subject>vzdělávání jedinců s vývojovou dysfázií</dc:subject><dc:description xsi:type="dcterms:cs">Diplomová práce je zaměřena na problematiku vývojové dysfázie dítěte mladšího školního věku. Je složena ze dvou částí. Teoretická část pojednává o integraci a integrovaném vzdělávání a vymezuje termín vývojové dysfázie a její příznaky. Část praktická se zaměřuje na vzdělávání dysfatických dětí v integrované formě a analýzu problémů, se kterými se setkávají při výuce českého jazyka.</dc:description><dc:publisher>Univerzita Karlova v Praze</dc:publisher><dcterms:advisor>Housarová, Blanka</dcterms:advisor><dcterms:referee></dcterms:referee><dcterms:created xsi:type="dcterms:W3CDTF">2006-11</dcterms:created><dcterms:dateAccepted></dcterms:dateAccepted><dc:status></dc:status><dc:type>diplomová práce</dc:type><dc:format xsi:type="dcterms:IMT">application.pdf</dc:format><dc:identifier></dc:identifier><dc:language xsi:type="dcterms:ISO 639-1">cs</dc:language><dc:rights></dc:rights><dcterms:name>Mgr.</dcterms:name><dcterms:level></dcterms:level><dcterms:discipline></dcterms:discipline><dcterms:grantor>Univerzita Karlova v Praze. Pedagogická fakulta. Katedra speciální pedagogiky.</dcterms:grantor><dc:collection>dp</dc:collection><dc:collection></dc:collection><dc:description xsi:type="dcterms:en">The dissertation is focused on problems of the development dysphasia of children of early pupilage. It consists of two parts. The theoretical part concentrates on integration and integrated education, and defines the term of development dysphasia and its symptoms. The practical part deals with integrated form of education of dysphasic children, and analysis of the problems they face studying Czech language.</dc:description><dc:subject>školní zařazení</dc:subject><dc:subject>narušená komunikační schopnost</dc:subject><dc:subject>individuals with development dysphasia</dc:subject><dc:subject>affected ability to communicate</dc:subject><dc:subject>development dysphasia</dc:subject></record>]]></value></md><md shared="false"><mid>2081242</mid><description xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><name>technical</name><type>text_md</type><value><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<textmd:textMD xmlns:textmd="http://www.loc.gov/METS/" xmlns:jhove="http://hul.harvard.edu/ois/xml/ns/jhove" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.loc.gov/METS/" xsi:schemaLocation="http://www.loc.gov/METS http://dlib.nyu.edu/METS/textmd.xsd">
+<textmd:encoding QUALITY="1">
+<textmd:encoding_software/>
+<textmd:encoding_platform linebreak=""/>
+<textmd:encoding_software/>
+<textmd:encoding_agent role=""/>
+</textmd:encoding>
+<textmd:character_info>
+<textmd:charset/>
+<textmd:byte_order/>
+<textmd:character_size encoding=""/>
+<textmd:linebreak/>
+</textmd:character_info>
+<textmd:language/>
+<textmd:alt_language authority=""/>
+<textmd:font_script/>
+<textmd:markup_basis version=""/>
+<textmd:markup_language version=""/>
+<textmd:processingNote/>
+<textmd:printRequirements/>
+<textmd:textNote/>
+<textmd:viewingRequirements/>
+<textmd:file>
+<textmd:fileSize>218335</textmd:fileSize>
+<textmd:checksum>
+<textmd:checksumMethod>CRC32</textmd:checksumMethod>
+<textmd:checksumValue>177776a5</textmd:checksumValue>
+</textmd:checksum>
+<textmd:checksum>
+<textmd:checksumMethod>MD5</textmd:checksumMethod>
+<textmd:checksumValue>3699b0bca3152ad0fc3b06d0b4d90fb8</textmd:checksumValue>
+</textmd:checksum>
+<textmd:checksum>
+<textmd:checksumMethod>SHA-1</textmd:checksumMethod>
+<textmd:checksumValue>7fddefcdcf0cac8d2aa44d6eb30e9a32f2f145b4</textmd:checksumValue>
+</textmd:checksum>
+<textmd:mimeType>application/pdf</textmd:mimeType>
+<textmd:extension/>
+</textmd:file>
+</textmd:textMD>
+]]></value></md><md shared="false"><mid>251016</mid><description xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><name>preservation</name><type>preservation_md</type><value><![CDATA[<object xmlns="http://www.loc.gov/standards/premis">
+  <objectIdentifier>
+    <objectIdentifierType>handle</objectIdentifierType>
+    <objectIdentifierValue>123.45/2693</objectIdentifierValue>
+  </objectIdentifier>
+</object>]]></value></md></mds><relations><relation><type>manifestation</type><pid>20534</pid></relation><relation><type>manifestation</type><pid>20535</pid></relation></relations><stream_ref><file_name>20533_integrace_deti_s_vyvojovou_dysfazii.pdf</file_name><file_extension>pdf</file_extension><mime_type>application/pdf</mime_type><directory_path>/exlibris/dtl/j3_1/digitool/home/system/bin/../../profile/storage/2008/01/18/file_1/20533</directory_path><file_id xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><storage_id>1000</storage_id><external_type>-1</external_type><file_size_bytes>218335</file_size_bytes></stream_ref></xb:digital_entity></xb:digital_entity_call>

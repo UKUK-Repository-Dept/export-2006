@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?><xb:digital_entity_call xmlns:xb="http://com/exlibris/digitool/repository/api/xmlbeans"><xb:digital_entity><pid>6869</pid><control><label>záhlavie</label><note>poznámka</note><ingest_id xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><ingest_name xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><entity_type xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><entity_group xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><usage_type>VIEW</usage_type><preservation_level>any</preservation_level><partition_a xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><partition_b xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><partition_c xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><status xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><creation_date>2006-05-18 10:55:37</creation_date><creator>super:DUVT</creator><modification_date>2014-12-01 15:46:57</modification_date><modified_by>viewer:internal</modified_by><admin_unit>DUR01</admin_unit></control><mds><md shared="false"><mid>4011</mid><description> </description><name>descriptive</name><type>dc</type><value><![CDATA[<record xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" ><dc:title>De contemptu mundi = sermo 59 ad fratres in eremo commorantes</dc:title><dc:creator>Pseudo-Augustinus</dc:creator><dc:subject></dc:subject><dc:description></dc:description><dc:publisher></dc:publisher><dc:contributor></dc:contributor><dc:date></dc:date><dc:type></dc:type><dc:format></dc:format><dc:identifier></dc:identifier><dc:source></dc:source><dc:language>latinsky</dc:language><dc:relation></dc:relation><dc:coverage></dc:coverage><dc:rights></dc:rights><dc:link></dc:link><dcterms:alternative></dcterms:alternative><dcterms:tableOfContents></dcterms:tableOfContents><dcterms:abstract></dcterms:abstract><dcterms:created>15. století</dcterms:created><dcterms:valid></dcterms:valid><dcterms:available></dcterms:available><dcterms:issued></dcterms:issued><dcterms:modified></dcterms:modified><dcterms:extent>Kodex, kniha, rukopis.</dcterms:extent><dcterms:medium>Papír, přední část pergamen.</dcterms:medium><dcterms:isVersionOf></dcterms:isVersionOf><dcterms:hasVersion></dcterms:hasVersion><dcterms:isReplacedBy></dcterms:isReplacedBy><dcterms:replaces></dcterms:replaces><dcterms:isRequiredBy></dcterms:isRequiredBy><dcterms:requires></dcterms:requires><dcterms:isPartOf></dcterms:isPartOf><dcterms:hasPart></dcterms:hasPart><dcterms:isReferencedBy></dcterms:isReferencedBy><dcterms:references></dcterms:references><dcterms:isFormatOf></dcterms:isFormatOf><dcterms:hasFormat></dcterms:hasFormat><dcterms:conformsTo></dcterms:conformsTo><dcterms:spatial></dcterms:spatial><dcterms:temporal></dcterms:temporal><dcterms:audience></dcterms:audience><dcterms:accessRights></dcterms:accessRights><dcterms:provenance></dcterms:provenance><dcterms:rightsHolder></dcterms:rightsHolder><dcterms:dateAccepted></dcterms:dateAccepted><dcterms:dateCopyrighted></dcterms:dateCopyrighted><dcterms:dateSubmitted></dcterms:dateSubmitted><dcterms:mediator></dcterms:mediator><dcterms:educationLevel></dcterms:educationLevel><dcterms:bibliographicCitation></dcterms:bibliographicCitation><dcterms:license></dcterms:license></record>]]></value></md><md shared="false"><mid>2080702</mid><description xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><name>technical</name><type>text_md</type><value><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<textmd:textMD xmlns:textmd="http://www.loc.gov/METS/" xmlns:jhove="http://hul.harvard.edu/ois/xml/ns/jhove" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.loc.gov/METS/" xsi:schemaLocation="http://www.loc.gov/METS http://dlib.nyu.edu/METS/textmd.xsd">
+<textmd:encoding QUALITY="1">
+<textmd:encoding_software/>
+<textmd:encoding_platform linebreak=""/>
+<textmd:encoding_software/>
+<textmd:encoding_agent role=""/>
+</textmd:encoding>
+<textmd:character_info>
+<textmd:charset/>
+<textmd:byte_order/>
+<textmd:character_size encoding=""/>
+<textmd:linebreak/>
+</textmd:character_info>
+<textmd:language/>
+<textmd:alt_language authority=""/>
+<textmd:font_script/>
+<textmd:markup_basis version=""/>
+<textmd:markup_language version=""/>
+<textmd:processingNote/>
+<textmd:printRequirements/>
+<textmd:textNote/>
+<textmd:viewingRequirements/>
+<textmd:file>
+<textmd:fileSize>2912</textmd:fileSize>
+<textmd:checksum>
+<textmd:checksumMethod>CRC32</textmd:checksumMethod>
+<textmd:checksumValue>ae883165</textmd:checksumValue>
+</textmd:checksum>
+<textmd:checksum>
+<textmd:checksumMethod>MD5</textmd:checksumMethod>
+<textmd:checksumValue>2cb38d9cb3a0a2405a2684921db8cd94</textmd:checksumValue>
+</textmd:checksum>
+<textmd:checksum>
+<textmd:checksumMethod>SHA-1</textmd:checksumMethod>
+<textmd:checksumValue>a1d218ac3d13524ad1ea494c9cc69ad54e69b721</textmd:checksumValue>
+</textmd:checksum>
+<textmd:mimeType>text/xml</textmd:mimeType>
+<textmd:extension/>
+</textmd:file>
+</textmd:textMD>
+]]></value></md><md shared="false"><mid>2080703</mid><description xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><name>changehistory</name><type>changehistory_md</type><value><![CDATA[<xb:history xmlns:xb="http://com/exlibris/digitool/repository/api/xmlbeans"><events><event xmlID="1"><eventIdentifier><eventIdentifierType>Service</eventIdentifierType><eventIdentifierValue>TechnicalMetadataExtractor</eventIdentifierValue></eventIdentifier><eventType>Technical Metadata Extraction</eventType><eventDateTime>2014-12-01T15:46:57.558+01:00</eventDateTime><eventDetail>Add some metadata to the digital entity using jhove</eventDetail><linkingAgentIdentifier><linkingAgentIdentifierType>software_used</linkingAgentIdentifierType><linkingAgentIdentifierValue>JHove</linkingAgentIdentifierValue></linkingAgentIdentifier></event></events></xb:history>]]></value></md></mds><relations/><stream_ref><file_name>6869_6869.xml</file_name><file_extension>xml</file_extension><mime_type>text/xml</mime_type><directory_path>/exlibris/dtl/j3_1/digitool/home/system/bin/../../profile/storage/2006/05/18/file_1/6869</directory_path><file_id xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><storage_id>1000</storage_id><external_type>-1</external_type><file_size_bytes>2912</file_size_bytes></stream_ref></xb:digital_entity></xb:digital_entity_call>

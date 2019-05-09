@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?><xb:digital_entity_call xmlns:xb="http://com/exlibris/digitool/repository/api/xmlbeans"><xb:digital_entity><pid>72766</pid><control><label>Kmoch,Jiri_posudek</label><note>FF UK</note><ingest_id xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><ingest_name xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><entity_type xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><entity_group xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><usage_type>VIEW</usage_type><preservation_level>any</preservation_level><partition_a xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><partition_b xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><partition_c xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><status xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><creation_date>2009-08-05 14:31:13</creation_date><creator>super:PARMOVA</creator><modification_date>2014-12-01 15:46:45</modification_date><modified_by>viewer:internal</modified_by><admin_unit>DUR01</admin_unit></control><mds><md shared="false"><mid>2080695</mid><description xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><name>technical</name><type>text_md</type><value><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<textmd:textMD xmlns:textmd="http://www.loc.gov/METS/" xmlns:jhove="http://hul.harvard.edu/ois/xml/ns/jhove" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.loc.gov/METS/" xsi:schemaLocation="http://www.loc.gov/METS http://dlib.nyu.edu/METS/textmd.xsd">
+<textmd:encoding QUALITY="1">
+<textmd:encoding_software/>
+<textmd:encoding_platform linebreak=""/>
+<textmd:encoding_software/>
+<textmd:encoding_agent role=""/>
+</textmd:encoding>
+<textmd:character_info>
+<textmd:charset/>
+<textmd:byte_order/>
+<textmd:character_size encoding=""/>
+<textmd:linebreak/>
+</textmd:character_info>
+<textmd:language/>
+<textmd:alt_language authority=""/>
+<textmd:font_script/>
+<textmd:markup_basis version=""/>
+<textmd:markup_language version=""/>
+<textmd:processingNote/>
+<textmd:printRequirements/>
+<textmd:textNote/>
+<textmd:viewingRequirements/>
+<textmd:file>
+<textmd:fileSize>177489</textmd:fileSize>
+<textmd:checksum>
+<textmd:checksumMethod>CRC32</textmd:checksumMethod>
+<textmd:checksumValue>d02f012d</textmd:checksumValue>
+</textmd:checksum>
+<textmd:checksum>
+<textmd:checksumMethod>MD5</textmd:checksumMethod>
+<textmd:checksumValue>96806b9cab3f1f8a4579289ff4f6f4ce</textmd:checksumValue>
+</textmd:checksum>
+<textmd:checksum>
+<textmd:checksumMethod>SHA-1</textmd:checksumMethod>
+<textmd:checksumValue>63ac60a341b0612d91db4e29268bd14a9c8b7b9d</textmd:checksumValue>
+</textmd:checksum>
+<textmd:mimeType>application/pdf</textmd:mimeType>
+<textmd:extension/>
+</textmd:file>
+</textmd:textMD>
+]]></value></md><md shared="false"><mid>129439</mid><description xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><name>changehistory</name><type>changehistory_md</type><value><![CDATA[<xb:history xmlns:xb="http://com/exlibris/digitool/repository/api/xmlbeans"><events><event xmlID="1"><eventIdentifier><eventIdentifierType>Service</eventIdentifierType><eventIdentifierValue>TechnicalMetadataExtractor</eventIdentifierValue></eventIdentifier><eventType>Technical Metadata Extraction</eventType><eventDateTime>2009-08-05T14:31:24.116+02:00</eventDateTime><eventDetail>Add some metadata to the digital entity using jhove</eventDetail><linkingAgentIdentifier><linkingAgentIdentifierType>software_used</linkingAgentIdentifierType><linkingAgentIdentifierValue>JHove</linkingAgentIdentifierValue></linkingAgentIdentifier></event></events></xb:history>]]></value></md><md shared="false"><mid>249745</mid><description xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><name>preservation</name><type>preservation_md</type><value><![CDATA[<object xmlns="http://www.loc.gov/standards/premis">
+  <objectIdentifier>
+    <objectIdentifierType>handle</objectIdentifierType>
+    <objectIdentifierValue>123.45/1475</objectIdentifierValue>
+  </objectIdentifier>
+</object>]]></value></md></mds><relations><relation><type>part_of</type><pid>63251</pid></relation><relation><type>manifestation</type><pid>526584</pid></relation></relations><stream_ref><file_name>72766_Kmoch%2CJiri-posudek01.pdf</file_name><file_extension>pdf</file_extension><mime_type>application/pdf</mime_type><directory_path>/exlibris/dtl/j3_1/digitool/home/system/bin/../../profile/storage/2009/08/05/file_4/72766</directory_path><file_id xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><storage_id>1000</storage_id><external_type>-1</external_type><file_size_bytes>177489</file_size_bytes></stream_ref></xb:digital_entity></xb:digital_entity_call>

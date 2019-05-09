@@ -80,10 +80,19 @@ def print_all_filenames(source_files):
             print(filename)
 
 #print(list(get_filenames(100452)))
-#print(list(get_filenames(64040)))
-#print(list(get_filenames(69568)))
-print_all_filenames("xml_filenames.txt")
+#print_all_filenames("xml_filenames.txt")
 
+#import os
+# v opomenute_soubory.txt jsou ty z ls na gull export na ktere nevede cesta z dsace
+# v opomenute_soubory1.txt jsou ty co jsou zminene jen ve svem xml
+# v opomenute_soubory2.txt je zbytek
+#for row in open("opomenute_soubory.txt","r"):
+#     id = row.split("_")[0]
+#     # žádné id není v xml_filenames.txt
+#     grep = os.popen("grep "+str(id)+" -r digital_entities/ -l").read()
+#     if len(grep.split("\n")) != 2:
+#        print(row[:-1])
+           
 
 # debug a pomocné
 def dspace_item_id_from_digitoll_interni_id(interni_id):

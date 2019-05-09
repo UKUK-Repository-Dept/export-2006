@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?><xb:digital_entity_call xmlns:xb="http://com/exlibris/digitool/repository/api/xmlbeans"><xb:digital_entity><pid>45354</pid><control><label>Evropský nacionalismus na stránkách českého tisku [teze]</label><note>FSV_IKSZ</note><ingest_id xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><ingest_name xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><entity_type xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><entity_group xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><usage_type>VIEW</usage_type><preservation_level>any</preservation_level><partition_a xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><partition_b xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><partition_c xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><status xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><creation_date>2008-12-11 11:27:29</creation_date><creator>super:STRUNCOV</creator><modification_date>2014-12-01 15:29:14</modification_date><modified_by>viewer:internal</modified_by><admin_unit>DUR01</admin_unit></control><mds><md shared="false"><mid>73992</mid><description xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><name>changehistory</name><type>changehistory_md</type><value><![CDATA[<xb:history xmlns:xb="http://com/exlibris/digitool/repository/api/xmlbeans"><events><event xmlID="1"><eventIdentifier><eventIdentifierType>Service</eventIdentifierType><eventIdentifierValue>TechnicalMetadataExtractor</eventIdentifierValue></eventIdentifier><eventType>Technical Metadata Extraction</eventType><eventDateTime>2008-12-11T11:27:42.332+01:00</eventDateTime><eventDetail>Add some metadata to the digital entity using jhove</eventDetail><linkingAgentIdentifier><linkingAgentIdentifierType>software_used</linkingAgentIdentifierType><linkingAgentIdentifierValue>JHove</linkingAgentIdentifierValue></linkingAgentIdentifier></event></events></xb:history>]]></value></md><md shared="false"><mid>73995</mid><description> </description><name>descriptive</name><type>dc</type><value><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/"><dc:title xsi:type="dcterms:cs">Evropský nacionalismus na stránkách českého tisku [teze]</dc:title><dcterms:translated xsi:type="dcterms:en">European nationalism in the Czech press</dcterms:translated><dcterms:alternative></dcterms:alternative><dcterms:alternativeTranslated></dcterms:alternativeTranslated><dc:studyID>	</dc:studyID><dc:creator>Valášková, Marie</dc:creator><dcterms:dateofbirth xsi:type="dcterms:W3CDTF">1982</dcterms:dateofbirth><dc:subject></dc:subject><dc:description xsi:type="dcterms:cs">Práce přináší analýzu toho, jak česká média informují o evropském nacionalismu. Výzkum je proveden na příkladu francouzských prezidentských voleb v roce 2002, kdy do druhého kola překvapivě postoupil předseda nacionalistické strany Národní fronta Jean-Marie Le Pen. Pomocí kvantitativní obsahové analýzy autor zkoumá, kolik prostoru média tématu věnovala, na jaké aspekty nacionalismu se zaměřovala a zda fenomén nacionalismu vysvětlovala. Analýza potvrdila hypotézu, že nacionalismus je prezentován v negativním světle jako hrozící nebezpečí. Příspěvky v médiích vyzývaly k obraně demokracie, nepromlouvali v nich však žádní odborníci, který by potvrdili nebo vyvrátili oprávněnost podobného burcování. Překvapivě ale bylo v příspěvcích věnováno poměrně dost prostoru pro prezentaci nacionalistických názorů.</dc:description><dc:publisher>Univerzita Karlova v Praze</dc:publisher><dcterms:advisor>Křeček, Jan</dcterms:advisor><dcterms:referee></dcterms:referee><dcterms:created xsi:type="dcterms:W3CDTF">2008</dcterms:created><dcterms:dateAccepted xsi:type="dcterms:W3CDTF">2008</dcterms:dateAccepted><dc:status></dc:status><dc:type>diplomová práce</dc:type><dc:format xsi:type="dcterms:IMT">application.pdf</dc:format><dc:identifier></dc:identifier><dc:language xsi:type="dcterms:ISO 639-1">cs</dc:language><dc:rights></dc:rights><dcterms:name>Mgr.</dcterms:name><dcterms:level>magisterský</dcterms:level><dcterms:discipline></dcterms:discipline><dcterms:grantor>Univerzita Karlova v Praze. Fakulta sociálních věd. Institut komunikačních studií a žurnalistiky. Katedra mediálních studií</dcterms:grantor><dc:collection>dp</dc:collection><dc:collection></dc:collection><dc:description xsi:type="dcterms:en">My analysis clear up an attitude of Czech media to provide informedness about european nationalism. Research was recognized on French presidential election in 2002. Jean-Marie Le Pen, French right-wing nationalist politican, founder and president of the Front National party, ran and surprisingly proceeded to the second round of the election. Media were exeminig by means of quantitative content analisis according to paid attention to nationalism, points of view of nationalism and how did they discribe and explain phenomenon of nationalism. Hypothesis, that nationalism is presented in negative way and impendency was acknowledged. Regarding to invocation to defending of democracy, any experts neither affirm nor refutate justification of any rousing human conduct. On the other hand, wide range of nationalism views were presented in particular papers, surprisingly.</dc:description></record>]]></value></md><md shared="false"><mid>2080193</mid><description xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><name>technical</name><type>text_md</type><value><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<textmd:textMD xmlns:textmd="http://www.loc.gov/METS/" xmlns:jhove="http://hul.harvard.edu/ois/xml/ns/jhove" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.loc.gov/METS/" xsi:schemaLocation="http://www.loc.gov/METS http://dlib.nyu.edu/METS/textmd.xsd">
+<textmd:encoding QUALITY="1">
+<textmd:encoding_software/>
+<textmd:encoding_platform linebreak=""/>
+<textmd:encoding_software/>
+<textmd:encoding_agent role=""/>
+</textmd:encoding>
+<textmd:character_info>
+<textmd:charset/>
+<textmd:byte_order/>
+<textmd:character_size encoding=""/>
+<textmd:linebreak/>
+</textmd:character_info>
+<textmd:language/>
+<textmd:alt_language authority=""/>
+<textmd:font_script/>
+<textmd:markup_basis version=""/>
+<textmd:markup_language version=""/>
+<textmd:processingNote/>
+<textmd:printRequirements/>
+<textmd:textNote/>
+<textmd:viewingRequirements/>
+<textmd:file>
+<textmd:fileSize>104900</textmd:fileSize>
+<textmd:checksum>
+<textmd:checksumMethod>CRC32</textmd:checksumMethod>
+<textmd:checksumValue>a33d7603</textmd:checksumValue>
+</textmd:checksum>
+<textmd:checksum>
+<textmd:checksumMethod>MD5</textmd:checksumMethod>
+<textmd:checksumValue>e9f75c2a0d4ef3000581a5ac151a0c05</textmd:checksumValue>
+</textmd:checksum>
+<textmd:checksum>
+<textmd:checksumMethod>SHA-1</textmd:checksumMethod>
+<textmd:checksumValue>d93f0a5d95bf982bb3eda07a98b5094ea3386a93</textmd:checksumValue>
+</textmd:checksum>
+<textmd:mimeType>application/pdf</textmd:mimeType>
+<textmd:extension/>
+</textmd:file>
+</textmd:textMD>
+]]></value></md><md shared="false"><mid>248986</mid><description xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><name>preservation</name><type>preservation_md</type><value><![CDATA[<object xmlns="http://www.loc.gov/standards/premis">
+  <objectIdentifier>
+    <objectIdentifierType>handle</objectIdentifierType>
+    <objectIdentifierValue>123.45/724</objectIdentifierValue>
+  </objectIdentifier>
+</object>]]></value></md></mds><relations><relation><type>manifestation</type><pid>45355</pid></relation><relation><type>manifestation</type><pid>45356</pid></relation><relation><type>part_of</type><pid>45350</pid></relation></relations><stream_ref><file_name>45354_Valaskova_DP_2008_IKSZ_teze.pdf</file_name><file_extension>pdf</file_extension><mime_type>application/pdf</mime_type><directory_path>/exlibris/dtl/j3_1/digitool/home/system/bin/../../profile/storage/2008/12/11/file_1/45354</directory_path><file_id xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><storage_id>1000</storage_id><external_type>-1</external_type><file_size_bytes>104900</file_size_bytes></stream_ref></xb:digital_entity></xb:digital_entity_call>
