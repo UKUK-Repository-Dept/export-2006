@@ -3,8 +3,11 @@ import requests, json
 import xml.etree.ElementTree as ET
 
 # část první z dspace dostávám seznam digitool id
-#collection_handle = "1233456789/4413" #dc
-community_id = "152"
+
+# https://gull.is.cuni.cz/rest/communities/
+#community_id = "152" #puvodni import
+community_id = "154" #můj import
+
 bare_url = "https://gull.is.cuni.cz/rest"
 
 def get_collections_id(community_id):
@@ -15,20 +18,23 @@ def get_collections_id(community_id):
         yield collection["id"]
 
 #collection_ids = get_collections_id(community_id)
-collection_ids = [242, 244]
+#collection_ids = [242, 244] #puvodni
+collection_ids = [267, 266] #nove
 
 def get_items_id(collection_id):
     url = bare_url + "/collections/" + str(collection_id) + "/items"
     response = requests.get(url, params="limit=3000")
     for item in json.loads(response.text):
         yield item["id"]
+#print(list(get_items_id(267)))
 
 def get_item(item_id):
     url = bare_url + "/items/" + str(item_id) 
     response = requests.get(url)
     return json.loads(response.text)
+#print(list(get_item(8418)))
 
-def get_interni_id(item_id):
+def get_digitool_id(item_id):
     handle = get_item(item_id)['handle']
     url = "https://gull.is.cuni.cz/oai/request?verb=GetRecord&identifier=oai:dspace.cuni.cz:" \
           + handle + "&metadataPrefix=xoai"
@@ -39,13 +45,15 @@ def get_interni_id(item_id):
         start = row.find(match)
         if start > 0:
             return row[start+len(match):-len(ending)]
+#print(list(get_digitool_id(8418)))
 
 def prepare_xml_filename_list():
         # pro vytovoreni xml_filenames
         for i in range(len(collection_ids)):
                 for item_id in get_items_id(collection_ids[i]):
-                        print(get_interni_id(item_id))
-
+                        print(get_digitool_id(item_id))
+di
+#prepare_xml_filename_list()
 
 
 
@@ -99,5 +107,5 @@ def dspace_item_id_from_digitoll_interni_id(interni_id):
         # TODO zatim nefunkcni
         for i in range(len(collection_ids)):
                 for item_id in get_items_id(collection_ids[i]):
-                        if get_interni_id == interni_id:
-                                print(item_id, ": ", get_interni_id(item_id))
+                        if get_digitool_id == interni_id:
+                                print(item_id, ": ", get_digitool_id(item_id))
