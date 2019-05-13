@@ -52,7 +52,6 @@ def prepare_xml_filename_list():
         for i in range(len(collection_ids)):
                 for item_id in get_items_id(collection_ids[i]):
                         print(get_digitool_id(item_id))
-di
 #prepare_xml_filename_list()
 
 
