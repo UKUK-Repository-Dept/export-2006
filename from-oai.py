@@ -28,4 +28,7 @@ def get_oai_metadata(oai_set):
     return recursion(url,None)
 
 records = get_oai_metadata(oai_sets[1])
-print(list(records)[0].text)
+first = list(records)[0]
+#print( ET.tostring(first) )
+
+#for child in first:

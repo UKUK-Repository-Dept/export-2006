@@ -1,6 +1,10 @@
 * 98751 neni v gull je v oai-pmh http://dingo.ruk.cuni.cz:8881/OAI-PUB?verb=GetRecord&identifier=oai:DURCharlesUniPrague.cz:98751&metadataPrefix=oai_dc
 * https://gull.is.cuni.cz/handle/123456789/10094 není v xml souborech
 * nejde aplikovat stary postup na novou kolekci gull(8418) není v oai -> https://gull.is.cuni.cz/oai/request?verb=GetRecord&identifier=oai:dspace.cuni.cz:123456789/8703&metadataPrefix=xoai 
+    zkusit regindex oai na gullu
+zkusit na čem se zaseklo sklizeni
+* první z přímo načtených 
+     oai:DURCharlesUniPrague.cz:14222</ns0:identifier>
 
 automaticky kontrolovat,protože tam jsou opravitelné chyby
 dc:type 
@@ -8,3 +12,6 @@ název souboru
 
 ruční:
 * 104691 divný typ
+
+
+http://www.openarchives.org/OAI/openarchivesprotocol.html
