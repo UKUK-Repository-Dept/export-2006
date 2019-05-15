@@ -45,14 +45,14 @@ def get_digitool_id(item_id):
         start = row.find(match)
         if start > 0:
             return row[start+len(match):-len(ending)]
-#print(list(get_digitool_id(8418)))
+#print(get_digitool_id(8418))
 
 def prepare_xml_filename_list():
         # pro vytovoreni xml_filenames
         for i in range(len(collection_ids)):
                 for item_id in get_items_id(collection_ids[i]):
                         print(get_digitool_id(item_id))
-#prepare_xml_filename_list()
+prepare_xml_filename_list()
 
 
 
