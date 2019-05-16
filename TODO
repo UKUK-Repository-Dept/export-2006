@@ -23,3 +23,5 @@ http://www.openarchives.org/OAI/openarchivesprotocol.html
         https://wiki.duraspace.org/display/DSDOC5x/OAI
         ručně: [dspace.dir]/bin/dspace oai import 
         na gull je to řešené cronnem
+* zaseknuté sklizeni
+    https://github.com/UKUK-Repository-Dept/ukuk-dspace/issues/65
