@@ -1,5 +1,6 @@
 * 98751 neni v gull je v oai-pmh http://dingo.ruk.cuni.cz:8881/OAI-PUB?verb=GetRecord&identifier=oai:DURCharlesUniPrague.cz:98751&metadataPrefix=oai_dc
 * https://gull.is.cuni.cz/handle/123456789/10094 není v xml souborech
+* položek co je v DC i MARC je 364 viz soubor
 
 zkusit na čem se zaseklo sklizeni
 * první z přímo načtených 

@@ -57,31 +57,47 @@ def get_filenames(interni_id):
     for record in subrecords:
         yield from get_filenames(record)
 
-def hui(record):
+def hui(record,searched):
     header=tag(record,"header")
     identifier=tag(header,"identifier").text
     oai_id = identifier.split(":")[-1]
     files=list(get_filenames(oai_id))
 #    print(files)
-    for file in files:
-        print(file)
+    for f in files:
+        if searched in f:
+            return True
+    return False
 #    if len(files) != 0:
 #        print(oai_id)
 #        metadata=tag(tag(record,"metadata"),"record")
 #        for child in metadata:
 #            print(child.tag, child.text)
 
-    
 
-records = get_oai_records(oai_sets[0])
+
+records0 = list(get_oai_records(oai_sets[1]))
+records1 = list(get_oai_records(oai_sets[1]))
+
+#for record in records0:
+#    if hui(record,"111653"):
+#        print("hura")
+
+def huiIN(number,records):
+    for record in records:
+        if hui(record,number):
+            return True
+    return False
+
+
+def huiBOTH(number):
+    return huiIN(number,records0) and huiIN(number,records1)
+
+print(huiBOTH("111653"))
+
+for row in open("dc_marc_prunik.txt","r"):
+#    print(row[:-1])
+    print(huiBOTH(row[:-1]))
+#    print(huiBOTH("111650"))
 #first = list(records)[0]
 #print( ET.tostring(first) )
 #hui(first)
-for record in records:
-    hui(record)
-records = get_oai_records(oai_sets[1])
-#first = list(records)[0]
-#print( ET.tostring(first) )
-#hui(first)
-for record in records:
-    hui(record)
