@@ -25,3 +25,5 @@ http://www.openarchives.org/OAI/openarchivesprotocol.html
         na gull je to řešené cronnem
 * zaseknuté sklizeni
     https://github.com/UKUK-Repository-Dept/ukuk-dspace/issues/65
+* oai 14222 a 53 nemá metadata, Eliška smaže v OAI
+* seznam těch co mají v metadatech "test"
