@@ -1,16 +1,17 @@
 * 98751 neni v gull je v oai-pmh http://dingo.ruk.cuni.cz:8881/OAI-PUB?verb=GetRecord&identifier=oai:DURCharlesUniPrague.cz:98751&metadataPrefix=oai_dc
+* comm -23 3.5.2019/ls_streams.txt rom-oai-files.txt
+    * 103446 je v xml exportu není ve vyhledávání (indexační tabulka?)
+
+Eliška:
+* 21 souboru s formatovanim marc21.txt
 * https://gull.is.cuni.cz/handle/123456789/10094 není v xml souborech
-* položek co je v DC i MARC je 364 viz soubor
 
-zkusit na čem se zaseklo sklizeni
-* první z přímo načtených 
-     oai:DURCharlesUniPrague.cz:14222</ns0:identifier>
 
-automaticky kontrolovat,protože tam jsou opravitelné chyby
+# automaticky kontrolovat, protože tam jsou opravitelné chyby
 dc:type 
 název souboru
 
-ruční:
+# ruční:
 * 104691 divný typ
 
 # návody
@@ -28,3 +29,4 @@ http://www.openarchives.org/OAI/openarchivesprotocol.html
     https://github.com/UKUK-Repository-Dept/ukuk-dspace/issues/65
 * oai 14222 a 53 nemá metadata, Eliška smaže v OAI
 * seznam těch co mají v metadatech "test"
+* položek co je v DC i MARC je 364 viz soubor

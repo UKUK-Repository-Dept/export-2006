@@ -3,11 +3,11 @@ import requests, json
 import xml.etree.ElementTree as ET
 
 server="dingo.ruk.cuni.cz:8881"
-verb="ListRecords"
+verb=["ListRecords","ListMetadataFormats"]
 metadataPrefix="oai_dc"
 oai_sets=["oai_kval","oai_kvalDC"]
 # nacte 3455,411 praci
-#3892
+identifier_prefix = "oai:DURCharlesUniPrague.cz:"
 
 def tag(root,tag):
     try:
@@ -18,7 +18,7 @@ def tag(root,tag):
 
 
 def get_oai_records(oai_set):
-    url = "http://"+server+"/OAI-PUB?verb="+verb+"&metadataPrefix="+metadataPrefix+"&set="+oai_set
+    url = "http://"+server+"/OAI-PUB?verb="+verb[0]+"&metadataPrefix="+metadataPrefix+"&set="+oai_set
     def recursion(url, resumptionToken):
         if resumptionToken is None:
             response = requests.get(url)
@@ -57,16 +57,17 @@ def get_filenames(interni_id):
     for record in subrecords:
         yield from get_filenames(record)
 
-def hui(record,searched):
+def get_oai_id(record):
+    header=tag(record,"header")
+    identifier=tag(header,"identifier").text
+    return identifier.split(":")[-1]
+
+def hui(record):
     header=tag(record,"header")
     identifier=tag(header,"identifier").text
     oai_id = identifier.split(":")[-1]
     files=list(get_filenames(oai_id))
-#    print(files)
-    for f in files:
-        if searched in f:
-            return True
-    return False
+    return files
 #    if len(files) != 0:
 #        print(oai_id)
 #        metadata=tag(tag(record,"metadata"),"record")
@@ -75,29 +76,34 @@ def hui(record,searched):
 
 
 
-records0 = list(get_oai_records(oai_sets[1]))
+records0 = list(get_oai_records(oai_sets[0]))
 records1 = list(get_oai_records(oai_sets[1]))
 
-#for record in records0:
-#    if hui(record,"111653"):
-#        print("hura")
+def search_records(phrase):
+    for record in records0 + records1:
+        str_rec = str(ET.tostring(record))
+        if phrase in str_rec:
+            yield record
 
-def huiIN(number,records):
-    for record in records:
-        if hui(record,number):
-            return True
-    return False
+def list_format(filename):
+    for row in open(filename,"r"):
+        #oai_id = row.split("_")[0]
+        oai_id = row[:-1]
+        url = "http://"+server+"/OAI-PUB?verb="+verb[1]+"&identifier="+identifier_prefix+oai_id
+        response = requests.get(url).text
+        if "id does not exist" not in response:
+            root = ET.fromstring(response)
+            metadataFormats=tag(root,"ListMetadataFormats")
+            for metadata in metadataFormats:
+                child = tag(metadata,"metadataPrefix")
+                print( child.text)
 
+#url = "http://"+server+"/OAI-PUB?verb="+verb[1]+"&identifier="+identifier_prefix
+#print(url)
+list_format("other-format.txt")
 
-def huiBOTH(number):
-    return huiIN(number,records0) and huiIN(number,records1)
-
-print(huiBOTH("111653"))
-
-for row in open("dc_marc_prunik.txt","r"):
-#    print(row[:-1])
-    print(huiBOTH(row[:-1]))
-#    print(huiBOTH("111650"))
-#first = list(records)[0]
-#print( ET.tostring(first) )
-#hui(first)
+#test_id="104691" #obyčejný 
+#test_id="103446"
+#for r in search_records(test_id):
+#    #print(str(ET.tostring(r)))
+#    print(hui(r))
