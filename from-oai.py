@@ -87,7 +87,6 @@ def search_records(phrase):
 
 def list_format(filename):
     for row in open(filename,"r"):
-        #oai_id = row.split("_")[0]
         oai_id = row[:-1]
         url = "http://"+server+"/OAI-PUB?verb="+verb[1]+"&identifier="+identifier_prefix+oai_id
         response = requests.get(url).text
@@ -98,9 +97,17 @@ def list_format(filename):
                 child = tag(metadata,"metadataPrefix")
                 print( child.text)
 
+def list_without_metadata(filename):
+    for row in open(filename,"r"):
+        oai_id = row.split("_")[0]
+        url = "http://"+server+"/OAI-PUB?verb="+verb[1]+"&identifier="+identifier_prefix+oai_id
+        response = requests.get(url).text
+        if "id does not exist" in response:
+            print(oai_id)
+
 #url = "http://"+server+"/OAI-PUB?verb="+verb[1]+"&identifier="+identifier_prefix
 #print(url)
-list_format("other-format.txt")
+list_without_metadata("opomenute_soubory.txt")
 
 #test_id="104691" #obyčejný 
 #test_id="103446"
