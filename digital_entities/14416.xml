@@ -1,4 +1,44 @@
-<?xml version="1.0" encoding="UTF-8" ?><xb:digital_entity_call xmlns:xb="http://com/exlibris/digitool/repository/api/xmlbeans"><xb:digital_entity><pid>14416</pid><control><label xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><note xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><ingest_id xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><ingest_name xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><entity_type xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><entity_group xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><usage_type>VIEW</usage_type><preservation_level>any</preservation_level><partition_a xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><partition_b xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><partition_c xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><status xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><creation_date>2007-01-25 18:13:01</creation_date><creator>super:MATEJKOVA</creator><modification_date>2014-12-01 16:38:14</modification_date><modified_by>viewer:internal</modified_by><admin_unit>DUR01</admin_unit></control><mds><md shared="false"><mid>2083110</mid><description xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><name>technical</name><type>text_md</type><value><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
+<xb:digital_entity_call xmlns:xb="http://com/exlibris/digitool/repository/api/xmlbeans">
+  <xb:digital_entity>
+    <pid>14416</pid>
+    <control>
+      <label xsi:nil="true" 
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+      <note xsi:nil="true" 
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+      <ingest_id xsi:nil="true" 
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+      <ingest_name xsi:nil="true" 
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+      <entity_type xsi:nil="true" 
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+      <entity_group xsi:nil="true" 
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+      <usage_type>VIEW</usage_type>
+      <preservation_level>any</preservation_level>
+      <partition_a xsi:nil="true" 
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+      <partition_b xsi:nil="true" 
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+      <partition_c xsi:nil="true" 
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+      <status xsi:nil="true" 
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+      <creation_date>2007-01-25 18:13:01</creation_date>
+      <creator>super:MATEJKOVA</creator>
+      <modification_date>2014-12-01 16:38:14</modification_date>
+      <modified_by>viewer:internal</modified_by>
+      <admin_unit>DUR01</admin_unit>
+    </control>
+    <mds>
+      <md shared="false">
+        <mid>2083110</mid>
+        <description xsi:nil="true" 
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <name>technical</name>
+        <type>text_md</type>
+        <value><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <textmd:textMD xmlns:textmd="http://www.loc.gov/METS/" xmlns:jhove="http://hul.harvard.edu/ois/xml/ns/jhove" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.loc.gov/METS/" xsi:schemaLocation="http://www.loc.gov/METS http://dlib.nyu.edu/METS/textmd.xsd">
 <textmd:encoding QUALITY="1">
 <textmd:encoding_software/>
@@ -39,9 +79,65 @@
 <textmd:extension/>
 </textmd:file>
 </textmd:textMD>
-]]></value></md><md shared="false"><mid>13699</mid><description xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><name>changehistory</name><type>changehistory_md</type><value><![CDATA[<xb:history xmlns:xb="http://com/exlibris/digitool/repository/api/xmlbeans"><events><event xmlID="1"><eventIdentifier><eventIdentifierType>Service</eventIdentifierType><eventIdentifierValue>TechnicalMetadataExtractor</eventIdentifierValue></eventIdentifier><eventType>Technical Metadata Extraction</eventType><eventDateTime>2007-01-25T18:13:27.623+01:00</eventDateTime><eventDetail>Add some metadata to the digital entity using jhove</eventDetail><linkingAgentIdentifier><linkingAgentIdentifierType>User</linkingAgentIdentifierType><linkingAgentIdentifierValue>viewer:internal</linkingAgentIdentifierValue></linkingAgentIdentifier></event></events></xb:history>]]></value></md><md shared="false"><mid>14171</mid><description> </description><name>descriptive</name><type>dc</type><value><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/"><dc:title>Příloha k diplomce</dc:title><dcterms:translated></dcterms:translated><dcterms:alternative></dcterms:alternative><dcterms:alternativeTranslated></dcterms:alternativeTranslated><dc:studyID></dc:studyID><dc:creator>autor</dc:creator><dcterms:dateofbirth></dcterms:dateofbirth><dc:subject></dc:subject><dc:description></dc:description><dc:publisher> Univerzita Karlova v Praze </dc:publisher><dcterms:advisor></dcterms:advisor><dcterms:referee></dcterms:referee><dcterms:created></dcterms:created><dcterms:dateAccepted></dcterms:dateAccepted><dc:status></dc:status><dc:type></dc:type><dc:format></dc:format><dc:identifier></dc:identifier><dc:language></dc:language><dc:rights></dc:rights><dcterms:name></dcterms:name><dcterms:level></dcterms:level><dcterms:discipline></dcterms:discipline><dcterms:grantor></dcterms:grantor><dc:collection></dc:collection><dc:collection></dc:collection></record>]]></value></md><md shared="false"><mid>254514</mid><description xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><name>preservation</name><type>preservation_md</type><value><![CDATA[<object xmlns="http://www.loc.gov/standards/premis">
-  <objectIdentifier>
-    <objectIdentifierType>handle</objectIdentifierType>
-    <objectIdentifierValue>123.45/6156</objectIdentifierValue>
-  </objectIdentifier>
-</object>]]></value></md></mds><relations><relation><type>manifestation</type><pid>14404</pid></relation><relation><type>manifestation</type><pid>14415</pid></relation><relation><type>manifestation</type><pid>15681</pid></relation><relation><type>manifestation</type><pid>14418</pid></relation></relations><stream_ref><file_name>14416_Priloha_3%5B1%5D.pdf</file_name><file_extension>pdf</file_extension><mime_type>application/pdf</mime_type><directory_path>/exlibris/dtl/j3_1/digitool/home/system/bin/../../profile/storage/2007/01/25/file_1/14416</directory_path><file_id xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><storage_id>1000</storage_id><external_type>-1</external_type><file_size_bytes>452488</file_size_bytes></stream_ref></xb:digital_entity></xb:digital_entity_call>
+]]>        </value>
+      </md>
+      <md shared="false">
+        <mid>13699</mid>
+        <description xsi:nil="true" 
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <name>changehistory</name>
+        <type>changehistory_md</type>
+        <value><![CDATA[<xb:history xmlns:xb="http://com/exlibris/digitool/repository/api/xmlbeans"><events><event xmlID="1"><eventIdentifier><eventIdentifierType>Service</eventIdentifierType><eventIdentifierValue>TechnicalMetadataExtractor</eventIdentifierValue></eventIdentifier><eventType>Technical Metadata Extraction</eventType><eventDateTime>2007-01-25T18:13:27.623+01:00</eventDateTime><eventDetail>Add some metadata to the digital entity using jhove</eventDetail><linkingAgentIdentifier><linkingAgentIdentifierType>User</linkingAgentIdentifierType><linkingAgentIdentifierValue>viewer:internal</linkingAgentIdentifierValue></linkingAgentIdentifier></event></events></xb:history>]]></value>
+      </md>
+      <md shared="false">
+        <mid>14171</mid>
+        <description></description>
+        <name>descriptive</name>
+        <type>dc</type>
+        <value><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/"><dc:title>Příloha k diplomce</dc:title><dcterms:translated></dcterms:translated><dcterms:alternative></dcterms:alternative><dcterms:alternativeTranslated></dcterms:alternativeTranslated><dc:studyID></dc:studyID><dc:creator>autor</dc:creator><dcterms:dateofbirth></dcterms:dateofbirth><dc:subject></dc:subject><dc:description></dc:description><dc:publisher> Univerzita Karlova v Praze </dc:publisher><dcterms:advisor></dcterms:advisor><dcterms:referee></dcterms:referee><dcterms:created></dcterms:created><dcterms:dateAccepted></dcterms:dateAccepted><dc:status></dc:status><dc:type></dc:type><dc:format></dc:format><dc:identifier></dc:identifier><dc:language></dc:language><dc:rights></dc:rights><dcterms:name></dcterms:name><dcterms:level></dcterms:level><dcterms:discipline></dcterms:discipline><dcterms:grantor></dcterms:grantor><dc:collection></dc:collection><dc:collection></dc:collection></record>]]></value>
+      </md>
+      <md shared="false">
+        <mid>254514</mid>
+        <description xsi:nil="true" 
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <name>preservation</name>
+        <type>preservation_md</type>
+        <value><![CDATA[<object xmlns="http://www.loc.gov/standards/premis">
+<objectIdentifier>
+<objectIdentifierType>handle</objectIdentifierType>
+<objectIdentifierValue>123.45/6156</objectIdentifierValue>
+</objectIdentifier>
+</object>]]></value>
+      </md>
+    </mds>
+    <relations>
+      <relation>
+        <type>manifestation</type>
+        <pid>14404</pid>
+      </relation>
+      <relation>
+        <type>manifestation</type>
+        <pid>14415</pid>
+      </relation>
+      <relation>
+        <type>manifestation</type>
+        <pid>15681</pid>
+      </relation>
+      <relation>
+        <type>manifestation</type>
+        <pid>14418</pid>
+      </relation>
+    </relations>
+    <stream_ref>
+      <file_name>14416_Priloha_3%5B1%5D.pdf</file_name>
+      <file_extension>pdf</file_extension>
+      <mime_type>application/pdf</mime_type>
+      <directory_path>/exlibris/dtl/j3_1/digitool/home/system/bin/../../profile/storage/2007/01/25/file_1/14416</directory_path>
+      <file_id xsi:nil="true" 
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+      <storage_id>1000</storage_id>
+      <external_type>-1</external_type>
+      <file_size_bytes>452488</file_size_bytes>
+    </stream_ref>
+  </xb:digital_entity>
+</xb:digital_entity_call>

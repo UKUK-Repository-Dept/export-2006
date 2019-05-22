@@ -6,33 +6,35 @@ import xml.etree.ElementTree as ET
 
 # https://gull.is.cuni.cz/rest/communities/
 #community_id = "152" #puvodni import
-community_id = "154" #můj import
+#community_id = "154" #můj import
+community_id = "155" #20.5
 
 bare_url = "https://gull.is.cuni.cz/rest"
 
 def get_collections_id(community_id):
     url = bare_url + "/communities/" + community_id + "/collections"
     response = requests.get(url)
-    print(url,response)
     for collection in json.loads(response.text):
         yield collection["id"]
 
 #collection_ids = get_collections_id(community_id)
+#print(list(collection_ids))
 #collection_ids = [242, 244] #puvodni
-collection_ids = [267, 266] #nove
+#collection_ids = [267, 266] #nove
+collection_ids = [269] 
 
 def get_items_id(collection_id):
     url = bare_url + "/collections/" + str(collection_id) + "/items"
     response = requests.get(url, params="limit=3000")
     for item in json.loads(response.text):
         yield item["id"]
-#print(list(get_items_id(267)))
+#print(list(get_items_id(268)))
 
 def get_item(item_id):
     url = bare_url + "/items/" + str(item_id) 
     response = requests.get(url)
     return json.loads(response.text)
-#print(list(get_item(8418)))
+#print(list(get_item(15070)))
 
 def get_digitool_id(item_id):
     handle = get_item(item_id)['handle']

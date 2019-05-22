@@ -16,7 +16,6 @@ def tag(root,tag):
         raise Exception("No tag {}".format(tag))
     return subtree
 
-
 def get_oai_records(oai_set):
     url = "http://"+server+"/OAI-PUB?verb="+verb[0]+"&metadataPrefix="+metadataPrefix+"&set="+oai_set
     def recursion(url, resumptionToken):
@@ -79,6 +78,9 @@ def hui(record):
 records0 = list(get_oai_records(oai_sets[0]))
 records1 = list(get_oai_records(oai_sets[1]))
 
+for record in records1:
+    print(get_oai_id(record))
+
 def search_records(phrase):
     for record in records0 + records1:
         str_rec = str(ET.tostring(record))
@@ -107,7 +109,7 @@ def list_without_metadata(filename):
 
 #url = "http://"+server+"/OAI-PUB?verb="+verb[1]+"&identifier="+identifier_prefix
 #print(url)
-list_without_metadata("opomenute_soubory.txt")
+#list_without_metadata("opomenute_soubory.txt")
 
 #test_id="104691" #obyčejný 
 #test_id="103446"
