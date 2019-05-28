@@ -1,10 +1,10 @@
-* 98751 neni v gull je v oai-pmh http://dingo.ruk.cuni.cz:8881/OAI-PUB?verb=GetRecord&identifier=oai:DURCharlesUniPrague.cz:98751&metadataPrefix=oai_dc
-* comm -23 3.5.2019/ls_streams.txt from-oai-files.txt
+* rozdil mezi gull a direct import
+* comm -23 3.5.2019/ls_streams.txt from-oai-files.txt | sort > opomenute_soubory.txt
     * 103446 je v xml exportu není ve vyhledávání (indexační tabulka?)
 * DC neimportovane 
 * 21 souboru s formatovanim marc21.txt
-    144016 je priloha k 14404
-    42693 je priloha k 63450
+    144016 je priloha k 14404 - je v gull
+    42693 je priloha k 63450 - neni v gull ani oaipmh
 
 Eliška:
 * https://gull.is.cuni.cz/handle/123456789/10094 není v xml souborech
@@ -16,7 +16,6 @@ název souboru
 
 # ruční:
 * 104691 divný typ
-
 # návody
 http://www.openarchives.org/OAI/openarchivesprotocol.html
 

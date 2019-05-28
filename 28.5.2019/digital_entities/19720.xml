@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?><xb:digital_entity_call xmlns:xb="http://com/exlibris/digitool/repository/api/xmlbeans"><xb:digital_entity><pid>19720</pid><control><label xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><note xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><ingest_id xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><ingest_name xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><entity_type xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><entity_group xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><usage_type>VIEW</usage_type><preservation_level>any</preservation_level><partition_a xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><partition_b xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><partition_c xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><status xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><creation_date>2007-12-14 12:26:33</creation_date><creator>super:NOCTUA</creator><modification_date>2014-12-01 16:10:06</modification_date><modified_by>viewer:internal</modified_by><admin_unit>DUR01</admin_unit></control><mds><md shared="false"><mid>21537</mid><description xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><name>changehistory</name><type>changehistory_md</type><value><![CDATA[<xb:history xmlns:xb="http://com/exlibris/digitool/repository/api/xmlbeans"><events><event xmlID="1"><eventIdentifier><eventIdentifierType>Service</eventIdentifierType><eventIdentifierValue>TechnicalMetadataExtractor</eventIdentifierValue></eventIdentifier><eventType>Technical Metadata Extraction</eventType><eventDateTime>2007-12-14T12:34:40.667+01:00</eventDateTime><eventDetail>Add some metadata to the digital entity using jhove</eventDetail><linkingAgentIdentifier><linkingAgentIdentifierType>User</linkingAgentIdentifierType><linkingAgentIdentifierValue>viewer:internal</linkingAgentIdentifierValue></linkingAgentIdentifier></event></events></xb:history>]]></value></md><md shared="false"><mid>21535</mid><description> </description><name>descriptive</name><type>dc</type><value><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/"><dc:title>Odraz díla Ferdinanda Ebnera v české teologii</dc:title><dcterms:translated>Reflection the Ferdinand Bbner´s Works in Czech Theology</dcterms:translated><dcterms:alternative></dcterms:alternative><dcterms:alternativeTranslated></dcterms:alternativeTranslated><dc:studyID>	</dc:studyID><dc:creator>Ing. Skala, Petr</dc:creator><dcterms:dateofbirth></dcterms:dateofbirth><dc:subject>slovo, duchovní realita, personalismus, existence, idealismus, Já-Ty, hřích, substancializace</dc:subject><dc:description></dc:description><dc:publisher>Univerzita Karlova v Praze</dc:publisher><dcterms:advisor>ThDr. Vogel, Jiří Th.D</dcterms:advisor><dcterms:referee></dcterms:referee><dcterms:created>2007-07-31</dcterms:created><dcterms:dateAccepted></dcterms:dateAccepted><dc:status></dc:status><dc:type>magisterská práce</dc:type><dc:format>application.pdf</dc:format><dc:identifier></dc:identifier><dc:language>cs</dc:language><dc:rights></dc:rights><dcterms:name>Mgr.</dcterms:name><dcterms:level>magisterský</dcterms:level><dcterms:discipline></dcterms:discipline><dcterms:grantor>Univerzita Karlova v Praze. Husitská teologická fakulta.</dcterms:grantor><dc:collection>dp</dc:collection><dc:collection>dp</dc:collection></record>]]></value></md><md shared="false"><mid>2081465</mid><description xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><name>technical</name><type>text_md</type><value><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<textmd:textMD xmlns:textmd="http://www.loc.gov/METS/" xmlns:jhove="http://hul.harvard.edu/ois/xml/ns/jhove" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.loc.gov/METS/" xsi:schemaLocation="http://www.loc.gov/METS http://dlib.nyu.edu/METS/textmd.xsd">
+<textmd:encoding QUALITY="1">
+<textmd:encoding_software/>
+<textmd:encoding_platform linebreak=""/>
+<textmd:encoding_software/>
+<textmd:encoding_agent role=""/>
+</textmd:encoding>
+<textmd:character_info>
+<textmd:charset/>
+<textmd:byte_order/>
+<textmd:character_size encoding=""/>
+<textmd:linebreak/>
+</textmd:character_info>
+<textmd:language/>
+<textmd:alt_language authority=""/>
+<textmd:font_script/>
+<textmd:markup_basis version=""/>
+<textmd:markup_language version=""/>
+<textmd:processingNote/>
+<textmd:printRequirements/>
+<textmd:textNote/>
+<textmd:viewingRequirements/>
+<textmd:file>
+<textmd:fileSize/>
+<textmd:mimeType/>
+<textmd:extension/>
+</textmd:file>
+</textmd:textMD>
+]]></value></md><md shared="false"><mid>251678</mid><description xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><name>preservation</name><type>preservation_md</type><value><![CDATA[<object xmlns="http://www.loc.gov/standards/premis">
+  <objectIdentifier>
+    <objectIdentifierType>handle</objectIdentifierType>
+    <objectIdentifierValue>123.45/3343</objectIdentifierValue>
+  </objectIdentifier>
+</object>]]></value></md></mds><relations><relation><type>manifestation</type><pid>19721</pid></relation></relations><stream_ref><file_name>19720_C:\Documents and Settings\knihovna\Plocha\skala.pdf</file_name><file_extension>pdf</file_extension><mime_type>application/pdf</mime_type><directory_path>/exlibris/dtl/j3_1/digitool/home/system/bin/../../profile/storage/2007/12/14/file_1/19720</directory_path><file_id xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><storage_id>1000</storage_id><external_type>-1</external_type><file_size_bytes>603273</file_size_bytes></stream_ref></xb:digital_entity></xb:digital_entity_call>

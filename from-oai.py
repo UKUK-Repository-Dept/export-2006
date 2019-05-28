@@ -78,8 +78,8 @@ def hui(record):
 records0 = list(get_oai_records(oai_sets[0]))
 records1 = list(get_oai_records(oai_sets[1]))
 
-for record in records1:
-    print(get_oai_id(record))
+#for record in records1  + records0:
+#    print(get_oai_id(record))
 
 def search_records(phrase):
     for record in records0 + records1:
@@ -87,17 +87,24 @@ def search_records(phrase):
         if phrase in str_rec:
             yield record
 
-def list_format(filename):
+def list_format(oai_id):
+    url = "http://"+server+"/OAI-PUB?verb="+verb[1]+"&identifier="+identifier_prefix+str(oai_id)
+    print(url)
+    response = requests.get(url).text
+    if "id does not exist" not in response:
+        root = ET.fromstring(response)
+        metadataFormats=tag(root,"ListMetadataFormats")
+        for metadata in metadataFormats:
+            child = tag(metadata,"metadataPrefix")
+            print( child.text)
+
+#list_format(104691) #obyčejný 
+#list_format(63450) #rodic marc21
+#list_format(103446) #prvni nezvestny
+
+def list_all_format(filename):
     for row in open(filename,"r"):
-        oai_id = row[:-1]
-        url = "http://"+server+"/OAI-PUB?verb="+verb[1]+"&identifier="+identifier_prefix+oai_id
-        response = requests.get(url).text
-        if "id does not exist" not in response:
-            root = ET.fromstring(response)
-            metadataFormats=tag(root,"ListMetadataFormats")
-            for metadata in metadataFormats:
-                child = tag(metadata,"metadataPrefix")
-                print( child.text)
+        list_format(row[:-1])
 
 def list_without_metadata(filename):
     for row in open(filename,"r"):

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?><xb:digital_entity_call xmlns:xb="http://com/exlibris/digitool/repository/api/xmlbeans"><xb:digital_entity><pid>14653</pid><control><label>Filmová hudba, její záznam a zpracování</label><note>Diplomová práce - PDF</note><ingest_id xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><ingest_name xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><entity_type xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><entity_group xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><usage_type>VIEW</usage_type><preservation_level>any</preservation_level><partition_a xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><partition_b xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><partition_c xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><status xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><creation_date>2007-03-16 18:34:46</creation_date><creator>super:DUVT</creator><modification_date>2014-12-01 16:36:04</modification_date><modified_by>viewer:internal</modified_by><admin_unit>DUR01</admin_unit></control><mds><md shared="false"><mid>2082980</mid><description xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><name>technical</name><type>text_md</type><value><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<textmd:textMD xmlns:textmd="http://www.loc.gov/METS/" xmlns:jhove="http://hul.harvard.edu/ois/xml/ns/jhove" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.loc.gov/METS/" xsi:schemaLocation="http://www.loc.gov/METS http://dlib.nyu.edu/METS/textmd.xsd">
+<textmd:encoding QUALITY="1">
+<textmd:encoding_software/>
+<textmd:encoding_platform linebreak=""/>
+<textmd:encoding_software/>
+<textmd:encoding_agent role=""/>
+</textmd:encoding>
+<textmd:character_info>
+<textmd:charset/>
+<textmd:byte_order/>
+<textmd:character_size encoding=""/>
+<textmd:linebreak/>
+</textmd:character_info>
+<textmd:language/>
+<textmd:alt_language authority=""/>
+<textmd:font_script/>
+<textmd:markup_basis version=""/>
+<textmd:markup_language version=""/>
+<textmd:processingNote/>
+<textmd:printRequirements/>
+<textmd:textNote/>
+<textmd:viewingRequirements/>
+<textmd:file>
+<textmd:fileSize>1626196</textmd:fileSize>
+<textmd:checksum>
+<textmd:checksumMethod>CRC32</textmd:checksumMethod>
+<textmd:checksumValue>59ec7e06</textmd:checksumValue>
+</textmd:checksum>
+<textmd:checksum>
+<textmd:checksumMethod>MD5</textmd:checksumMethod>
+<textmd:checksumValue>203d06b2c13a9df808e25bbdda50c574</textmd:checksumValue>
+</textmd:checksum>
+<textmd:checksum>
+<textmd:checksumMethod>SHA-1</textmd:checksumMethod>
+<textmd:checksumValue>9b18089df61a6baf2fc3cf720362fecba16e4aee</textmd:checksumValue>
+</textmd:checksum>
+<textmd:mimeType>application/pdf</textmd:mimeType>
+<textmd:extension/>
+</textmd:file>
+</textmd:textMD>
+]]></value></md><md shared="false"><mid>14197</mid><description xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><name>changehistory</name><type>changehistory_md</type><value><![CDATA[<xb:history xmlns:xb="http://com/exlibris/digitool/repository/api/xmlbeans"><events><event xmlID="1"><eventIdentifier><eventIdentifierType>Service</eventIdentifierType><eventIdentifierValue>TechnicalMetadataExtractor</eventIdentifierValue></eventIdentifier><eventType>Technical Metadata Extraction</eventType><eventDateTime>2007-03-16T18:51:45.532+01:00</eventDateTime><eventDetail>Add some metadata to the digital entity using jhove</eventDetail><linkingAgentIdentifier><linkingAgentIdentifierType>User</linkingAgentIdentifierType><linkingAgentIdentifierValue>viewer:internal</linkingAgentIdentifierValue></linkingAgentIdentifier></event></events></xb:history>]]></value></md><md shared="false"><mid>14194</mid><description> </description><name>descriptive</name><type>dc</type><value><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/"><dc:title xsi:type="dcterms:cs">Filmová hudba, její záznam a zpracování</dc:title><dcterms:translated xsi:type="dcterms:en">Film music, its record and process</dcterms:translated><dcterms:alternative></dcterms:alternative><dcterms:alternativeTranslated></dcterms:alternativeTranslated><dc:studyID></dc:studyID><dc:creator>Horák, Ivan.</dc:creator><dcterms:dateofbirth></dcterms:dateofbirth><dc:subject></dc:subject><dc:description xsi:type="dcterms:en">This dissertation essay concerns film music, its recording and processing. The work concentrates on the synthesis of the music with the film picture and on the choice of the right tools that lead to their successful combination. It also touches a selected technical aspects of music recording and its processing. It chronologically describes the creation of the film music from the beginning till the final phase: the final mix. Analysis of the audiovisual samples represent an important part of this work. These samples show what are the possibilities of an artificial electronic music as well as of the orchestral music combined with the electronic instruments.</dc:description><dc:publisher> Univerzita Karlova v Praze </dc:publisher><dcterms:advisor>Zobač, Jíří.</dcterms:advisor><dcterms:advisor>Ďurovič, Juraj; konzultant</dcterms:advisor><dcterms:referee></dcterms:referee><dcterms:created>2006</dcterms:created><dcterms:dateAccepted>7.6.2006</dcterms:dateAccepted><dc:status></dc:status><dc:type></dc:type><dc:format xsi:type="dcterms:IMT">application.pdf</dc:format><dc:identifier></dc:identifier><dc:language></dc:language><dc:rights></dc:rights><dcterms:name></dcterms:name><dcterms:level></dcterms:level><dcterms:discipline></dcterms:discipline><dcterms:grantor>Akademie múzických umění. Filmová a televizní fakulta AMU. Katedra zvukové tvorby</dcterms:grantor><dc:collection>dp</dc:collection><dc:collection>dp</dc:collection></record>]]></value></md><md shared="false"><mid>14207</mid><description> </description><name>descriptive</name><type>dc</type><value><![CDATA[<record xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" ></record>]]></value></md><md shared="false"><mid>254439</mid><description xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><name>preservation</name><type>preservation_md</type><value><![CDATA[<object xmlns="http://www.loc.gov/standards/premis">
+  <objectIdentifier>
+    <objectIdentifierType>handle</objectIdentifierType>
+    <objectIdentifierValue>123.45/6083</objectIdentifierValue>
+  </objectIdentifier>
+</object>]]></value></md></mds><relations><relation><type>manifestation</type><pid>14657</pid></relation><relation><type>manifestation</type><pid>15869</pid></relation></relations><stream_ref><file_name>14653_IvanHorak_DiplomovaPrace.pdf</file_name><file_extension>pdf</file_extension><mime_type>application/pdf</mime_type><directory_path>/exlibris/dtl/j3_1/digitool/home/system/bin/../../profile/storage/2007/03/16/file_1/14653</directory_path><file_id xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><storage_id>1000</storage_id><external_type>-1</external_type><file_size_bytes>1626196</file_size_bytes></stream_ref></xb:digital_entity></xb:digital_entity_call>
