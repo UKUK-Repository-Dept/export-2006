@@ -6,6 +6,15 @@
     144016 je priloha k 14404 - je v gull
     42693 je priloha k 63450 - neni v gull ani oaipmh
 
+# scp -r novotj@dingo.is.cuni.cz:/exlibris/dtl/j3_1/digitool/home/profile/export/export_Jitka/digital_entities 28.5.2019/
+
+ cd /exlibris/dtl/j3_1/digitool/home/profile/export/export_Jitka/
+dingo:/exlibris/dtl/j3_1/digitool/home/profile/export/export_Jitka $ ls
+digital_entities  streams
+
+Ruční práce: 
+scp -r novotj@gull.is.cuni.cz:/opt/dspace/ITEM@1233456789-1536.zip .
+
 Eliška:
 * https://gull.is.cuni.cz/handle/123456789/10094 není v xml souborech
 
