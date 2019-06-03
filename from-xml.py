@@ -10,8 +10,8 @@ def tag(root,tag):
         raise Exception("No tag {}".format(tag))
     return subtree
 
-def get_filenames(dirname,filename):
-    tree = ET.parse(dirname+'/'+filename)
+def get_filenames(xml_dirname,filename):
+    tree = ET.parse(xml_dirname+'/'+filename)
     root = tree.getroot()
     for stream_ref in root.findall("./*stream_ref"):
         filename = stream_ref.find('file_name').text
@@ -24,13 +24,13 @@ def get_filenames(dirname,filename):
             if relation_type == "include":
                 pid = relation.find('pid').text
                 subrecords.append(pid)
-                #print("children"+pid,relation_type,dirname,filename)
+                #print("children"+pid,relation_type,xml_dirname,filename)
     for record in subrecords:
-        yield from get_filenames(dirname,record+".xml")
+        yield from get_filenames(xml_dirname,record+".xml")
 
-def print_childs(dirname,filename):
+def print_childs(xml_dirname,filename):
     try:
-        tree = ET.parse(dirname+"/"+filename)
+        tree = ET.parse(xml_dirname+"/"+filename)
     except:
         raise
     root = tree.getroot()
@@ -41,101 +41,117 @@ def print_childs(dirname,filename):
                 pid = relation.find('pid').text
                 print(pid)
 
-def print_all_child(dirname):
-    for filename in os.listdir(dirname):
-        print_childs(dirname,filename)
+def print_all_child(xml_dirname):
+    for filename in os.listdir(xml_dirname):
+        print_childs(xml_dirname,filename)
 
-def check_mentions(dirname,filename):
+def check_mentions(xml_dirname,filename):
     dt_id = filename.split("_")[0]
-    return filename in get_filenames(dirname,dt_id+".xml")
+    return filename in get_filenames(xml_dirname,dt_id+".xml")
 
-def check_all_mentions(dirname,filename):
+def check_all_mentions(xml_dirname,filename):
     for row in open(filename,"r"):
-        if not check_mentions(dirname,row[:-1]):
+        if not check_mentions(xml_dirname,row[:-1]):
             print(row[:-1])
 
-def print_special(dirname,filename,pattern):
+def print_special(xml_dirname,filename,pattern):
     #print("debug"+filename)
-    for pdf in get_filenames(dirname,filename):
+    for pdf in get_filenames(xml_dirname,filename):
         if pattern in pdf:
             1+1
             #print(filename)
         
-def print_all_special(dirname,pattern):
-    for filename in os.listdir(dirname):
+def print_all_special(xml_dirname,pattern):
+    for filename in os.listdir(xml_dirname):
         try:
-            print_special(dirname,filename,pattern)
+            print_special(xml_dirname,filename,pattern)
         except:
             print(filename)
 
-def print_label(dirname,filename):
-    try:
-        tree = ET.parse(dirname+"/"+filename)
-    except:
-        raise
+def get_category(xml_dirname,filename):
+    tree = ET.parse(xml_dirname+"/"+filename)
     root = tree.getroot()
     label = tag(tag(tag(root,"digital_entity"),"control"),"label")
     note = tag(tag(tag(root,"digital_entity"),"control"),"note")
     ingest = tag(tag(tag(root,"digital_entity"),"control"),"ingest_name")
-    if None == ingest.text:
-        if None == note.text:
-            print(filename, label.text, note.text)
-            pass
-        elif "MFF" in note.text:
-            #print(filename, label.text, note.text)
-            pass
-        elif "FF" in note.text:
-            #print(filename, label.text, note.text)
-            pass
-        elif "PF" in note.text:
-            #print(filename, label.text, note.text)
-            pass
-        elif "FTVS" in note.text:
-            #print(filename, label.text, note.text)
-            pass
-        elif "2LF" in note.text or "LF2" in note.text:
-            #print(filename, label.text, note.text)
-            pass
-        elif "etf" in note.text or "ETF" in note.text:
-            #print(filename, label.text, note.text)
-            pass
-        elif "HTF" in note.text:
-            #print(filename, label.text, note.text)
-            pass
-        elif "FSV" in note.text:
-            #print(filename, label.text, note.text)
-            pass
-        else:
-            #print(filename, label.text, note.text)
-            pass
-        pass
-    elif "ksp" in ingest.text:
-        #print(filename, label.text, ingest.text)
-        pass
-    elif "psy" in ingest.text: 
-        #print(filename, label.text, ingest.text)
-        pass
-    elif "mff" in ingest.text:
-        #print(filename, label.text, ingest.text)
-        pass
-    elif "uisk" in ingest.text:
-        #print(filename, label.text, ingest.text)
-        pass
-    elif "Dousova" in ingest.text:
-        #print(filename, label.text, ingest.text)
-        pass
-    elif "12345" in ingest.text:
-        #print(filename, label.text, ingest.text)
-        pass
-    else:
-        #print(filename, label.text, ingest.text, note.text)
-        pass 
+    return (label.text,ingest.text,note.text)
 
-def print_all_label(dirname,filename):
-    for row in open(filename,"r"):
-        oai_id = row.split("_")[0]
-        print_label(dirname,oai_id+".xml")
+def print_all_label(xml_dirname,filename):
+    def has_category(oai_id,category,type):
+        label, ingest, note = get_category(xml_dirname,oai_id+".xml")
+        if type=="ingest":
+            if ingest != None:
+                return category in ingest
+            else:
+                return False
+        if type=="ingest-other":
+            if ingest == None:
+                return False
+            for tag in category:
+                if tag in ingest:
+                    return False
+            return True
+        if type=="ingest-None":
+            if ingest == None:
+                return True
+            return False
+        if "note" in type:
+            if ingest != None:
+                return False
+        if type=="note":
+            if note != None:
+                return category in note
+            else:
+                return False
+        if type=="note-other":
+            if note == None:
+                return False
+            for tag in category:
+                if tag in note:
+                    return False
+            return True
+        if type=="note-None":
+            if note == None:
+                return True
+            return False
+    
+    print("\nIngesty:")
+    ingests = ["ksp", "psy", "mff", "uisk", "Dousova", "12345"] 
+    category = {}
+    for tag in ingests:
+        category[tag] = [ row[-1] for row in open(filename,"r") \
+            if has_category(row[:-1],tag,"ingest") ]
+    category["jiná"] = [ row[:-1] for row in open(filename,"r") \
+        if has_category(row[:-1],ingests,"ingest-other") ]
+    category["žádná"] = [ row[:-1] for row in open(filename,"r") \
+        if has_category(row[:-1],None,"ingest-None") ]
+    sum = 0
+    for tag, list_id in category.items():
+        sum += len(list_id)
+        print(tag,len(list_id))
+    print("celkem",sum)
+    
+    print("\nNote:\nU zaznamu bez ingest porovnavam note,\npozor FF je součet fildy a matfyzu")
+    notes = ["FF UK","FFUK","MFF","etf","ETF","HTF","2LF","LF2","PF","FTVS"]
+    category = {}
+    for tag in notes:
+        category[tag] = [ row[:-1] for row in open(filename,"r") \
+            if has_category(row[:-1],tag,"note") ]
+    category["jiná"] = [ row[:-1] for row in open(filename,"r") \
+        if has_category(row[:-1],notes,"note-other") ]
+    category["žádná"] = [ row[-1] for row in open(filename,"r") \
+        if has_category(row[:-1],None,"note-None") ]
+    sum = 0
+    for tag, list_id in category.items():
+        sum += len(list_id)
+        print(tag,len(list_id))
+    print("celkem",sum)
 
+    #print(category["FF"])
+    #print(len(set(category["MFF"]).intersection(set(category["FF"]))))
+    for oai_id in category["jiná"]:
+        label, ingest, note = get_category(xml_dirname,oai_id+".xml")
+        #print(label, ingest, note)
 #print_label("3.5.2019/digital_entities","103446.xml","label")
 print_all_label("28.5.2019/digital_entities","opomenute_soubory.txt")
 #print_special("3.5.2019/digital_entities",127578.xml","posu")
