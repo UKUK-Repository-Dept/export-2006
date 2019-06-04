@@ -100,26 +100,27 @@ def print_all_label(xml_dirname,filename):
                 return False
         if type=="note":
             if note != None:
-                return category in note
+                return note in category
             else:
                 return False
         if type=="note-other":
             if note == None:
                 return False
-            for tag in category:
-                if tag in note:
-                    return False
+            for tags in category:
+                for tag in tags:
+                    if tag == note:
+                        return False
             return True
         if type=="note-None":
             if note == None:
                 return True
             return False
     
-    print("\nIngesty:")
-    ingests = ["ksp", "psy", "mff", "uisk", "Dousova", "12345"] 
+#    print("\nIngesty:")
+    ingests = ["ksp", "mff", "psy", "Dousova", "uisk", "Dodatky", "Hubl", "smes", "nadm_velikost", "12345"] 
     category = {}
     for tag in ingests:
-        category[tag] = [ row[-1] for row in open(filename,"r") \
+        category[tag] = [ row[:-1] for row in open(filename,"r") \
             if has_category(row[:-1],tag,"ingest") ]
     category["jiná"] = [ row[:-1] for row in open(filename,"r") \
         if has_category(row[:-1],ingests,"ingest-other") ]
@@ -128,30 +129,37 @@ def print_all_label(xml_dirname,filename):
     sum = 0
     for tag, list_id in category.items():
         sum += len(list_id)
-        print(tag,len(list_id))
-    print("celkem",sum)
+        if len(list_id) < 100:
+            print("\n",tag,len(list_id))
+            for oai_id in list_id:
+                label, ingest, note = get_category(xml_dirname,oai_id+".xml")
+                print(oai_id, label, ingest, tag)
+
+#    print("celkem",sum)
     
-    print("\nNote:\nU zaznamu bez ingest porovnavam note,\npozor FF je součet fildy a matfyzu")
-    notes = ["FF UK","FFUK","MFF","etf","ETF","HTF","2LF","LF2","PF","FTVS"]
+    #print("\nNote:")
+    notes = [["HTF"],["FFUk","FF","FF UK","FFUK"],["etf","ETF"],["MFF"],["PF"],["FTVS"],["2LF","LF2","2LF -"],["FSV","FSV IMS","FSV_IKSZ","FSV ISS","FSV IPS"],["FHS"],["3LF"]]
     category = {}
     for tag in notes:
-        category[tag] = [ row[:-1] for row in open(filename,"r") \
+        category[str(tag)] = [ row[:-1] for row in open(filename,"r") \
             if has_category(row[:-1],tag,"note") ]
     category["jiná"] = [ row[:-1] for row in open(filename,"r") \
         if has_category(row[:-1],notes,"note-other") ]
-    category["žádná"] = [ row[-1] for row in open(filename,"r") \
+    category["žádná"] = [ row[:-1] for row in open(filename,"r") \
         if has_category(row[:-1],None,"note-None") ]
-    sum = 0
-    for tag, list_id in category.items():
-        sum += len(list_id)
-        print(tag,len(list_id))
-    print("celkem",sum)
+    #sum = 0
+    #for tag, list_id in category.items():
+    #    sum += len(list_id)
+    #    print(tag,len(list_id))
+    #print("celkem",sum)
 
     #print(category["FF"])
     #print(len(set(category["MFF"]).intersection(set(category["FF"]))))
-    for oai_id in category["jiná"]:
+    for oai_id in category["žádná"]:
         label, ingest, note = get_category(xml_dirname,oai_id+".xml")
-        #print(label, ingest, note)
+        #if label == None:
+        #    print(oai_id)
+
 #print_label("3.5.2019/digital_entities","103446.xml","label")
 print_all_label("28.5.2019/digital_entities","opomenute_soubory.txt")
 #print_special("3.5.2019/digital_entities",127578.xml","posu")
