@@ -23,11 +23,21 @@ class Dspace:
             json=self.login
             )
         response.raise_for_status()
+        self.token = response.text
+        self.headers["rest-dspace-token"]= self.token
         print(response.text)
+    
+    def logout(self):
+        response = requests.post(
+            self.url+'/logout', 
+            headers=self.headers, 
+            )
+        response.raise_for_status()
+        self.token = response.text
 
     def hui(self):
         pass
 
 
 ds = Dspace()
-ds.hui()
+ds.logout()
