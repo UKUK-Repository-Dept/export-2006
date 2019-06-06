@@ -5,8 +5,11 @@
 * 21 souboru s formatovanim marc21.txt
     144016 je priloha k 14404 - je v gull
     42693 je priloha k 63450 - neni v gull ani oaipmh
+* usadge_type thumbnail
+* https://github.com/DSpace-Labs/dspace-rest-requests/blob/master/send_file.sh
 
 # scp -r novotj@dingo.is.cuni.cz:/exlibris/dtl/j3_1/digitool/home/profile/export/export_Jitka/digital_entities 28.5.2019/
+
 
  cd /exlibris/dtl/j3_1/digitool/home/profile/export/export_Jitka/
 dingo:/exlibris/dtl/j3_1/digitool/home/profile/export/export_Jitka $ ls
