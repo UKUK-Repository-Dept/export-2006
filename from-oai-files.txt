@@ -24,10 +24,7 @@
 1083514_Grygar_Jakub_%202004_disertace.pdf
 1115823_dis31_s71_142.pdf
 111650_Ellederova%2CJitka_dp_2004.pdf
-111650_Ellederova%2CJitka_dp_2004.pdf
 111653_Ellederova%2CJitka_dp_2004_oponent.pdf
-111653_Ellederova%2CJitka_dp_2004_oponent.pdf
-111656_Ellederova%2CJitka_dp_2004_vedouci.pdf
 111656_Ellederova%2CJitka_dp_2004_vedouci.pdf
 1121271_1121271.pdf
 1138076_jirikofranekhabilitacnipraceuk_text.pdf
@@ -284,7 +281,6 @@
 124977_Fialova,Lenka_dp_2004.pdf
 124978_Fialova,Lenka_dp_2004_oponent.pdf
 124979_Fialova,Lenka_dp_2004_vedouci.pdf
-124980_Fiedlerova,Eva_dp_2002.pdf
 124981_Fiedlerova,Eva_dp_2002_oponent.pdf
 124982_Fiedlerova,Eva_dp_2002_vedouci.pdf
 124983_Florianova,Monika_bc_2003.pdf
@@ -321,10 +317,7 @@
 125032_Horka,Martina_dp_2002_oponent.pdf
 125033_Horka,Martina_dp_2002_vedouci.pdf
 125034_Hruba,Dagmar_dp_2002.pdf
-125034_Hruba,Dagmar_dp_2002.pdf
 125035_Hruba,Dagmar_dp_2002_oponent.pdf
-125035_Hruba,Dagmar_dp_2002_oponent.pdf
-125036_Hruba,Dagmar_dp_2002_vedouci.pdf
 125036_Hruba,Dagmar_dp_2002_vedouci.pdf
 125037_Janatova,Lenka_dp_2003.pdf
 125038_Janatova,Lenka_dp_2003_oponent.pdf
@@ -419,6 +412,8 @@
 125692_Sladkova,Zuzana_dp_2003.pdf
 125693_Sladkova,Zuzana_dp_2003_oponent.pdf
 125695_Sladkova,Zuzana_dp_2003_vedouci.pdf
+126000_ticha_psp_2009.pdf
+126006_ticha_psp_2009_opon.pdf
 126821_Rynesova.pdf
 127076_Charvatova,Martina_bc_2001.pdf
 127078_Charvatova,Martina_bc_2001_oponent.pdf
@@ -519,6 +514,7 @@
 127202_Skuckova,Jirina_bc_2004.pdf
 127203_Skuckova,Jirina_bc_2004_oponent.pdf
 127204_Skuckova,Jirina_bc_2004_vedouci.pdf
+128118_Fiedlerova%2CEva_dp_2002.pdf
 129525_Janovcova,Vlasta_dp_2001.pdf
 129526_Janovcova,Vlasta_dp_2001_oponent.pdf
 129527_Janovcova,Vlasta_dp_2001_vedouci.pdf
@@ -750,264 +746,140 @@
 132635_Walter,Michal_rg_2005_oponent.pdf
 132636_Walter,Michal_rg_2005_vedouci.pdf
 1333784_1333784.pdf
-1333784_1333784.pdf
 134670_Plecita-disertaceVO.pdf
 134676_disertace3.pdf
-14106_test_dp.doc
+135103_ren_BP14.pdf
 14106_test_dp.doc
 14156_clanek_aids.pdf
-14156_clanek_aids.pdf
-14229_BC-Germanova.pdf
 14229_BC-Germanova.pdf
 14237_bc-Holy.pdf
-14237_bc-Holy.pdf
-14278_bc-Sefrova.pdf
 14278_bc-Sefrova.pdf
 14299_BC-Spakova.pdf
-14299_BC-Spakova.pdf
-14311_bc-Kottova.pdf
 14311_bc-Kottova.pdf
 14370_E:\bc\antropius_bc.pdf
-14370_E:\bc\antropius_bc.pdf
-14404_Diplomova_prace%5B1%5D.pdf
 14404_Diplomova_prace%5B1%5D.pdf
 14405_Pavelka_Tomas_dp.pdf
 14439_ritschelova_2006.pdf
-14439_ritschelova_2006.pdf
-14478_Vrba_dipl_2006.pdf
 14478_Vrba_dipl_2006.pdf
 14536_diserBERAN.pdf
-14536_diserBERAN.pdf
-14554_E:\bc\ciprova_bc.pdf
 14554_E:\bc\ciprova_bc.pdf
 14573_bartova_bc.pdf
-14573_bartova_bc.pdf
-14574_busek_bc.pdf
 14574_busek_bc.pdf
 14575_buzkova_bc.pdf
-14575_buzkova_bc.pdf
-14576_cordiner_bc.pdf
 14576_cordiner_bc.pdf
 14577_dolejsi_bc.pdf
-14577_dolejsi_bc.pdf
-14578_knezek_bc.pdf
 14578_knezek_bc.pdf
 14579_Kolarova_bc.pdf
-14579_Kolarova_bc.pdf
-14580_korycansky_bc.pdf
 14580_korycansky_bc.pdf
 14581_kozojedova_bc.pdf
-14581_kozojedova_bc.pdf
-14582_krivska_bc.pdf
 14582_krivska_bc.pdf
 14583_manakova_bc.pdf
-14583_manakova_bc.pdf
-14584_pelikanova_bc.pdf
 14584_pelikanova_bc.pdf
 14585_probostova_bc.pdf
-14585_probostova_bc.pdf
-14586_rybova_bc.pdf
 14586_rybova_bc.pdf
 14587_sisakova_bc.pdf
-14587_sisakova_bc.pdf
-14626_diserBERAN.pdf
 14626_diserBERAN.pdf
 14634_Bc-Holzerova.pdf
-14634_Bc-Holzerova.pdf
-14638_dipl1.wmv
 14638_dipl1.wmv
 14653_IvanHorak_DiplomovaPrace.pdf
-14653_IvanHorak_DiplomovaPrace.pdf
-14671_diserBERAN.pdf
 14671_diserBERAN.pdf
 14672_diserBERAN.pdf
-14672_diserBERAN.pdf
-14673_diserBERAN.pdf
 14673_diserBERAN.pdf
 14676_diserBERAN.pdf
-14676_diserBERAN.pdf
 14677_diserBERAN.pdf
-14677_diserBERAN.pdf
-14686_diserBERAN.pdf
 14686_diserBERAN.pdf
 14687_diserBERAN.pdf
 14688_diserSTEFKO.pdf
 14740_rigoWINTR.pdf
-14740_rigoWINTR.pdf
-14799_BP-Merunkova.pdf
 14799_BP-Merunkova.pdf
 14812_BP-NOvotna-Vera.pdf
-14812_BP-NOvotna-Vera.pdf
-14817_BC-Pfauser.pdf
 14817_BC-Pfauser.pdf
 14819_Bakalarska_prace_mikulas_pstross_7913.pdf
-14819_Bakalarska_prace_mikulas_pstross_7913.pdf
-14887_burjanek_dipl.pdf
 14887_burjanek_dipl.pdf
 14894_E:\Elektronicke verze DP\2006\Barunik.pdf
-14894_E:\Elektronicke verze DP\2006\Barunik.pdf
-14895_E:\Elektronicke verze DP\2006\Barunik.pdf
 14895_E:\Elektronicke verze DP\2006\Barunik.pdf
 14896_E:\Elektronicke verze DP\2006\Barunik.pdf
-14896_E:\Elektronicke verze DP\2006\Barunik.pdf
-14897_E:\Elektronicke verze DP\2006\Barunik.pdf
 14897_E:\Elektronicke verze DP\2006\Barunik.pdf
 14898_E:\Elektronicke verze DP\2006\Barunik.pdf
-14898_E:\Elektronicke verze DP\2006\Barunik.pdf
-14899_E:\Elektronicke verze DP\2006\Barunik.pdf
 14899_E:\Elektronicke verze DP\2006\Barunik.pdf
 14900_E:\Elektronicke verze DP\2006\Barunik.pdf
-14900_E:\Elektronicke verze DP\2006\Barunik.pdf
-14902_E:\Elektronicke verze DP\2006\Barunik.pdf
 14902_E:\Elektronicke verze DP\2006\Barunik.pdf
 14903_E:\Elektronicke verze DP\2006\Barunik.pdf
-14903_E:\Elektronicke verze DP\2006\Barunik.pdf
-14904_E:\Elektronicke verze DP\2006\Barunik.pdf
 14904_E:\Elektronicke verze DP\2006\Barunik.pdf
 14905_E:\Elektronicke verze DP\2006\Barunik.pdf
-14905_E:\Elektronicke verze DP\2006\Barunik.pdf
-14907_E:\Elektronicke verze DP\2006\Barunik.pdf
 14907_E:\Elektronicke verze DP\2006\Barunik.pdf
 14908_E:\Elektronicke verze DP\2006\Baxa.pdf
-14908_E:\Elektronicke verze DP\2006\Baxa.pdf
-14909_E:\Elektronicke verze DP\2006\Barunik.pdf
 14909_E:\Elektronicke verze DP\2006\Barunik.pdf
 14910_E:\Elektronicke verze DP\2006\Barunik.pdf
-14910_E:\Elektronicke verze DP\2006\Barunik.pdf
-14911_E:\Elektronicke verze DP\2006\Baxa.pdf
 14911_E:\Elektronicke verze DP\2006\Baxa.pdf
 14912_E:\Elektronicke verze DP\2006\Baxa.pdf
-14912_E:\Elektronicke verze DP\2006\Baxa.pdf
-14913_E:\Elektronicke verze DP\2006\Baxa.pdf
 14913_E:\Elektronicke verze DP\2006\Baxa.pdf
 14914_E:\Elektronicke verze DP\2007\Doubrava Jan - DP IES.pdf
-14914_E:\Elektronicke verze DP\2007\Doubrava Jan - DP IES.pdf
-14915_E:\Elektronicke verze DP\2007\Doubrava Jan - DP IES.pdf
 14915_E:\Elektronicke verze DP\2007\Doubrava Jan - DP IES.pdf
 14916_E:\Elektronicke verze DP\2006\Baxa.pdf
-14916_E:\Elektronicke verze DP\2006\Baxa.pdf
-14917_E:\Elektronicke verze DP\2006\Baxa.pdf
 14917_E:\Elektronicke verze DP\2006\Baxa.pdf
 14918_E:\Elektronicke verze DP\2006\Baxa.pdf
-14918_E:\Elektronicke verze DP\2006\Baxa.pdf
 14919_E:\Elektronicke verze DP\2006\Baxa.pdf
-14919_E:\Elektronicke verze DP\2006\Baxa.pdf
-14920_E:\Elektronicke verze DP\2006\Baxa.pdf
 14920_E:\Elektronicke verze DP\2006\Baxa.pdf
 14921_DP-verzeodevzdanaa.doc
 14936_E:\Elektronicke verze DP\2006\Baxa.pdf
-14936_E:\Elektronicke verze DP\2006\Baxa.pdf
-14938_E:\Elektronicke verze DP\2006\Baxa.pdf
 14938_E:\Elektronicke verze DP\2006\Baxa.pdf
 14941_C:\Documents and Settings\Administrator\Desktop\erm0342.pdf
-14941_C:\Documents and Settings\Administrator\Desktop\erm0342.pdf
-14942_D:\Na zkouseni\erm0342.pdf
 14942_D:\Na zkouseni\erm0342.pdf
 14943_D:\Na zkouseni\erm0342.pdf
-14943_D:\Na zkouseni\erm0342.pdf
-14944_D:\Na zkouseni\erm0342.pdf
 14944_D:\Na zkouseni\erm0342.pdf
 14945_D:\Na zkouseni\erm0342.pdf
-14945_D:\Na zkouseni\erm0342.pdf
-14946_D:\Na zkouseni\erm0342.pdf
 14946_D:\Na zkouseni\erm0342.pdf
 14947_D:\Na zkouseni\erm0342.pdf
-14947_D:\Na zkouseni\erm0342.pdf
-14948_D:\Na zkouseni\erm0342.pdf
 14948_D:\Na zkouseni\erm0342.pdf
 14949_D:\Na zkouseni\erm0342.pdf
-14949_D:\Na zkouseni\erm0342.pdf
-14950_D:\Na zkouseni\erm0342.pdf
 14950_D:\Na zkouseni\erm0342.pdf
 14951_D:\Na zkouseni\erm0342.pdf
-14951_D:\Na zkouseni\erm0342.pdf
-14952_D:\Na zkouseni\erm0342.pdf
 14952_D:\Na zkouseni\erm0342.pdf
 14953_D:\Na zkouseni\erm0342.pdf
-14953_D:\Na zkouseni\erm0342.pdf
-14954_D:\Na zkouseni\erm0342.pdf
 14954_D:\Na zkouseni\erm0342.pdf
 14963_E:\Elektronicke verze DP\2006\Baxa.pdf
-14963_E:\Elektronicke verze DP\2006\Baxa.pdf
-14964_bernardova_bp.pdf
 14964_bernardova_bp.pdf
 15056_E:\Elektronicke verze kvalifikacnich praci\2006\Diplomky\Baxa.pdf
-15056_E:\Elektronicke verze kvalifikacnich praci\2006\Diplomky\Baxa.pdf
-15102_diplomova-prace-37962216-2006-brozikova-dp.pdf
 15102_diplomova-prace-37962216-2006-brozikova-dp.pdf
 15178_Blajskova_2007.pdf
-15178_Blajskova_2007.pdf
-16996_C:\temp\57646.pdf
 16996_C:\temp\57646.pdf
 17085_Dis-Karasek.pdf
-17085_Dis-Karasek.pdf
 17193_25a.swf
-17193_25a.swf
-17194_2007-03-13-vystava-ma_to_cenu-720p.wmv
 17194_2007-03-13-vystava-ma_to_cenu-720p.wmv
 17196_behounkova_dipl.pdf
 17200_gallovic_phd.pdf
-17200_gallovic_phd.pdf
-17203_oprsal_dipl.pdf
 17203_oprsal_dipl.pdf
 17206_oprsal_phd.pdf
-17206_oprsal_phd.pdf
-17209_velimsky_phd.pdf
 17209_velimsky_phd.pdf
 17948_spousta_dipl.pdf
 17960_diserBOHAC.pdf
 17983_benesova_dipl.pdf
-17983_benesova_dipl.pdf
-17989_gallovic_dipl.pdf
 17989_gallovic_dipl.pdf
 17995_malenko_dipl.pdf
 17998_plicka_phd.pdf
-17998_plicka_phd.pdf
-18011_vecsey_phd.pdf
 18011_vecsey_phd.pdf
 18018_osm_veku_cloveka.pdf
-18018_osm_veku_cloveka.pdf
-18067_velimsky_dipl.pdf
 18067_velimsky_dipl.pdf
 18072_veteska_dipl.pdf
-18072_veteska_dipl.pdf
-18093_cerny_dipl.pdf
 18093_cerny_dipl.pdf
 18099_eliasek_dipl.pdf
-18099_eliasek_dipl.pdf
-18262_multikulturni_vychova_na_zakladni_skole.pdf
 18262_multikulturni_vychova_na_zakladni_skole.pdf
 18306_kulvait_bak.pdf
-18306_kulvait_bak.pdf
-18312_malek_dipl.pdf
 18312_malek_dipl.pdf
 18316_masin_bak.pdf
-18316_masin_bak.pdf
-18478_DP-Pazdziorova-text.pdf
 18478_DP-Pazdziorova-text.pdf
 18538_vyuka_nemeckeho_jazyka_u_deti_se_spu.pdf
-18538_vyuka_nemeckeho_jazyka_u_deti_se_spu.pdf
-18556_problematika_vyuziti_volneho_casu_u_deti_s_autismem.pdf
 18556_problematika_vyuziti_volneho_casu_u_deti_s_autismem.pdf
 18571_diagnostika_poruch_reci_u_osob_s_parkinsonovou_nemoci.pdf
-18571_diagnostika_poruch_reci_u_osob_s_parkinsonovou_nemoci.pdf
-18658_vyznam_sportu_pro_jedince_se_zrakovym_postizenim.pdf
 18658_vyznam_sportu_pro_jedince_se_zrakovym_postizenim.pdf
 18773_Havlinova_IES.pdf
-18773_Havlinova_IES.pdf
-18780_Kabrtova_IES.pdf
 18780_Kabrtova_IES.pdf
 18817_C:\Documents and Settings\pavlaskova\Dokumenty\dokumentace\DT-config_guide.pdf
-18817_C:\Documents and Settings\pavlaskova\Dokumenty\dokumentace\DT-config_guide.pdf
-18933_C:\Documents and Settings\pavlaskova\Dokumenty\dokumentace\DT-config_guide.pdf
 18933_C:\Documents and Settings\pavlaskova\Dokumenty\dokumentace\DT-config_guide.pdf
 18992_zhodnoceni_vybranych_technik_a_materialu.pdf
-18992_zhodnoceni_vybranych_technik_a_materialu.pdf
-18996_C:\Documents and Settings\Pavlaskova\Dokumenty\dokumentace\DT-config_guide.pdf
 18996_C:\Documents and Settings\Pavlaskova\Dokumenty\dokumentace\DT-config_guide.pdf
 19005_testovani_dyslexie.pdf
-19005_testovani_dyslexie.pdf
-19141_vyvoj_ctenarskych_dovednosti.pdf
 19141_vyvoj_ctenarskych_dovednosti.pdf
 19169_Bubak_DP.pdf
 19172_Antosova_Lucie.pdf
@@ -1018,12 +890,8 @@
 19193_Gregorova_Iva.pdf
 19196_Horak_Lukas.pdf
 19297_andrasova_bc2006.pdf
-19297_andrasova_bc2006.pdf
-19298_bendova_bc2006.pdf
 19298_bendova_bc2006.pdf
 19299_problematika_zaku_s_SVPU.pdf
-19299_problematika_zaku_s_SVPU.pdf
-19306_PIVONSKY%20KLASTER.pdf
 19306_PIVONSKY%20KLASTER.pdf
 19307_Benacek_Ondrej.pdf
 19310_Fruhauf.pdf
@@ -1045,7 +913,6 @@
 19361_Zika_Jan.pdf
 19364_Kafka_Tomas.pdf
 19378_Roubal_Tomas.pdf
-19378_Roubal_Tomas.pdf
 19381_Illova_Lucie.pdf
 19384_Hercegova_Katarina.pdf
 19388_Mejstrik_Krystof.pdf
@@ -1060,195 +927,101 @@
 19416_Slav00EDcek_Jan_dp_2005_IES.pdf
 19420_Kasova_IES.pdf
 19434_C:\Documents and Settings\knihovna\Plocha\Cerna.pdf
-19434_C:\Documents and Settings\knihovna\Plocha\Cerna.pdf
-19448_C:\Documents and Settings\knihovna\Plocha\Bucharova.pdf
 19448_C:\Documents and Settings\knihovna\Plocha\Bucharova.pdf
 19468_C:\Documents and Settings\knihovna\Plocha\hruskova.pdf
-19468_C:\Documents and Settings\knihovna\Plocha\hruskova.pdf
-19474_C:\Documents and Settings\knihovna\Plocha\chvostova.pdf
 19474_C:\Documents and Settings\knihovna\Plocha\chvostova.pdf
 19476_C:\Documents and Settings\knihovna\Plocha\jandeckova.pdf
-19476_C:\Documents and Settings\knihovna\Plocha\jandeckova.pdf
-19482_C:\Documents and Settings\knihovna\Plocha\jirku.pdf
 19482_C:\Documents and Settings\knihovna\Plocha\jirku.pdf
 19484_C:\Documents and Settings\knihovna\Plocha\kaburkova.pdf
-19484_C:\Documents and Settings\knihovna\Plocha\kaburkova.pdf
-19486_C:\Documents and Settings\knihovna\Plocha\koblerova.pdf
 19486_C:\Documents and Settings\knihovna\Plocha\koblerova.pdf
 19492_C:\Documents and Settings\knihovna\Plocha\kruzova.pdf
-19492_C:\Documents and Settings\knihovna\Plocha\kruzova.pdf
-19501_C:\Documents and Settings\knihovna\Plocha\mikotova.pdf
 19501_C:\Documents and Settings\knihovna\Plocha\mikotova.pdf
 19503_C:\Documents and Settings\knihovna\Plocha\oliverius.pdf
-19503_C:\Documents and Settings\knihovna\Plocha\oliverius.pdf
-19505_C:\Documents and Settings\knihovna\Plocha\pavlicek.pdf
 19505_C:\Documents and Settings\knihovna\Plocha\pavlicek.pdf
 19520_mentalne_postizeny_clovek_jako_pachatel_trestne_cinnosti.pdf
-19520_mentalne_postizeny_clovek_jako_pachatel_trestne_cinnosti.pdf
-19577_Egyptske%20mudroslovi.pdf
 19577_Egyptske%20mudroslovi.pdf
 19612_C:\Documents and Settings\knihovna\Plocha\prchalova.pdf
-19612_C:\Documents and Settings\knihovna\Plocha\prchalova.pdf
-19616_Perinova%20Dp.pdf
 19616_Perinova%20Dp.pdf
 19636_koznerova%20DP.pdf
-19636_koznerova%20DP.pdf
-19652_Valis.pdf
 19652_Valis.pdf
 19662_C:\Documents and Settings\knihovna\Plocha\literova.pdf
-19662_C:\Documents and Settings\knihovna\Plocha\literova.pdf
-19709_C:\Documents and Settings\knihovna\Plocha\roule.pdf
 19709_C:\Documents and Settings\knihovna\Plocha\roule.pdf
 19714_C:\Documents and Settings\knihovna\Plocha\sanca.pdf
-19714_C:\Documents and Settings\knihovna\Plocha\sanca.pdf
-19720_C:\Documents and Settings\knihovna\Plocha\skala.pdf
 19720_C:\Documents and Settings\knihovna\Plocha\skala.pdf
 19722_C:\Documents and Settings\knihovna\Plocha\stastna.pdf
-19722_C:\Documents and Settings\knihovna\Plocha\stastna.pdf
-19724_C:\Documents and Settings\knihovna\Plocha\steflova.pdf
 19724_C:\Documents and Settings\knihovna\Plocha\steflova.pdf
 19726_C:\Documents and Settings\knihovna\Plocha\stehlikova.pdf
-19726_C:\Documents and Settings\knihovna\Plocha\stehlikova.pdf
-19728_C:\Documents and Settings\knihovna\Plocha\sucha.pdf
 19728_C:\Documents and Settings\knihovna\Plocha\sucha.pdf
 19732_C:\Documents and Settings\knihovna\Plocha\kubesova.pdf
-19732_C:\Documents and Settings\knihovna\Plocha\kubesova.pdf
 19739_zak_s_autismem.pdf
-19739_zak_s_autismem.pdf
-19792_trestna_cinnost_mladeze.pdf
 19792_trestna_cinnost_mladeze.pdf
 20293_frinta.pdf
 20509_program_ambulantnich_sluzeb_pro_uzivatele_drog.pdf
-20509_program_ambulantnich_sluzeb_pro_uzivatele_drog.pdf
-20512_uloha_osobni_asistence_v_zivote_cloveka_s_mentalnim_postizenim.pdf
 20512_uloha_osobni_asistence_v_zivote_cloveka_s_mentalnim_postizenim.pdf
 20515_aspekty_studia_osob_s_tezkym_telesnym_postizenim.pdf
-20515_aspekty_studia_osob_s_tezkym_telesnym_postizenim.pdf
-20520_abeceda_anatomie_pro_logopedy.pdf
 20520_abeceda_anatomie_pro_logopedy.pdf
 20530_rozvoj_ctenarstvi_u_sluchove_postizenych_deti.pdf
-20530_rozvoj_ctenarstvi_u_sluchove_postizenych_deti.pdf
-20533_integrace_deti_s_vyvojovou_dysfazii.pdf
 20533_integrace_deti_s_vyvojovou_dysfazii.pdf
 20536_zpusob_emocionalniho_ovlivneni_zaku_s_adhd_add.pdf
-20536_zpusob_emocionalniho_ovlivneni_zaku_s_adhd_add.pdf
-20541_problematika_pacientu_hospitalizovanych_v_LDN.pdf
 20541_problematika_pacientu_hospitalizovanych_v_LDN.pdf
 20547_hmatove_vnimani_u_deti_s_tezkym_postizenim_zraku.pdf
-20547_hmatove_vnimani_u_deti_s_tezkym_postizenim_zraku.pdf
-20550_sexualni_vychova_zaku_se_zrakovym_postizenim.pdf
 20550_sexualni_vychova_zaku_se_zrakovym_postizenim.pdf
 20624_kucera.pdf
-20624_kucera.pdf
-20664_munkovamichaela1.pdf
 20664_munkovamichaela1.pdf
 20818_bazalni_stimulace.pdf
-20818_bazalni_stimulace.pdf
-20830_diagnostika_recovych_schopnosti.pdf
 20830_diagnostika_recovych_schopnosti.pdf
 20833_mimoskolni_aktivity_sluchove_postizenych.pdf
-20833_mimoskolni_aktivity_sluchove_postizenych.pdf
-20836_moznosti_integrovane_vychovy_deti_se_zrakovym_postizenim.pdf
 20836_moznosti_integrovane_vychovy_deti_se_zrakovym_postizenim.pdf
 20838_narozeni_ditete_s_mentalnim_postizenim.pdf
-20838_narozeni_ditete_s_mentalnim_postizenim.pdf
-20841_starnouci_clovek_s_mentalni_retardaci.pdf
 20841_starnouci_clovek_s_mentalni_retardaci.pdf
 20847_terapie_autismu.pdf
-20847_terapie_autismu.pdf
-20850_vyvoj_reci_kojencu_v_kolektivnich_zarizenich.pdf
 20850_vyvoj_reci_kojencu_v_kolektivnich_zarizenich.pdf
 23242_Junasova_bc.pdf
-23242_Junasova_bc.pdf
-23245_Junasova_bc_1.rtf
 23245_Junasova_bc_1.rtf
 23588_solcova_iva-diz.pdf
-23588_solcova_iva-diz.pdf
-24235_muchova_dp.pdf
 24235_muchova_dp.pdf
 24303_Prace_BC_Volebni_reforma_Japonska.pdf
-24303_Prace_BC_Volebni_reforma_Japonska.pdf
-24319_D17609.pdf
 24319_D17609.pdf
 24358_D17610.pdf
-24358_D17610.pdf
-24550_D17556.pdf
 24550_D17556.pdf
 24604_dp.pdf
-24604_dp.pdf
-24609_D17524.pdf
 24609_D17524.pdf
 24612_rigo%20cele.pdf
-24612_rigo%20cele.pdf
-24618_Pruvodni%20list%20faktury.pdf
 24618_Pruvodni%20list%20faktury.pdf
 24653_Pruvodni%20list%20faktury.pdf
-24653_Pruvodni%20list%20faktury.pdf
-24657_rigo%20cele.pdf
 24657_rigo%20cele.pdf
 24663_Pruvodni_list_faktury.pdf
-24663_Pruvodni_list_faktury.pdf
-24668_rigo%20cele.pdf
 24668_rigo%20cele.pdf
 24671_cap.pdf
-24671_cap.pdf
-24693_DIGITOOL-45-version1-PER_LIB.INI
 24693_DIGITOOL-45-version1-PER_LIB.INI
 24694_DIGITOOL-45-version1-PER_LIB.INI
-24694_DIGITOOL-45-version1-PER_LIB.INI
-24695_DIGITOOL-45-version1-PER_LIB.INI
 24695_DIGITOOL-45-version1-PER_LIB.INI
 24696_DIGITOOL-45-version1-PER_LIB.INI
-24696_DIGITOOL-45-version1-PER_LIB.INI
-24697_DIGITOOL-45-version1-PER_LIB.INI
 24697_DIGITOOL-45-version1-PER_LIB.INI
 24698_DIGITOOL-45-version1-PER_LIB.INI
-24698_DIGITOOL-45-version1-PER_LIB.INI
-24699_DIGITOOL-45-version1-PER_LIB.INI
 24699_DIGITOOL-45-version1-PER_LIB.INI
 24700_\\fffs01\home\staspaff\Profile\Desktop\JY172A00MR.pdf
-24700_\\fffs01\home\staspaff\Profile\Desktop\JY172A00MR.pdf
-24703_\\fffs01\home\staspaff\Profile\Desktop\JY172A00MR.pdf
 24703_\\fffs01\home\staspaff\Profile\Desktop\JY172A00MR.pdf
 24706_\\fffs01\home\staspaff\Profile\Desktop\JY172A00MR.pdf
-24706_\\fffs01\home\staspaff\Profile\Desktop\JY172A00MR.pdf
-24717_D17528.pdf
 24717_D17528.pdf
 24740_D17226.pdf
-24740_D17226.pdf
-24753_D17231.pdf
 24753_D17231.pdf
 24760_Vymetal_Mikulas_dis.pdf
 24763_Capek_Filip_dis.pdf
 24766_cap.pdf
-24766_cap.pdf
-24786_cap.pdf
 24786_cap.pdf
 24789_cap.pdf
-24789_cap.pdf
-24792_cap.pdf
 24792_cap.pdf
 24797_D17241.pdf
-24797_D17241.pdf
-24821_D17253.pdf
 24821_D17253.pdf
 24823_D17254.pdf
-24823_D17254.pdf
-24926_D16906.pdf
 24926_D16906.pdf
 24943_D16923.pdf
-24943_D16923.pdf
-24983_D16935.pdf
 24983_D16935.pdf
 25060_D16947.pdf
-25060_D16947.pdf
-25066_D16950.pdf
 25066_D16950.pdf
 25080_D16957.pdf
-25080_D16957.pdf
 25093_D16898.pdf
-25093_D16898.pdf
-25516_Synakova_DP_2008_IKSZ.pdf
 25516_Synakova_DP_2008_IKSZ.pdf
 28680_Barci_DisP_2004_IES.pdf
 28683_Bauer_DisP_2004_IES.pdf
@@ -1283,38 +1056,21 @@
 28773_Suchanek_DP_2004_IES.pdf
 28776_Tethalova_DP_2004_IES.pdf
 32086_Rouckova_Marie_dp.pdf
-32086_Rouckova_Marie_dp.pdf
-32462_dis16_1.pdf
 32462_dis16_1.pdf
 32464_lastuvkova_bc.pdf
-32464_lastuvkova_bc.pdf
-32482_gottwaldova_bc.pdf
 32482_gottwaldova_bc.pdf
 32485_Knezu_Jaroslav_bc.pdf
-32485_Knezu_Jaroslav_bc.pdf
-32488_kostkova_patricie_bc.pdf
 32488_kostkova_patricie_bc.pdf
 32491_neradova_bc.pdf
-32491_neradova_bc.pdf
-32494_Spacek_Martin_bc.pdf
 32494_Spacek_Martin_bc.pdf
 32497_Junasova_bc.pdf
-32497_Junasova_bc.pdf
-34000_Tesar_DP_2008_IES.pdf
 34000_Tesar_DP_2008_IES.pdf
 34049_Brabcova_BP_2008_IES.pdf
-34049_Brabcova_BP_2008_IES.pdf
-42579_BcPraceKuklikova.pdf
 42579_BcPraceKuklikova.pdf
 42595_Shulz_Jakub_bc.pdf
-42595_Shulz_Jakub_bc.pdf
-42597_Betakova_Martina_bc.pdf
 42597_Betakova_Martina_bc.pdf
 42611_Novakova_BP_2008_IKSZ.pdf
-42611_Novakova_BP_2008_IKSZ.pdf
 42619_Slaufova_BP_2008_IKSZ.pdf
-42619_Slaufova_BP_2008_IKSZ.pdf
-42622_Smrckova_BP_2008_IKSZ.pdf
 42622_Smrckova_BP_2008_IKSZ.pdf
 42625_Cuda_DP_2004_IES.pdf
 42628_Divis_DP_2003_IES.pdf
@@ -1327,7 +1083,6 @@
 42655_Hedbavny_DP_2003_IES.pdf
 42658_Kamenickova_DP_2002_IES.pdf
 42661_Kreuzbergova_DP_2003_IES.pdf
-42664_Domankova_Jana_bc.pdf
 42664_Domankova_Jana_bc.pdf
 42703_Holub_DisP_2001_IES.pdf
 42710_Chytilova_DP_2004_IES.pdf
@@ -1356,92 +1111,52 @@
 42887_Nezdara_DP_2003_IES.pdf
 42892_Hlavacek_DisP_2003_IES.pdf
 42973_Bak.pdf
-42973_Bak.pdf
 43165_dis49_1.pdf
-43165_dis49_1.pdf
-43166_dis20_1.pdf
 43166_dis20_1.pdf
 43167_dis31_1.pdf
 43168_erdelyi_geza-dis13.pdf
-43168_erdelyi_geza-dis13.pdf
 43169_dis11_1.pdf
-43170_dis85_1.pdf
 43170_dis85_1.pdf
 43171_dis04.pdf
 43172_dis23_1.pdf
-43172_dis23_1.pdf
-43174_dis69_1.pdf
 43174_dis69_1.pdf
 43175_dis78_1.pdf
-43175_dis78_1.pdf
-43176_dis41_1.pdf
 43176_dis41_1.pdf
 43177_dis40_1.pdf
-43177_dis40_1.pdf
-43178_dis32_1.pdf
 43178_dis32_1.pdf
 43179_dis12_1.pdf
-43179_dis12_1.pdf
-43820_karolinka-cz-99-00.pdf
 43820_karolinka-cz-99-00.pdf
 43945_diplomova_prace.pdf
-43945_diplomova_prace.pdf
-43949_diplomka.pdf
 43949_diplomka.pdf
 44540_C:\Documents and Settings\skol\Dokumenty\verisova_jana01\verisova_jana-dip.pdf
-44540_C:\Documents and Settings\skol\Dokumenty\verisova_jana01\verisova_jana-dip.pdf
-44541_C:\Documents and Settings\skol\Dokumenty\verisova_jana01\verisova_jana-dip.pdf
 44541_C:\Documents and Settings\skol\Dokumenty\verisova_jana01\verisova_jana-dip.pdf
 44613_Baikovskaya_DP_2008_IES.pdf
 44621_Cech_DP_2008_IES.pdf
-44621_Cech_DP_2008_IES.pdf
-44648_Hajkova_DP_2008_IES.pdf
 44648_Hajkova_DP_2008_IES.pdf
 44651_Hajkova_DP_2008_IES_pril.pdf
-44651_Hajkova_DP_2008_IES_pril.pdf
-44656_Havlinova_DP_2008_IES.pdf
 44656_Havlinova_DP_2008_IES.pdf
 44660_Herbst_DP_2008_IES.pdf
-44660_Herbst_DP_2008_IES.pdf
-44940_BP.pdf
 44940_BP.pdf
 45007_Seman_BP_2008_IES.pdf
-45007_Seman_BP_2008_IES.pdf
-45032_Penize_v_hodnotove_orientaci_cloveka.pdf
 45032_Penize_v_hodnotove_orientaci_cloveka.pdf
 45035_Skorepa_Michal_DP_1995_IES.pdf
 45038_Bak.pdf
-45038_Bak.pdf
-45069_Veverkova_BP_2008_IES.pdf
 45069_Veverkova_BP_2008_IES.pdf
 45081_Samkova-Zakova_DisP_2003_IES.pdf
-45081_Samkova-Zakova_DisP_2003_IES.pdf
-45084_Ondrejkova_BP_2008_IES.pdf
 45084_Ondrejkova_BP_2008_IES.pdf
 45116_Kollar_DP_2008_IES.pdf
-45116_Kollar_DP_2008_IES.pdf
-45131_Chvalkovska_DP_2008_IES.pdf
 45131_Chvalkovska_DP_2008_IES.pdf
 45135_Chmelik_DP_1997_IES.pdf
 45138_Janko_DP_1997_IES.pdf
 45141_Kubin_DP_1997_IES.pdf
 45167_Lopusnik_DP_2008_IES.pdf
-45167_Lopusnik_DP_2008_IES.pdf
-45234_Misicova_DP_2008_IES.pdf
 45234_Misicova_DP_2008_IES.pdf
 45237_Polanska_DP_2008_IES.pdf
-45237_Polanska_DP_2008_IES.pdf
-45241_Seidler_DP_2008_IES.pdf
 45241_Seidler_DP_2008_IES.pdf
 45256_Verner_BP_2008_IES.pdf
-45256_Verner_BP_2008_IES.pdf
-45327_Tomeckova_DP_2008_IKSZ.pdf
 45327_Tomeckova_DP_2008_IKSZ.pdf
 45350_Valaskova_DP_2008_IKSZ.pdf
-45350_Valaskova_DP_2008_IKSZ.pdf
 45354_Valaskova_DP_2008_IKSZ_teze.pdf
-45354_Valaskova_DP_2008_IKSZ_teze.pdf
-45377_Zeman_DP_2008_IKSZ.pdf
 45377_Zeman_DP_2008_IKSZ.pdf
 45386_Koerner_DP_2001_IES.pdf
 45389_Gersl_DP_2001_IES.pdf
@@ -1487,98 +1202,53 @@
 45821_Svrckova_BP_2004_IES.pdf
 45824_Petrov_BP_2004_IES.pdf
 45873_Turecek.pdf
-45873_Turecek.pdf
 46033_Dipl.prace_Dostalova_Lenka_2005.doc
 46107_Pazdernik_DP_2003_IES.pdf
 46110_Janoudova_BP_2005_IES.pdf
 46117_Koprnicka_BP_2005_IES.pdf
 52608_Dvorakova_Monika_bc.pdf
-52608_Dvorakova_Monika_bc.pdf
-52615_Riglova_Anetta_bc.pdf
 52615_Riglova_Anetta_bc.pdf
 52625_Drbohlavova_Jitka_bc.pdf
-52625_Drbohlavova_Jitka_bc.pdf
-52632_halmaznova_rut_bc.pdf
 52632_halmaznova_rut_bc.pdf
 52634_hlavacova_pavla_c.pdf
-52634_hlavacova_pavla_c.pdf
-52638_chamradova_lucie_bc.pdf
 52638_chamradova_lucie_bc.pdf
 52640_jirova_eliska_bc.pdf
-52640_jirova_eliska_bc.pdf
-52642_kasova_lucie_bc.pdf
 52642_kasova_lucie_bc.pdf
 52645_kleinova_jana_bc.pdf
-52645_kleinova_jana_bc.pdf
-52890_1199360370X2.pdf
 52890_1199360370X2.pdf
 52893_1199360637X1.pdf
-52893_1199360637X1.pdf
-53014_kopecna_eva_bc.pdf
 53014_kopecna_eva_bc.pdf
 53016_linkova_marketa_bc.pdf
-53016_linkova_marketa_bc.pdf
-53018_livancova_martina_bc.pdf
 53018_livancova_martina_bc.pdf
 53020_novakova_martina_bc.pdf
-53020_novakova_martina_bc.pdf
-53022_nykodymova_iveta_bc.pdf
 53022_nykodymova_iveta_bc.pdf
 53033_ondrichova_marie_bc.pdf
-53033_ondrichova_marie_bc.pdf
-53041_otrisalova_kristina_bc.pdf
 53041_otrisalova_kristina_bc.pdf
 53044_paroulkova_jana_bc.pdf
-53044_paroulkova_jana_bc.pdf
-53046_plavec_jan_bc.pdf
 53046_plavec_jan_bc.pdf
 53048_provaznikova_zdenka_bc.pdf
-53048_provaznikova_zdenka_bc.pdf
-53056_rohlena_jan_bc.pdf
 53056_rohlena_jan_bc.pdf
 53058_sekaninova_lucie_bc.pdf
-53058_sekaninova_lucie_bc.pdf
-53060_sirova_katerina_bc.pdf
 53060_sirova_katerina_bc.pdf
 53063_spacek_jan_bc.pdf
-53063_spacek_jan_bc.pdf
-53065_stekla_marie_bc.pdf
 53065_stekla_marie_bc.pdf
 53067_chmelikova_bc2006.pdf
-53067_chmelikova_bc2006.pdf
-53069_skalickova_bc2006.pdf
 53069_skalickova_bc2006.pdf
 53071_valentova_bc.pdf
-53071_valentova_bc.pdf
-53073_Krist00FDna%20Obrdl00EDkov00E1%20BCP.pdf
 53073_Krist00FDna%20Obrdl00EDkov00E1%20BCP.pdf
 53076_Vydrzalova_Simona_bc.pdf
-53076_Vydrzalova_Simona_bc.pdf
-53120_1199780739XI.pdf
 53120_1199780739XI.pdf
 53131_1200313322X1.pdf
-53131_1200313322X1.pdf
-53134_1200576215X1.pdf
 53134_1200576215X1.pdf
 53137_1193058306X1.pdf
-53137_1193058306X1.pdf
-53140_1193214058X1.pdf
 53140_1193214058X1.pdf
 53143_1194361302X1.pdf
-53143_1194361302X1.pdf
-53146_1194362893X1.pdf
 53146_1194362893X1.pdf
 53149_1194955608X1.pdf
-53149_1194955608X1.pdf
-53152_1194956541X2.pdf
 53152_1194956541X2.pdf
 53156_1195461163X1.pdf
-53156_1195461163X1.pdf
-53159_1195462626X2.pdf
 53159_1195462626X2.pdf
 53162_1195462626X2.pdf
-53162_1195462626X2.pdf
-53317_rigorozni%20pr00E1ce_Jakub%20Musil.pdf
 53317_rigorozni%20pr00E1ce_Jakub%20Musil.pdf
 53344_Jirkova%2CJitka-DP.pdf
 53348_Klapetkova%2CLucie-DP.pdf
@@ -1628,16 +1298,10 @@
 54024_Chudobova%2CPetra-DP.pdf
 54038_Spiritovic%2CNora.pdf
 54102_1195723719X1.pdf
-54102_1195723719X1.pdf
-54105_1196257671X1.pdf
 54105_1196257671X1.pdf
 54108_1196258320X1.pdf
-54108_1196258320X1.pdf
-54111_1196258687X1.pdf
 54111_1196258687X1.pdf
 54114_1196259217X1.pdf
-54114_1196259217X1.pdf
-54117_1196847963X1.pdf
 54117_1196847963X1.pdf
 54120_Ambrozova%2CJana-DP.pdf
 54124_Celikovsky%2CVit-DP.pdf
@@ -2358,7 +2022,6 @@
 64043_Wunschova,MDP01.pdf
 64088_payne_odkud_zlo.pdf
 64634_view.tiff
-64634_view.tiff
 64708_Test%20Reyovy%20figury(DP).pdf
 64714_Adamirova,BarboraDP01.pdf
 64715_Cutychova,HanaDP01.pdf
@@ -2416,14 +2079,9 @@
 64820_Varysova,Marie-DP01.pdf
 64821_Vlkova,Simona-DP01.pdf
 64865_1194428127X1.pdf
-64865_1194428127X1.pdf
-64868_1194428714X1.pdf
 64868_1194428714X1.pdf
 64871_1194622195X1.pdf
-64871_1194622195X1.pdf
 64874_1194622536X1.pdf
-64874_1194622536X1.pdf
-64877_1194622853X1.pdf
 64877_1194622853X1.pdf
 64889_Bohackova,H-DP01.pdf
 64890_Brozova,E-DP01.pdf
@@ -2856,7 +2514,6 @@
 68632_Widemannova,Eva-DP01.pdf
 68633_Wiwoho,Busono-DP01.pdf
 68634_Zetkova,Vera-DP01.pdf
-6869_6869.xml
 6869_6869.xml
 68736_Jirasek%2CJaroslavPriloha-DP01.pdf
 68737_Kohoutova%2CBarbora_prilohy.pdf
@@ -3703,10 +3360,7 @@
 74018_Rodna%2CKaterina-posudek01.pdf
 74019_Rohlikova%2CPetra-posudek01.pdf
 74034__74032_tif_jp2000.jp2
-74034__74032_tif_jp2000.jp2
 74035__74031_tif_jp2000.jp2
-74035__74031_tif_jp2000.jp2
-74036__74033_tif_jp2000.jp2
 74036__74033_tif_jp2000.jp2
 74037_Rudolfova%2CHana-posudek01.pdf
 74038_Runtschova%2CVeronika-posudek01.pdf
@@ -4054,25 +3708,15 @@
 75985_Rwakayiro,Mpabuka,Ignace-DP01.pdf
 75986_Moulis,Jaroslav-DP01.pdf
 76749_1196083747X1.pdf
-76749_1196083747X1.pdf
-76752_1196083900X1.pdf
 76752_1196083900X1.pdf
 76755_1196084053X1.pdf
-76755_1196084053X1.pdf
-76950_Novakova_BP_2008_IKSZ_teze.pdf
 76950_Novakova_BP_2008_IKSZ_teze.pdf
 77189_1196156913X1.pdf
-77189_1196156913X1.pdf
-77192_1196157676X1.pdf
 77192_1196157676X1.pdf
 77195_1196242592X2.pdf
-77195_1196242592X2.pdf
 77198_1196242824X2.pdf
-77198_1196242824X2.pdf
-77201_1196243727X1.pdf
 77201_1196243727X1.pdf
 77229_Vrbova%2CZuzana-DP01.pdf
-77232_1196420020X1.pdf
 77232_1196420020X1.pdf
 77275_Atzamoglou,Olga-DP01.pdf
 77276_Axlerova,Anna-DP01.pdf
@@ -4240,7 +3884,6 @@
 77939_DIS2.pdf
 77988_Valasek_Eduard%2C%20dp.pdf
 78088_bakalarka.pdf
-78088_bakalarka.pdf
 80520_halama_etf_dis1992.pdf
 81140_DIS_7.pdf
 81142_DIS_7_posudek.pdf
@@ -4337,8 +3980,6 @@
 81850_Zahradnikova,Rene-RP01.pdf
 82166_stanek_dis_etf_80.pdf
 82237_solar_dipl.pdf
-82237_solar_dipl.pdf
-82239_solar_dipl.pdf
 82239_solar_dipl.pdf
 82410_Molnar_dis_ETF_47.pdf
 82515_kocner_psp_2005.pdf
@@ -4519,10 +4160,10 @@
 90439_Dodatky_2009_045.pdf
 90443_Dodatky_2009_049.pdf
 92234_Teply_etf_dis1968.pdf
+94163_Maly_1087.pdf
+94304_Štolba_1111.pdf
 95475_Diplomova-prace-Kopecka-final.pdf
 95810_52712_Pecinkova-Dite_trpici_%252520epilepsii.pdf
-95810_52712_Pecinkova-Dite_trpici_%252520epilepsii.pdf
-95811_52712_Pecinkova-Dite_trpici_%252520epilepsii.pdf
 95811_52712_Pecinkova-Dite_trpici_%252520epilepsii.pdf
 95865_Jedlickova-dp.pdf
 95868_Jedlickova-prilohy.zip

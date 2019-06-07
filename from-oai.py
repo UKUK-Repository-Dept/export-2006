@@ -2,13 +2,6 @@
 import requests, json
 import xml.etree.ElementTree as ET
 
-server="dingo.ruk.cuni.cz:8881"
-verb=["ListRecords","ListMetadataFormats"]
-metadataPrefix="oai_dc"
-oai_sets=["oai_kval","oai_kvalDC"]
-# nacte 3455,411 praci
-identifier_prefix = "oai:DURCharlesUniPrague.cz:"
-
 def tag(root,tag):
     try:
         subtree=list(r for r in root if tag in r.tag)[0]
@@ -16,110 +9,83 @@ def tag(root,tag):
         raise Exception("No tag {}".format(tag))
     return subtree
 
-def get_oai_records(oai_set):
-    url = "http://"+server+"/OAI-PUB?verb="+verb[0]+"&metadataPrefix="+metadataPrefix+"&set="+oai_set
-    def recursion(url, resumptionToken):
-        if resumptionToken is None:
-            response = requests.get(url)
-        else:
-            response = requests.get(url+"&resumptionToken="+resumptionToken)
-        root = ET.fromstring(response.text)
-        ListRecord=tag(root,"ListRecords")
-        for child in ListRecord:
-            if "record" in child.tag: 
-                yield child
-            elif "resumptionToken" in child.tag:
-                resumptionToken = child.text
-                yield from recursion(url,resumptionToken)
+class Digitool:
+    server = "dingo.ruk.cuni.cz:8881"
+    metadataPrefix = "oai_dc"
+    identifierPrefix = "oai:DURCharlesUniPrague.cz:"
+    xmlDirname = "28.5.2019/digital_entities/"
+
+    def __init__(self,oai_set):
+        self.oai_set = oai_set
+
+    def download_list(self):
+        url = ( "http://" + self.server + "/OAI-PUB?" +  
+            "verb=ListRecords" + 
+            "&metadataPrefix=" + self.metadataPrefix + 
+            "&set=" + self.oai_set )
+        def recursion(url, resumptionToken):
+            if resumptionToken is None:
+                response = requests.get(url)
             else:
-                raise "Unknown tag"
-    return recursion(url,None)
+                response = requests.get(url+"&resumptionToken="+resumptionToken)
+            root = ET.fromstring(response.text)
+            ListRecord=tag(root,"ListRecords")
+            for child in ListRecord:
+                if "record" in child.tag: 
+                    yield child
+                elif "resumptionToken" in child.tag:
+                    resumptionToken = child.text
+                    yield from recursion(url,resumptionToken)
+                else:
+                    raise "Unknown tag"
+        self.list = list(recursion(url,None))
+    
+    def get_attachement(self, oai_id):
+        try:
+            tree = ET.parse(self.xmlDirname + str(oai_id) + ".xml")
+        except:
+            #ručně ověřeno tohle padá na náhledech co vypadaji jako děti
+            return
+        root = tree.getroot()
+        for stream_ref in root.findall("./*stream_ref"):
+            filename = stream_ref.find('file_name').text
+            if filename != None:
+                yield filename
+        subrecords = []
+        for relations in root.findall("./*relations"):
+            for relation in relations:
+                relation_type = relation.find('type').text
+                if relation_type == "include":
+                    pid = relation.find('pid').text
+                    subrecords.append(pid)
+        for record in subrecords:
+            yield from self.get_attachement(record)
 
-def get_filenames(interni_id):
-    try:
-        tree = ET.parse('digital_entities/'+str(interni_id)+".xml")
-    except:
-        #print(interni_id)
-        return
-    root = tree.getroot()
-    for stream_ref in root.findall("./*stream_ref"):
-        filename = stream_ref.find('file_name').text
-        if filename != None:
-            yield filename
-    subrecords = []
-    for relations in root.findall("./*relations"):
-        for relation in relations:
-            relation_type = relation.find('type').text
-            if relation_type == "include":
-                pid = relation.find('pid').text
-                subrecords.append(pid)
-    for record in subrecords:
-        yield from get_filenames(record)
+    def get_oai_id(self, record):
+        header=tag(record,"header")
+        identifier=tag(header,"identifier").text
+        return identifier.split(":")[-1]
 
-def get_oai_id(record):
-    header=tag(record,"header")
-    identifier=tag(header,"identifier").text
-    return identifier.split(":")[-1]
-
-def hui(record):
-    header=tag(record,"header")
-    identifier=tag(header,"identifier").text
-    oai_id = identifier.split(":")[-1]
-    files=list(get_filenames(oai_id))
-    return files
-#    if len(files) != 0:
-#        print(oai_id)
-#        metadata=tag(tag(record,"metadata"),"record")
-#        for child in metadata:
-#            print(child.tag, child.text)
-
-
-
-records0 = list(get_oai_records(oai_sets[0]))
-records1 = list(get_oai_records(oai_sets[1]))
-
-#for record in records1  + records0:
-#    print(get_oai_id(record))
-
-def search_records(phrase):
-    for record in records0 + records1:
-        str_rec = str(ET.tostring(record))
-        if phrase in str_rec:
-            yield record
-
-def list_format(oai_id):
-    url = "http://"+server+"/OAI-PUB?verb="+verb[1]+"&identifier="+identifier_prefix+str(oai_id)
-    print(url)
-    response = requests.get(url).text
-    if "id does not exist" not in response:
-        root = ET.fromstring(response)
-        metadataFormats=tag(root,"ListMetadataFormats")
-        for metadata in metadataFormats:
-            child = tag(metadata,"metadataPrefix")
-            print( child.text)
-
-#list_format(104691) #obyčejný 
-#list_format(63450) #rodic marc21
-#list_format(103446) #prvni nezvestny
-
-def list_all_format(filename):
-    for row in open(filename,"r"):
-        list_format(row[:-1])
-
-def list_without_metadata(filename):
-    for row in open(filename,"r"):
-        oai_id = row.split("_")[0]
-        url = "http://"+server+"/OAI-PUB?verb="+verb[1]+"&identifier="+identifier_prefix+oai_id
-        response = requests.get(url).text
-        if "id does not exist" in response:
+    def gather_attachements(self):
+        self.attachements = []
+        for record in self.list:
+            oai_id = self.get_oai_id(record)
             print(oai_id)
+            self.attachements += list(self.get_attachement(oai_id))
 
-#url = "http://"+server+"/OAI-PUB?verb="+verb[1]+"&identifier="+identifier_prefix
-#print(url)
-#list_without_metadata("opomenute_soubory.txt")
+    def print_attachements(self):
+        for attachement in self.attachements:
+            print(attachement)
 
-#test_id="104691" #obyčejný 
-#test_id="103446"
-#for r in search_records(test_id):
-#    #print(str(ET.tostring(r)))
-#    print(hui(r))
+
+
+dt = Digitool("oai_kval") 
+dt.download_list()
+
+tree = ET.ElementTree(dt.list[0])
+tree.write(open('test.xml','wb'))
+#print(len(dt.list))
+#print(list(dt.get_attachement(104691))) #obyčejný 
+#print(list(dt.get_attachement(20659))) 
+#dt.gather_attachements()
+#dt.print_attachements()

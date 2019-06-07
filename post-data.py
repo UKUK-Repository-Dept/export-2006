@@ -5,7 +5,10 @@ import os
 
 class Dspace:
     url = "https://gull.is.cuni.cz/rest"
-    headers= { "content-type": "application/json"}
+    headers= { 
+        "content-type": "application/json",
+        }
+
 
     def __init__(self):
         try:
@@ -35,16 +38,6 @@ class Dspace:
         response.raise_for_status()
         self.token = response.text
 
-    def hui(self):
-        response = requests.get(
-            #self.url+'/communities 
-            #self.url+'/collections/94', 
-            #self.url+'/items/5781', 
-            #self.url+'/items/5781/metadata', 
-            self.url+'/items/5781/bitstreams', 
-            headers=self.headers, 
-            )
-        print("hui",response.text)
     
     def list_bitstream(self):
         response = requests.get(
@@ -65,7 +58,7 @@ class Dspace:
             'description': description,
             'mineType': 'application/pdf',
         }
-        response = requests.post(
+        requests.post(
             self.url+'/items/'+str(item_id)+'/bitstreams/',
             headers=self.headers,
             files=files,
@@ -75,15 +68,56 @@ class Dspace:
     
     def delete_bitstream(self,delete):
         for d in delete:
-            response = requests.delete(
+            requests.delete(
                 self.url+'/items/5781/bitstreams/'+str(d),
                 headers=self.headers,
                 )
 
+    def handle(self, handle):
+        response = requests.get(
+            self.url+'/handle/'+handle, 
+            headers=self.headers, 
+            )
+        handle_json = json.loads(response.text)
+        for key in handle_json.keys():
+            print(key,handle_json[key])
+    
+    def new_item(self, collection_id, metadata, files):
+        requests.post(
+            self.url+'/collections/'+str(collection_id)+'/items', 
+            headers=self.headers,
+            #headers= { "content-type": "application/xml", "rest-dspace-token": self.token, },
+            json=metadata, 
+            )
+        #TODO potřebuju id
+        for filename in files:
+            self.post_new_bitstream(filename, filename)
+    
+    def hui(self):
+        response = requests.get(
+            #self.url+'/communities 
+            #self.url+'/collections/94', 
+            #self.url+'/items/5781', 
+            #self.url+'/items/5781/metadata', 
+            self.url+'/items/5781/bitstreams', 
+            headers=self.headers, 
+            )
+        print("hui",response.text)
 
+
+metadata = {"metadata":[ 
+            { "key": "dc.contributor.author", "value": "LAST, FIRST" }, 
+            { "key": "dc.creator", "value": "prvni" }, 
+            { "key": "dc.creator", "value": "druhy" }, 
+            { "key": "dc.description", "language": "pt_BR", "value": "DESCRICAO" }, 
+            { "key": "dc.description.abstract", "language": "pt_BR", "value": "ABSTRACT" }, 
+            { "key": "dc.title", "language": "pt_BR", "value": "Se souborem" } 
+            ]}
 ds = Dspace()
+#ds.handle("123456789/23900")
+ds.new_item(273,metadata,["lorem-ipsum.pdf"])
 #ds.hui()
 #ds.post_new_bitstream(5781,"lorem-ipsum.pdf")
-ds.delete_bitstream([6654,6655])
-ds.list_bitstream()
+#ds.delete_bitstream([6654,6655])
+#ds.list_bitstream()
 ds.logout()
