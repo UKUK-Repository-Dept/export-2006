@@ -13,11 +13,8 @@ print("hui")
 
 metadata = {"metadata":[ 
             { "key": "dc.contributor.author", "value": "LAST, FIRST" }, 
-            { "key": "dc.creator", "value": "prvni" }, 
-            { "key": "dc.creator", "value": "druhy" }, 
-            { "key": "dc.description", "language": "pt_BR", "value": "DESCRICAO" }, 
             { "key": "dc.description.abstract", "language": "pt_BR", "value": "ABSTRACT" }, 
-            { "key": "dc.title", "language": "pt_BR", "value": "S ID" } 
+            { "key": "dc.title", "language": "pt_BR", "value": "Od jinud" } 
             ]}
 ds = Dspace()
 #ds.handle("123456789/23900")

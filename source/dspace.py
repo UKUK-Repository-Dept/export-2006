@@ -87,7 +87,6 @@ class Dspace:
         response = requests.post(
             self.url+'/collections/'+str(collection_id)+'/items', 
             headers=self.headers,
-            #headers= { "content-type": "application/xml", "rest-dspace-token": self.token, },
             json=metadata, 
             )
         root = ET.fromstring(response.text)
@@ -96,31 +95,3 @@ class Dspace:
         for filename in files:
             self.post_new_bitstream(dspace_id, filename)
     
-    def hui(self):
-        response = requests.get(
-            #self.url+'/communities 
-            #self.url+'/collections/94', 
-            #self.url+'/items/5781', 
-            #self.url+'/items/5781/metadata', 
-            self.url+'/items/5781/bitstreams', 
-            headers=self.headers, 
-            )
-        print("hui",response.text)
-
-
-metadata = {"metadata":[ 
-            { "key": "dc.contributor.author", "value": "LAST, FIRST" }, 
-            { "key": "dc.creator", "value": "prvni" }, 
-            { "key": "dc.creator", "value": "druhy" }, 
-            { "key": "dc.description", "language": "pt_BR", "value": "DESCRICAO" }, 
-            { "key": "dc.description.abstract", "language": "pt_BR", "value": "ABSTRACT" }, 
-            { "key": "dc.title", "language": "pt_BR", "value": "S ID" } 
-            ]}
-ds = Dspace()
-#ds.handle("123456789/23900")
-ds.new_item(273,metadata,["lorem-ipsum.pdf"])
-#ds.hui()
-#ds.post_new_bitstream(5781,"lorem-ipsum.pdf")
-#ds.delete_bitstream([6654,6655])
-#ds.list_bitstream()
-ds.logout()
