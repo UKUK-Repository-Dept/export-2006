@@ -2,3 +2,4 @@ output.txt
 .*.swp
 export_vskp
 .vsdoce/*
+*/__pycache__/*

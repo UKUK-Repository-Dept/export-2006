@@ -80,11 +80,11 @@ class Digitool:
 
 
 
-dt = Digitool("oai_kval") 
-dt.download_list()
+#dt = Digitool("oai_kval") 
+#dt.download_list()
 
-tree = ET.ElementTree(dt.list[0])
-tree.write(open('test.xml','wb'))
+#tree = ET.ElementTree(dt.list[0])
+#tree.write(open('test.xml','wb'))
 #print(len(dt.list))
 #print(list(dt.get_attachement(104691))) #obyčejný 
 #print(list(dt.get_attachement(20659))) 
