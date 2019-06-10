@@ -2,6 +2,8 @@
 import requests, json
 import xml.etree.ElementTree as ET
 
+# prvni pokus - neni doladeny protože selhává na tom že dspace inport z oai je nastabilní
+
 # část první z dspace dostávám seznam digitool id
 
 # https://gull.is.cuni.cz/rest/communities/

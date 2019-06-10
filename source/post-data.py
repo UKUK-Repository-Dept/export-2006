@@ -83,13 +83,13 @@ class Dspace:
             print(key,handle_json[key])
     
     def new_item(self, collection_id, metadata, files):
-        requests.post(
+        response = requests.post(
             self.url+'/collections/'+str(collection_id)+'/items', 
             headers=self.headers,
             #headers= { "content-type": "application/xml", "rest-dspace-token": self.token, },
             json=metadata, 
-            )
-        #TODO potřebuju id
+            ).text
+        print("hui",response.text)
         for filename in files:
             self.post_new_bitstream(filename, filename)
     

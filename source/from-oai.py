@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 import requests, json
 import xml.etree.ElementTree as ET
+# http://www.openarchives.org/OAI/openarchivesprotocol.html
 
 def tag(root,tag):
     try:
