@@ -91,18 +91,14 @@ class Dspace:
         for filename in files:
             self.post_new_bitstream(dspace_id, filename)
     
-metadata = {"metadata":[ 
-            { "key": "dc.contributor.author", "value": "LAST, FIRST" }, 
-            { "key": "dc.description.abstract", "language": "pt_BR", "value": "ABSTRACT" }, 
-            { "key": "dc.title", "language": "pt_BR", "value": "Od jinud" } 
-            ]}
-
-
-#ds = Dspace()
-#ds.handle("123456789/23900")
-#ds.new_item(273,metadata,["lorem-ipsum.pdf"])
-#ds.hui()
-#ds.post_new_bitstream(5781,"lorem-ipsum.pdf")
-#ds.delete_bitstream([6654,6655])
-#ds.list_bitstream()
-#ds.logout()
+    def delete_all_item(self, collection_id):
+        # Note tested on small collections
+        response = requests.get(
+            self.url+'/collections/'+str(collection_id)+'/items', 
+            headers=self.headers,
+            )
+        for item in json.loads(response.text):
+            requests.delete(
+                self.url+'/items/'+str(item['id']), 
+                headers=self.headers,
+            )

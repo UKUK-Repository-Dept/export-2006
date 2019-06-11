@@ -72,7 +72,6 @@ class Digitool:
         self.attachements = []
         for record in self.list:
             oai_id = self.get_oai_id(record)
-            print(oai_id)
             self.attachements += list(self.get_attachement(oai_id))
 
     def print_attachements(self):
@@ -81,13 +80,3 @@ class Digitool:
 
 
 
-#dt = Digitool("oai_kval") 
-#dt.download_list()
-
-#tree = ET.ElementTree(dt.list[0])
-#tree.write(open('test.xml','wb'))
-#print(len(dt.list))
-#print(list(dt.get_attachement(104691))) #obyčejný 
-#print(list(dt.get_attachement(20659))) 
-#dt.gather_attachements()
-#dt.print_attachements()
