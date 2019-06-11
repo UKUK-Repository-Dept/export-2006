@@ -5,19 +5,43 @@ from digitoolOAI import Digitool
 from digitoolXML import DigitoolXML
 from dspace import Dspace
 
+
 metadata = {"metadata":[ 
             { "key": "dc.contributor.author", "value": "LAST, FIRST" }, 
             { "key": "dc.description.abstract", "language": "pt_BR", "value": "ABSTRACT" }, 
             { "key": "dc.title", "language": "pt_BR", "value": "Od jinud" } 
             ]}
 
-def forgot_attachements(oai_attachements, xml_attachements_list):
-    for row in open(xml_attachements_list,"r"):
-        if not row[:-1] in oai_attachements:
-            yield row[:-1]
 
+@click.group()
+def cli():
+    pass
 
-@click.command()
+@cli.command()
+@click.option('--label', prompt='label', type=click.Choice(['ingest','note']), help='Choose label to categorize')
+def categorize(label):
+    def forgot_attachements(oai_attachements, xml_attachements_list):
+        for row in open(xml_attachements_list,"r"):
+            if not row[:-1] in oai_attachements:
+                yield row[:-1]
+    dt = Digitool("oai_kval") 
+    dt.download_list()
+    dt.gather_attachements()
+    forgot = list(forgot_attachements(dt.attachements,"28.5.2019/ls_streams.txt"))
+
+    dtx = DigitoolXML("28.5.2019")
+    ingests = ["ksp", "mff", "psy", "Dousova", "uisk", "Hubl", "smes", "nadm_velikost", "12345"] 
+    notes = [["HTF"],["FFUk","FF","FF UK","FFUK"],["etf","ETF"],["MFF"],["PF"],["FTVS"],["2LF","LF2","2LF -"],["FSV","FSV IMS","FSV_IKSZ","FSV ISS","FSV IPS"],["FHS"],["3LF"]]
+    category = dtx.categorize_ingest(forgot,ingests)
+    if label == 'note':
+        category = dtx.categorize_note(category['None'],notes)
+    sum = 0
+    for tag, list_id in category.items():
+        sum += len(list_id)
+        print(tag,len(list_id))
+    print("celkem",sum)
+
+@cli.command()
 @click.option('--dspace_admin_username', prompt='email', help='Dspace admin email')
 @click.option('--dspace_admin_passwd', prompt='passwd', help='Dspace admin passwd')
 def run(dspace_admin_passwd, dspace_admin_username):
@@ -30,20 +54,21 @@ def run(dspace_admin_passwd, dspace_admin_username):
     #print(list(dt.get_attachement(20659))) 
     dt.gather_attachements()
     #dt.print_attachements()
-    forgot = list(forgot_attachements(dt.attachements,"28.5.2019/ls_streams.txt"))
+    #forgot = list(forgot_attachements(dt.attachements,"28.5.2019/ls_streams.txt"))
+    print(dt.attachements[0:10])
 
     dtx = DigitoolXML("28.5.2019")
     #print(list(dtx.get_attachements("100452.xml")))
     #print(list(dtx.get_category("100452.xml")))
-    ingests = ["ksp", "mff", "psy", "Dousova", "uisk", "Hubl", "smes", "nadm_velikost", "12345"] 
-    notes = [["HTF"],["FFUk","FF","FF UK","FFUK"],["etf","ETF"],["MFF"],["PF"],["FTVS"],["2LF","LF2","2LF -"],["FSV","FSV IMS","FSV_IKSZ","FSV ISS","FSV IPS"],["FHS"],["3LF"]]
-    category = dtx.categorize_ingest(forgot,ingests)
-    category = dtx.categorize_note(category['None'],notes)
-    sum = 0
-    for tag, list_id in category.items():
-        sum += len(list_id)
-        print(tag,len(list_id))
-    print("celkem",sum)
+    #ingests = ["ksp", "mff", "psy", "Dousova", "uisk", "Hubl", "smes", "nadm_velikost", "12345"] 
+    #notes = [["HTF"],["FFUk","FF","FF UK","FFUK"],["etf","ETF"],["MFF"],["PF"],["FTVS"],["2LF","LF2","2LF -"],["FSV","FSV IMS","FSV_IKSZ","FSV ISS","FSV IPS"],["FHS"],["3LF"]]
+    #category = dtx.categorize_ingest(forgot,ingests)
+    #category = dtx.categorize_note(category['None'],notes)
+    #sum = 0
+    #for tag, list_id in category.items():
+    #    sum += len(list_id)
+    #    print(tag,len(list_id))
+    #print("celkem",sum)
 
     ds = Dspace(dspace_admin_username,dspace_admin_passwd)
     #ds.handle("123456789/23900")
@@ -55,4 +80,5 @@ def run(dspace_admin_passwd, dspace_admin_username):
     ds.logout()
 
 if __name__ == '__main__':
-    run()
+    #run()
+    cli()
