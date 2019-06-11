@@ -19,11 +19,16 @@ def categorize(label):
                 yield row[:-1]
     
     dt = Digitool("oai_kval") 
-    dtx = DigitoolXML("28.5.2019",skip_missing=True)
+    dtx = DigitoolXML("28.5.2019", skip_missing=True)
     dt.download_list()
-    dt.gather_attachements(dtx)
 
-    forgot = list(forgot_attachements(dt.attachements,"28.5.2019/ls_streams.txt"))
+    attachements = []
+    for record in dt.list:
+        oai_id = dt.get_oai_id(record)
+        attachements += list(dtx.get_attachements(str(oai_id)+".xml"))
+
+
+    forgot = list(forgot_attachements(attachements,"28.5.2019/ls_streams.txt"))
 
     ingests = ["ksp", "mff", "psy", "Dousova", "uisk", "Hubl", "smes", "nadm_velikost", "12345"] 
     notes = [["HTF"],["FFUk","FF","FF UK","FFUK"],["etf","ETF"],["MFF"],["PF"],["FTVS"],["2LF","LF2","2LF -"],["FSV","FSV IMS","FSV_IKSZ","FSV ISS","FSV IPS"],["FHS"],["3LF"]]
@@ -66,8 +71,8 @@ def run(dspace_admin_passwd, dspace_admin_username):
     dt.download_list()
     #print(list(dt.get_attachement(104691))) #obyčejný 
     dtx = DigitoolXML("28.5.2019",skip_missing=True)
-    dt.gather_attachements(dtx)
-    print(dt.attachements[0:10])
+    for record in dt.list[0:9]:
+        metadata = dt.get_metadata(record,"dc")
 
     ds = Dspace(dspace_admin_username,dspace_admin_passwd)
     ds.logout()

@@ -2,7 +2,6 @@
 import requests
 import json
 import xml.etree.ElementTree as ET
-from digitoolXML import DigitoolXML
 # http://www.openarchives.org/OAI/openarchivesprotocol.html
 
 def tag(root,tag):
@@ -46,10 +45,10 @@ class Digitool:
         header=tag(record,"header")
         identifier=tag(header,"identifier").text
         return identifier.split(":")[-1]
-
-    def gather_attachements(self, digitoolXML):
-        self.attachements = []
-        for record in self.list:
-            oai_id = self.get_oai_id(record)
-            self.attachements += list(digitoolXML.get_attachements(str(oai_id)+".xml"))
+    
+    def get_metadata(self, record, metadata_type):
+        metadata=tag(record,"metadata")
+        metadata=tag(metadata,metadata_type)
+        for child in metadata:
+            print(child.tag, child.text)
 
