@@ -45,14 +45,14 @@ class Dspace:
             for bitstream in json.loads(response.text):
                 print(bitstream[key])
     
-    def post_new_bitstream(self, item_id, filename, description=None):
+    def post_new_bitstream(self, item_id, filename, filetype, description=None):
         files = {
             'file': open("lorem-ipsum.pdf",'rb')
         }
         params={
             'name': filename,
             'description': description,
-            'mineType': 'application/pdf',
+            'mineType': filetype,
         }
         requests.post(
             self.url+'/items/'+str(item_id)+'/bitstreams/',
@@ -87,8 +87,8 @@ class Dspace:
         root = ET.fromstring(response.text)
         subtree=list(r for r in root if "id" in r.tag)[0]
         dspace_id = int(subtree.text)
-        for filename in files:
-            self.post_new_bitstream(dspace_id, filename)
+        for filename, filetype, description in files:
+            self.post_new_bitstream(dspace_id, filename, filetype, description)
     
     def delete_all_item(self, collection_id):
         # Note tested on small collections

@@ -63,6 +63,24 @@ def dspace(dspace_admin_passwd, dspace_admin_username):
     #ds.list_bitstream()
     ds.logout()
 
+@cli.command()
+def descriptions():
+    dt = Digitool("oai_kval") 
+    dt.download_list()
+    dtx = DigitoolXML("28.5.2019", skip_missing=True)
+    c = Convertor()
+    
+    problems = []
+    for record in dt.list:
+        oai_id = dt.get_oai_id(record)
+        attachements = list(dtx.get_attachements(oai_id+".xml",full=True))
+        descriptions = c.generate_description(attachements)
+        if descriptions == "cajk":
+            continue
+        print(attachements)
+        print(descriptions)
+    print("problems",problems)
+
 
 @cli.command()
 @click.option('--dspace_admin_username', prompt='email', help='Dspace admin email')
@@ -95,7 +113,7 @@ def convert(dspace_admin_passwd, dspace_admin_username, test):
             if not click.confirm("Is converting OK?", default=True):
                 problems.append(oai_id)
         else:
-            ds.new_item(273,converted_metadata,["lorem-ipsum.pdf"])
+            ds.new_item(273,converted_metadata,[("lorem-ipsum.pdf","application/pdf","Dokument")])
     click.clear()
     print("problems",problems)
     ds.logout()

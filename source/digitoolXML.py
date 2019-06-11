@@ -16,7 +16,7 @@ class DigitoolXML:
         self.xml_dirname = dirname+'/digital_entities'
         self.skip_missing = skip_missing
 
-    def get_attachements(self, filename):
+    def get_attachements(self, filename, full=False):
         if self.skip_missing:
             try:
                 tree = ET.parse(self.xml_dirname+'/'+filename)
@@ -29,7 +29,11 @@ class DigitoolXML:
         for stream_ref in root.findall("./*stream_ref"):
             filename = stream_ref.find('file_name').text
             if filename != None:
-                yield filename
+                if full:
+                    mime_type = stream_ref.find('mime_type').text
+                    yield filename, mime_type
+                else:
+                    yield filename
         subrecords = []
         for relations in root.findall("./*relations"):
             for relation in relations:
@@ -38,7 +42,7 @@ class DigitoolXML:
                     pid = relation.find('pid').text
                     subrecords.append(pid)
         for record in subrecords:
-            yield from self.get_attachements(record+".xml")
+            yield from self.get_attachements(record+".xml",full)
 
 
     def get_category(self, filename):
