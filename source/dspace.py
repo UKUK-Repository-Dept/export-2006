@@ -11,13 +11,9 @@ class Dspace:
         }
 
 
-    def __init__(self):
-        try:
-            self.user = os.environ['DSPACE_USER']
-            self.passwd = os.environ['DSPACE_PASSWD']
-        except KeyError as e:
-            print("Please set DSPACE_USER and DSPACE_PASSWD variables.")
-            raise e
+    def __init__(self, user, passwd):
+        self.user = user 
+        self.passwd = passwd
         self.login = {
             'email': self.user,
             'password': self.passwd
