@@ -5,3 +5,4 @@ export_vskp
 */__pycache__/*
 *2019*/*/*
 .vscode/*
+env/*

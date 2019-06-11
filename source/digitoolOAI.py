@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-import requests, json
+import requests
+import json
 import xml.etree.ElementTree as ET
 # http://www.openarchives.org/OAI/openarchivesprotocol.html
 
