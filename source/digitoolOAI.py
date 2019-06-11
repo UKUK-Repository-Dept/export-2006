@@ -2,6 +2,7 @@
 import requests
 import json
 import xml.etree.ElementTree as ET
+from digitoolXML import DigitoolXML
 # http://www.openarchives.org/OAI/openarchivesprotocol.html
 
 def tag(root,tag):
@@ -41,38 +42,17 @@ class Digitool:
                 else:
                     raise "Unknown tag"
         self.list = list(recursion(url,None))
-    
-    def get_attachement(self, oai_id):
-        try:
-            tree = ET.parse(self.xmlDirname + str(oai_id) + ".xml")
-        except:
-            #ručně ověřeno tohle padá na náhledech co vypadaji jako děti
-            return
-        root = tree.getroot()
-        for stream_ref in root.findall("./*stream_ref"):
-            filename = stream_ref.find('file_name').text
-            if filename != None:
-                yield filename
-        subrecords = []
-        for relations in root.findall("./*relations"):
-            for relation in relations:
-                relation_type = relation.find('type').text
-                if relation_type == "include":
-                    pid = relation.find('pid').text
-                    subrecords.append(pid)
-        for record in subrecords:
-            yield from self.get_attachement(record)
 
     def get_oai_id(self, record):
         header=tag(record,"header")
         identifier=tag(header,"identifier").text
         return identifier.split(":")[-1]
 
-    def gather_attachements(self):
+    def gather_attachements(self, digitoolXML):
         self.attachements = []
         for record in self.list:
             oai_id = self.get_oai_id(record)
-            self.attachements += list(self.get_attachement(oai_id))
+            self.attachements += list(digitoolXML.get_attachements(str(oai_id)+".xml"))
 
     def print_attachements(self):
         for attachement in self.attachements:

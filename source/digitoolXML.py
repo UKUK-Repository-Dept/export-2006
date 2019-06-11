@@ -11,12 +11,20 @@ def tag(root,tag):
     return subtree
 
 class DigitoolXML:
-    def __init__(self, dirname):
+    def __init__(self, dirname, skip_missing = False):
         self.dirname = dirname
         self.xml_dirname = dirname+'/digital_entities'
+        self.skip_missing = skip_missing
 
     def get_attachements(self, filename):
-        tree = ET.parse(self.xml_dirname+'/'+filename)
+        if self.skip_missing:
+            try:
+                tree = ET.parse(self.xml_dirname+'/'+filename)
+            except:
+                return
+        else:
+            tree = ET.parse(self.xml_dirname+'/'+filename)
+
         root = tree.getroot()
         for stream_ref in root.findall("./*stream_ref"):
             filename = stream_ref.find('file_name').text
