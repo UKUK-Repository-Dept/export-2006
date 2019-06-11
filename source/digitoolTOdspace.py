@@ -39,29 +39,15 @@ def categorize(label):
     print("celkem",sum)
 
 
-metadata = {"metadata":[ 
-            { "key": "dc.contributor.author", "value": "LAST, FIRST" }, 
-            { "key": "dc.description.abstract", "language": "pt_BR", "value": "ABSTRACT" }, 
-            { "key": "dc.title", "language": "pt_BR", "value": "Od jinud" } 
-            ]}
-
-
 @cli.command()
 @click.option('--dspace_admin_username', prompt='email', help='Dspace admin email')
 @click.option('--dspace_admin_passwd', prompt='passwd', help='Dspace admin passwd')
-def run(dspace_admin_passwd, dspace_admin_username):
-    dt = Digitool("oai_kval") 
-    dt.download_list()
-    #tree = ET.ElementTree(dt.list[0])
-    #tree.write(open('test.xml','wb'))
-    #print(len(dt.list))
-    #print(list(dt.get_attachement(104691))) #obyčejný 
-    #print(list(dt.get_attachement(20659))) 
-    dt.gather_attachements()
-    #dt.print_attachements()
-    #forgot = list(forgot_attachements(dt.attachements,"28.5.2019/ls_streams.txt"))
-    print(dt.attachements[0:10])
-
+def dspace(dspace_admin_passwd, dspace_admin_username):
+    metadata = {"metadata":[ 
+                { "key": "dc.contributor.author", "value": "LAST, FIRST" }, 
+                { "key": "dc.description.abstract", "language": "pt_BR", "value": "ABSTRACT" }, 
+                { "key": "dc.title", "language": "pt_BR", "value": "Od jinud" } 
+                ]}
     ds = Dspace(dspace_admin_username,dspace_admin_passwd)
     #ds.handle("123456789/23900")
     #ds.new_item(273,metadata,["lorem-ipsum.pdf"])
@@ -71,6 +57,20 @@ def run(dspace_admin_passwd, dspace_admin_username):
     #ds.list_bitstream()
     ds.logout()
 
+
+@cli.command()
+@click.option('--dspace_admin_username', prompt='email', help='Dspace admin email')
+@click.option('--dspace_admin_passwd', prompt='passwd', help='Dspace admin passwd')
+def run(dspace_admin_passwd, dspace_admin_username):
+    dt = Digitool("oai_kval") 
+    dt.download_list()
+    #print(list(dt.get_attachement(104691))) #obyčejný 
+    dtx = DigitoolXML("28.5.2019",skip_missing=True)
+    dt.gather_attachements(dtx)
+    print(dt.attachements[0:10])
+
+    ds = Dspace(dspace_admin_username,dspace_admin_passwd)
+    ds.logout()
+
 if __name__ == '__main__':
-    #run()
     cli()

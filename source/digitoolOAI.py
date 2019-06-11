@@ -16,7 +16,6 @@ class Digitool:
     server = "dingo.ruk.cuni.cz:8881"
     metadataPrefix = "oai_dc"
     identifierPrefix = "oai:DURCharlesUniPrague.cz:"
-    xmlDirname = "28.5.2019/digital_entities/"
 
     def __init__(self,oai_set):
         self.oai_set = oai_set
@@ -53,10 +52,4 @@ class Digitool:
         for record in self.list:
             oai_id = self.get_oai_id(record)
             self.attachements += list(digitoolXML.get_attachements(str(oai_id)+".xml"))
-
-    def print_attachements(self):
-        for attachement in self.attachements:
-            print(attachement)
-
-
 
