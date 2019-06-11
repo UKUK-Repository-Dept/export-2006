@@ -74,12 +74,15 @@ def descriptions():
     for record in dt.list:
         oai_id = dt.get_oai_id(record)
         attachements = list(dtx.get_attachements(oai_id+".xml",full=True))
-        descriptions = c.generate_description(attachements)
-        if descriptions == "cajk":
+        if len(attachements) == 0:
+            #print(oai_id)
             continue
-        print(attachements)
+        descriptions = c.generate_description(attachements)
+        if isinstance(descriptions, list):
+            continue
+#        print(attachements)
         print(descriptions)
-    print("problems",problems)
+#    print("problems",problems)
 
 
 @cli.command()
