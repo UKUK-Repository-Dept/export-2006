@@ -1,4 +1,3 @@
-#!/usr/bin/python3
 import requests
 import json
 import xml.etree.ElementTree as ET
@@ -50,5 +49,5 @@ class Digitool:
         metadata=tag(record,"metadata")
         metadata=tag(metadata,metadata_type)
         for child in metadata:
-            print(child.tag, child.text)
+            yield (child.tag, child.text)
 

@@ -4,6 +4,7 @@ import click
 from digitoolOAI import Digitool
 from digitoolXML import DigitoolXML
 from dspace import Dspace
+from convertor import Convertor
 
 
 @click.group()
@@ -56,7 +57,7 @@ def dspace(dspace_admin_passwd, dspace_admin_username):
     ds = Dspace(dspace_admin_username,dspace_admin_passwd)
     #ds.handle("123456789/23900")
     #ds.new_item(273,metadata,["lorem-ipsum.pdf"])
-    #ds.delete_all_item(273)
+    ds.delete_all_item(273)
     #ds.post_new_bitstream(5781,"lorem-ipsum.pdf")
     #ds.delete_bitstream([6654,6655])
     #ds.list_bitstream()
@@ -66,15 +67,37 @@ def dspace(dspace_admin_passwd, dspace_admin_username):
 @cli.command()
 @click.option('--dspace_admin_username', prompt='email', help='Dspace admin email')
 @click.option('--dspace_admin_passwd', prompt='passwd', help='Dspace admin passwd')
-def run(dspace_admin_passwd, dspace_admin_username):
+@click.option('--test/--run', default=True, help='Test print or pushing on server')
+#TODO --yes operator by byl lepši než test
+def convert(dspace_admin_passwd, dspace_admin_username, test):
     dt = Digitool("oai_kval") 
     dt.download_list()
     #print(list(dt.get_attachement(104691))) #obyčejný 
-    dtx = DigitoolXML("28.5.2019",skip_missing=True)
-    for record in dt.list[0:9]:
-        metadata = dt.get_metadata(record,"dc")
-
+    dtx = DigitoolXML("28.5.2019")
+    c = Convertor()
     ds = Dspace(dspace_admin_username,dspace_admin_passwd)
+    
+    problems = []
+    for record in dt.list[0:10]:
+        oai_id = dt.get_oai_id(record)
+        original_metadata = list(dt.get_metadata(record,"dc"))
+        converted_metadata = c.convert(original_metadata)
+        attachements = list(dtx.get_attachements(oai_id+".xml"))
+        if test:
+            click.clear()
+            for i in original_metadata:
+                print(i)
+            print()
+            for i in converted_metadata['metadata']:
+                print(i)
+            print()
+            print(attachements)
+            if not click.confirm("Is converting OK?", default=True):
+                problems.append(oai_id)
+        else:
+            ds.new_item(273,converted_metadata,["lorem-ipsum.pdf"])
+    click.clear()
+    print("problems",problems)
     ds.logout()
 
 if __name__ == '__main__':

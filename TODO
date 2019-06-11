@@ -1,3 +1,7 @@
+* rozházené kódování http://dingo.ruk.cuni.cz:8881/OAI-PUB?verb=ListRecords&metadataPrefix=oai_dc&set=oai_kval
+
+-----------------------------------------------------
+
 * rozdil mezi gull a direct import
 * comm -23 3.5.2019/ls_streams.txt from-oai-files.txt | sort > opomenute_soubory.txt
     * 103446 je v xml exportu není ve vyhledávání (indexační tabulka?)
@@ -28,8 +32,6 @@ název souboru
 
 # ruční:
 * 104691 divný typ
-# návody
-http://www.openarchives.org/OAI/openarchivesprotocol.html
 
 # hotové
 
