@@ -4,7 +4,8 @@ import click
 from digitoolOAI import Digitool
 from digitoolXML import DigitoolXML
 from dspace import Dspace
-from convertor import Convertor
+from filenameConvertor import FilenameConvertor
+from metadataConvertor import MetadataConvertor
 
 
 @click.group()
@@ -68,7 +69,7 @@ def descriptions():
     dt = Digitool("oai_kval") 
     dt.download_list()
     dtx = DigitoolXML("28.5.2019", skip_missing=True)
-    c = Convertor()
+    c = FilenameConvertor()
     
     problems = []
     for record in dt.list:
@@ -95,7 +96,7 @@ def convert(dspace_admin_passwd, dspace_admin_username, test):
     dt.download_list()
     #print(list(dt.get_attachement(104691))) #obyčejný 
     dtx = DigitoolXML("28.5.2019")
-    c = Convertor()
+    c = MetadataConvertor()
     ds = Dspace(dspace_admin_username,dspace_admin_passwd)
     
     problems = []

@@ -1,20 +1,14 @@
 
-class Convertor:
+class FilenameConvertor:
+
     def __init__(self):
         pass
-
-    def convert(self, record):
-        return {"metadata":[ 
-                { "key": "dc.contributor.author", "value": "LAST, FIRST" }, 
-                { "key": "dc.description.abstract", "language": "pt_BR", "value": "ABSTRACT" }, 
-                { "key": "dc.title", "language": "pt_BR", "value": "Pokus" } 
-                ]}
     
     def generate_description(self, files):
         #TODO tohle celé zkonrolovat eliškou
-        bc = ['BC','bp','BP','bc','Bakaraska','baklarka','Bc','Bakalarska','bakalarka','bakalarska','Ba','Bak']
+        bc = ['BC','bp','BP','Bakaraska','baklarka','Bc','Bakalarska','bakalarka','bakalarska']
         dp = ['DP','Diplomova','Diplomka','diplomka','diplomova','dp','dP','dip','DIP']
-        rp = ['rigorózni','rigo','dis','Dis','RP','rp','rg','phd']
+        rp = ['rigorózni','rigo','Dis','RP','phd']
         weird = ['DT-config_guide','Dodatky','clanek','posudek']
         vedouci = ['vedouci']
         oponent = ['opon']
@@ -30,6 +24,8 @@ class Convertor:
         if len(files) == 1:
             filename, filetype = files[0]
             if filetype == 'application/pdf':
+                if has(dp, filename) and has(rp, filename):
+                        print(filename)
                 if has(dp, filename):
                     return [(filename, filetype, "Diplomová práce")]
                 elif has(bc, filename):
