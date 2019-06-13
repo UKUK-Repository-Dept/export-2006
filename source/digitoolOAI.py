@@ -14,6 +14,10 @@ class Digitool:
     server = "dingo.ruk.cuni.cz:8881"
     metadataPrefix = "oai_dc"
     identifierPrefix = "oai:DURCharlesUniPrague.cz:"
+    metadata_types = { 
+            '{http://www.openarchives.org/OAI/2.0/oai_dc/}dc':'dc',
+            '{http://www.openarchives.org/OAI/2.0/}record':'record',
+            }
 
     def __init__(self,oai_set):
         self.oai_set = oai_set
@@ -45,14 +49,21 @@ class Digitool:
         identifier=tag(header,"identifier").text
         return identifier.split(":")[-1]
     
-    def get_metadata(self, record, metadata_type):
-        all_metadata=tag(record,"metadata")
-        metadata=tag(all_metadata,metadata_type)
-        #for child in all_metadata:
-        #    if child.tag == metadata_type:
-        #        metadata = child
-        if not 'metadata' in locals():
+    def get_metadata(self, record):
+        try:
+            all_metadata=tag(record,"metadata")
+        except:
             return
-        for child in metadata:
-            yield (child.tag, child.text)
-
+        res = {}
+        for metadata in all_metadata:
+            metadata_type = self.metadata_types[metadata.tag]
+            res[metadata_type] = []
+            for child in metadata:
+                if child.text == None:
+                    subMetadata = []
+                    for i in child:
+                        subMetadata.append((i.tag, i.text))
+                    res[metadata_type].append((child.tag, subMetadata))
+                else:
+                    res[metadata_type].append((child.tag, child.text))
+        return res

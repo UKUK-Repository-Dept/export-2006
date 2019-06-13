@@ -25,6 +25,11 @@ class MetadataConvertor:
             'habilitaÄ<U+008D>nÃ­ prÃ¡ce',
             ]
     language_values = [ 'cze', 'ger', 'eng', 'slo', 'fre', 'pol' ]
+    example_return = {"metadata":[ 
+                { "key": "dc.contributor.author", "value": "LAST, FIRST" }, 
+                { "key": "dc.description.abstract", "language": "pt_BR", "value": "ABSTRACT" }, 
+                { "key": "dc.title", "language": "pt_BR", "value": "Pokus" } 
+                ]}
 
     def convertYear(self, year):
         if year[0] == '[':
@@ -57,9 +62,9 @@ class MetadataConvertor:
             #if 'relation' in tag:
             #    print(oai_id,len(value))
             #    print(value)
-        return {"metadata":[ 
-                { "key": "dc.contributor.author", "value": "LAST, FIRST" }, 
-                { "key": "dc.description.abstract", "language": "pt_BR", "value": "ABSTRACT" }, 
-                { "key": "dc.title", "language": "pt_BR", "value": "Pokus" } 
-                ]}
+        return self.example_return
     
+    def convertRecord(self, record, oai_id):
+        #for tag, value in record:
+        #    print(tag,value)
+        return self.example_return

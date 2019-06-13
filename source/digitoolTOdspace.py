@@ -102,20 +102,19 @@ def convert(dspace_admin_passwd, dspace_admin_username, test):
     problems = []
     for record in dt.list:
         oai_id = dt.get_oai_id(record)
-        try:
-            original_metadata = list(dt.get_metadata(record,"dc"))
-        except:
-            #print(oai_id)
-            continue # TODO nemam aktualni koleci
-        converted_metadata = c.convertDC(original_metadata, oai_id)
+        originalMetadata = dt.get_metadata(record)
+        if originalMetadata is None:
+            #print("No metadata",oai_id)
+            continue #TODO
+        if 'dc' in originalMetadata.keys(): #3112
+            convertedMetadataDC = c.convertDC(originalMetadata['dc'], oai_id)
+        if 'record' in originalMetadata.keys(): #358, žádný průnik
+            convertedMetadataRecord = c.convertRecord(originalMetadata['record'], oai_id)
         attachements = list(dtx.get_attachements(oai_id+".xml"))
         test = False #TODO
         if test:
             click.clear()
-            for i in original_metadata:
-                print(i)
-            print()
-            for i in converted_metadata['metadata']:
+            for i in originalMetadata:
                 print(i)
             print()
             print(attachements)
