@@ -95,16 +95,21 @@ def convert(dspace_admin_passwd, dspace_admin_username, test):
     dt = Digitool("oai_kval") 
     dt.download_list()
     #print(list(dt.get_attachement(104691))) #obyčejný 
-    dtx = DigitoolXML("28.5.2019")
+    dtx = DigitoolXML("28.5.2019", skip_missing=True)
     c = MetadataConvertor()
     ds = Dspace(dspace_admin_username,dspace_admin_passwd)
     
     problems = []
-    for record in dt.list[0:10]:
+    for record in dt.list:
         oai_id = dt.get_oai_id(record)
-        original_metadata = list(dt.get_metadata(record,"dc"))
-        converted_metadata = c.convert(original_metadata)
+        try:
+            original_metadata = list(dt.get_metadata(record,"dc"))
+        except:
+            #print(oai_id)
+            continue # TODO nemam aktualni koleci
+        converted_metadata = c.convertDC(original_metadata, oai_id)
         attachements = list(dtx.get_attachements(oai_id+".xml"))
+        test = False #TODO
         if test:
             click.clear()
             for i in original_metadata:
@@ -114,12 +119,13 @@ def convert(dspace_admin_passwd, dspace_admin_username, test):
                 print(i)
             print()
             print(attachements)
-            if not click.confirm("Is converting OK?", default=True):
-                problems.append(oai_id)
+            #if not click.confirm("Is converting OK?", default=True):
+            #    problems.append(oai_id)
         else:
-            ds.new_item(273,converted_metadata,[("lorem-ipsum.pdf","application/pdf","Dokument")])
-    click.clear()
-    print("problems",problems)
+            pass
+            #ds.new_item(273,converted_metadata,[("lorem-ipsum.pdf","application/pdf","Dokument")])
+    #click.clear()
+    #print("problems",problems)
     ds.logout()
 
 if __name__ == '__main__':

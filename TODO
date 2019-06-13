@@ -1,4 +1,9 @@
 * rozházené kódování http://dingo.ruk.cuni.cz:8881/OAI-PUB?verb=ListRecords&metadataPrefix=oai_dc&set=oai_kval
+* opomenute soubory (ostatní ingesty, bez ingestu)
+* podezdřelé filenamy
+* neroztrizene filenamy (TODO halozit podle metadat)
+* konvertovani
+
 
 -----------------------------------------------------
 

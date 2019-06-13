@@ -31,6 +31,7 @@ class FilenameConvertor:
             raise Exception("More matches. {}".format(name))
 
     def generate_description(self, files):
+        #TODO tohle se dá brát i z metadat
         if len(files) == 1:
             filename, filetype = files[0]
             if filetype == 'application/pdf':

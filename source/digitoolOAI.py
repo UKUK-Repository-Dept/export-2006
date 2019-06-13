@@ -46,8 +46,13 @@ class Digitool:
         return identifier.split(":")[-1]
     
     def get_metadata(self, record, metadata_type):
-        metadata=tag(record,"metadata")
-        metadata=tag(metadata,metadata_type)
+        all_metadata=tag(record,"metadata")
+        metadata=tag(all_metadata,metadata_type)
+        #for child in all_metadata:
+        #    if child.tag == metadata_type:
+        #        metadata = child
+        if not 'metadata' in locals():
+            return
         for child in metadata:
             yield (child.tag, child.text)
 
