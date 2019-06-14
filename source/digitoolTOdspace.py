@@ -8,6 +8,7 @@ from filenameConvertor import FilenameConvertor
 from metadataConvertor import MetadataConvertor
 import problematicGroup as bugs
 
+xml_dirname = "28.5.2019"
 
 @click.group()
 def cli():
@@ -25,9 +26,9 @@ def categorize(label, skip): #TODO at zvladne vic nez jen opomenute soubory a ma
     
     dt = Digitool("oai_kval") 
     if skip:
-        dtx = DigitoolXML("28.5.2019", skip_missing=True)
+        dtx = DigitoolXML(xml_dirname, skip_missing=True)
     else:
-        dtx = DigitoolXML("28.5.2019")
+        dtx = DigitoolXML(xml_dirname)
     dt.download_list()
 
     attachements = []
@@ -36,7 +37,7 @@ def categorize(label, skip): #TODO at zvladne vic nez jen opomenute soubory a ma
         attachements += list(dtx.get_attachements(str(oai_id)+".xml"))
 
 
-    forgot = list(forgot_attachements(attachements,"28.5.2019/ls_streams.txt"))
+    forgot = list(forgot_attachements(attachements,xml_dirname+"/ls_streams.txt"))
 
     ingests = ["ksp", "mff", "psy", "Dousova", "uisk", "Hubl", "smes", "nadm_velikost", "12345"] 
     notes = [["HTF"],["FFUk","FF","FF UK","FFUK"],["etf","ETF"],["MFF"],["PF"],["FTVS"],["2LF","LF2","2LF -"],["FSV","FSV IMS","FSV_IKSZ","FSV ISS","FSV IPS"],["FHS"],["3LF"]]
@@ -76,9 +77,9 @@ def descriptions():
     dt = Digitool("oai_kval") 
     dt.download_list()
     if skip:
-        dtx = DigitoolXML("28.5.2019", skip_missing=True)
+        dtx = DigitoolXML(xml_dirname, skip_missing=True)
     else:
-        dtx = DigitoolXML("28.5.2019")
+        dtx = DigitoolXML(xml_dirname)
     c = FilenameConvertor()
     
     problems = []
@@ -100,9 +101,9 @@ def convertItem(oai_id, test, skip):
     dt = Digitool("oai_kval") 
     record = dt.get_item(oai_id)
     if skip:
-        dtx = DigitoolXML("28.5.2019", skip_missing=True)
+        dtx = DigitoolXML(xml_dirname, skip_missing=True)
     else:
-        dtx = DigitoolXML("28.5.2019")
+        dtx = DigitoolXML(xml_dirname)
     c = MetadataConvertor()
     originalMetadata = dt.get_metadata(record)
     if originalMetadata is None:
@@ -146,9 +147,9 @@ def convert(dspace_admin_passwd, dspace_admin_username, test, run, skip):
     dt = Digitool("oai_kval") 
     dt.download_list()
     if skip:
-        dtx = DigitoolXML("28.5.2019", skip_missing=True)
+        dtx = DigitoolXML(xml_dirname, skip_missing=True)
     else:
-        dtx = DigitoolXML("28.5.2019")
+        dtx = DigitoolXML(xml_dirname)
     c = MetadataConvertor()
     ds = Dspace(dspace_admin_username,dspace_admin_passwd)
     
