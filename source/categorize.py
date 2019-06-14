@@ -14,10 +14,12 @@ class Categorize():
         self.category['other note'] = {}
         self.category['None note'] = {}
 
-    def categorize(self, oai_ids):
+    def categorize_list(self, oai_ids, descriptions):
         for oai_id in oai_ids:
-            oai = oai_id.split("_")[0]
-            self.categorize_ingest(oai,oai_id)
+            self.categorize_ingest(oai_id, descriptions)
+    
+    def categorize_item(self, oai_id, description):
+        self.categorize_ingest(oai_id, description)
     
     def categorize_ingest(self, oai_id, description):
         label, ingest, note = self.dtx.get_category(oai_id+".xml")
@@ -55,4 +57,3 @@ class Categorize():
             sum += len(list_id)
             print(tag,len(list_id))
         print("celkem",sum)
-        print(self.category['smes'])

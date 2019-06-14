@@ -17,32 +17,21 @@ def cli():
     pass
 
 @cli.command()
-@click.option('--label', prompt='label', type=click.Choice(['ingest','note']), help='Choose label to categorize')
+@click.option('--group', prompt='group', type=click.Choice(['all','forgot']), help='Choose group to categorize')
 @click.option('--skip/--no-skip', default=False, help='Skip items with known errors')
-def categorize(label, skip): #TODO at zvladne vic nez jen opomenute soubory a ma i duvot pro generovani hezcich seznamu
-    print(bugs.opomenute_soubory())
-    def forgot_attachements(oai_attachements, xml_attachements_list):
-        for row in open(xml_attachements_list,"r"):
-            if not row[:-1] in oai_attachements:
-                yield row[:-1]
-    
-    dt = Digitool(digitool_category) 
+def categorize(group, skip):
+    #TODO všechny dalši skupiny viz ostatni TODO
+
     if skip:
         dtx = DigitoolXML(xml_dirname, skip_missing=True)
     else:
         dtx = DigitoolXML(xml_dirname)
-    dt.download_list()
-
-    attachements = []
-    for record in dt.list:
-        oai_id = dt.get_oai_id(record)
-        attachements += list(dtx.get_attachements(str(oai_id)+".xml"))
-
-
-    forgot = list(forgot_attachements(attachements,xml_dirname+"/ls_streams.txt"))
-
     c = Categorize(dtx)
-    category = c.categorize(forgot)
+    if group == 'all':
+        print("TODO")
+    elif group == 'forgot':
+        dt = Digitool(digitool_category) 
+        bugs.forgot_attachements(dt,dtx,c,xml_dirname+"/ls_streams.txt")
     c.print()
 
 @cli.command()
