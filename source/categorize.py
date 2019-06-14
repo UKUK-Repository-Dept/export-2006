@@ -14,15 +14,21 @@ class Categorize():
         self.category['other note'] = {}
         self.category['None note'] = {}
 
-    def categorize_list(self, oai_ids, descriptions):
+    def categorize_list(self, oai_ids, descriptions, skip=False):
         for oai_id in oai_ids:
-            self.categorize_ingest(oai_id, descriptions)
+            self.categorize_ingest(oai_id, descriptions, skip)
     
-    def categorize_item(self, oai_id, description):
-        self.categorize_ingest(oai_id, description)
+    def categorize_item(self, oai_id, description, skip=False):
+        self.categorize_ingest(oai_id, description, skip)
     
-    def categorize_ingest(self, oai_id, description):
-        label, ingest, note = self.dtx.get_category(oai_id+".xml")
+    def categorize_ingest(self, oai_id, description, skip=False):
+        if skip:
+            try:
+                label, ingest, note = self.dtx.get_category(oai_id+".xml")
+            except:
+                return
+        else:
+            label, ingest, note = self.dtx.get_category(oai_id+".xml")
         for tag in self.ingests:
             if ingest != None and tag in ingest:
                 self.category[tag].setdefault(oai_id,[]).append(description)

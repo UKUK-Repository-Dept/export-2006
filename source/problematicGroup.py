@@ -1,4 +1,11 @@
 
+def oai(digitool, digitoolXML, categorize, skip=False): #categorieze whole oai
+    digitool.download_list()
+    attachements = []
+    for record in digitool.list:
+        oai_id = digitool.get_oai_id(record)
+        categorize.categorize_item(oai_id,"je v oai",skip=skip)
+
 def forgot_attachements(digitool, digitoolXML, categorize, xml_attachements_list):
     digitool.download_list()
     attachements = []

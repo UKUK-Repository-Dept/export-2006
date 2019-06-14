@@ -17,7 +17,7 @@ def cli():
     pass
 
 @cli.command()
-@click.option('--group', prompt='group', type=click.Choice(['all','forgot']), help='Choose group to categorize')
+@click.option('--group', prompt='group', type=click.Choice(['oai','forgot']), help='Choose group to categorize')
 @click.option('--skip/--no-skip', default=False, help='Skip items with known errors')
 def categorize(group, skip):
     #TODO všechny dalši skupiny viz ostatni TODO
@@ -27,8 +27,9 @@ def categorize(group, skip):
     else:
         dtx = DigitoolXML(xml_dirname)
     c = Categorize(dtx)
-    if group == 'all':
-        print("TODO")
+    if group == 'oai':
+        dt = Digitool(digitool_category) 
+        bugs.oai(dt,dtx,c,skip=skip)
     elif group == 'forgot':
         dt = Digitool(digitool_category) 
         bugs.forgot_attachements(dt,dtx,c,xml_dirname+"/ls_streams.txt")
