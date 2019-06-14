@@ -6,6 +6,7 @@ from digitoolXML import DigitoolXML
 from dspace import Dspace
 from filenameConvertor import FilenameConvertor
 from metadataConvertor import MetadataConvertor
+import problematicGroup as bugs
 
 
 @click.group()
@@ -15,7 +16,8 @@ def cli():
 @cli.command()
 @click.option('--label', prompt='label', type=click.Choice(['ingest','note']), help='Choose label to categorize')
 @click.option('--skip/--no-skip', default=False, help='Skip items with known errors')
-def categorize(label): #TODO at zvladne vic nez jen opomenute soubory a ma i duvot pro generovani hezcich seznamu
+def categorize(label, skip): #TODO at zvladne vic nez jen opomenute soubory a ma i duvot pro generovani hezcich seznamu
+    print(bugs.opomenute_soubory())
     def forgot_attachements(oai_attachements, xml_attachements_list):
         for row in open(xml_attachements_list,"r"):
             if not row[:-1] in oai_attachements:
