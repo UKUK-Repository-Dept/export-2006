@@ -14,6 +14,7 @@ def cli():
 
 @cli.command()
 @click.option('--label', prompt='label', type=click.Choice(['ingest','note']), help='Choose label to categorize')
+@click.option('--skip/--no-skip', default=False, help='Skip items with known errors')
 def categorize(label): #TODO at zvladne vic nez jen opomenute soubory a ma i duvot pro generovani hezcich seznamu
     def forgot_attachements(oai_attachements, xml_attachements_list):
         for row in open(xml_attachements_list,"r"):
@@ -21,7 +22,10 @@ def categorize(label): #TODO at zvladne vic nez jen opomenute soubory a ma i duv
                 yield row[:-1]
     
     dt = Digitool("oai_kval") 
-    dtx = DigitoolXML("28.5.2019", skip_missing=True)
+    if skip:
+        dtx = DigitoolXML("28.5.2019", skip_missing=True)
+    else:
+        dtx = DigitoolXML("28.5.2019")
     dt.download_list()
 
     attachements = []
@@ -65,10 +69,14 @@ def dspace(dspace_admin_passwd, dspace_admin_username):
     ds.logout()
 
 @cli.command()
+@click.option('--skip/--no-skip', default=False, help='Skip items with known errors')
 def descriptions():
     dt = Digitool("oai_kval") 
     dt.download_list()
-    dtx = DigitoolXML("28.5.2019", skip_missing=True) #TODO do prepinace
+    if skip:
+        dtx = DigitoolXML("28.5.2019", skip_missing=True)
+    else:
+        dtx = DigitoolXML("28.5.2019")
     c = FilenameConvertor()
     
     problems = []
@@ -92,7 +100,6 @@ def descriptions():
 @click.option('--test/--no-test', default=False, help='Ask user to check convert')
 @click.option('--run/--no-run', default=False, help='Pushih converted data to server')
 @click.option('--skip/--no-skip', default=False, help='Skip items with known errors')
-#TODO --yes operator by byl lepši než test
 def convert(dspace_admin_passwd, dspace_admin_username, test, run, skip):
     dt = Digitool("oai_kval") 
     dt.download_list()
