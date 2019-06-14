@@ -14,7 +14,7 @@ def cli():
 
 @cli.command()
 @click.option('--label', prompt='label', type=click.Choice(['ingest','note']), help='Choose label to categorize')
-def categorize(label):
+def categorize(label): #TODO at zvladne vic nez jen opomenute soubory a ma i duvot pro generovani hezcich seznamu
     def forgot_attachements(oai_attachements, xml_attachements_list):
         for row in open(xml_attachements_list,"r"):
             if not row[:-1] in oai_attachements:
@@ -68,7 +68,7 @@ def dspace(dspace_admin_passwd, dspace_admin_username):
 def descriptions():
     dt = Digitool("oai_kval") 
     dt.download_list()
-    dtx = DigitoolXML("28.5.2019", skip_missing=True)
+    dtx = DigitoolXML("28.5.2019", skip_missing=True) #TODO do prepinace
     c = FilenameConvertor()
     
     problems = []
@@ -90,12 +90,16 @@ def descriptions():
 @click.option('--dspace_admin_username', prompt='email', help='Dspace admin email')
 @click.option('--dspace_admin_passwd', prompt='passwd', help='Dspace admin passwd')
 @click.option('--test/--run', default=True, help='Test print or pushing on server')
+@click.option('--skip/--no-skip', default=False, help='Skip items with known errors')
 #TODO --yes operator by byl lepši než test
-def convert(dspace_admin_passwd, dspace_admin_username, test):
+def convert(dspace_admin_passwd, dspace_admin_username, test, skip):
     dt = Digitool("oai_kval") 
     dt.download_list()
-    #print(list(dt.get_attachement(104691))) #obyčejný 
-    dtx = DigitoolXML("28.5.2019", skip_missing=True)
+    #print(list(dt.get_attachement(104691))) #obyčejný #TODO tohle jako defaultni hodnotu prepinace 
+    if skip:
+        dtx = DigitoolXML("28.5.2019", skip_missing=True)
+    else:
+        dtx = DigitoolXML("28.5.2019")
     c = MetadataConvertor()
     ds = Dspace(dspace_admin_username,dspace_admin_passwd)
     
@@ -104,8 +108,10 @@ def convert(dspace_admin_passwd, dspace_admin_username, test):
         oai_id = dt.get_oai_id(record)
         originalMetadata = dt.get_metadata(record)
         if originalMetadata is None:
-            #print("No metadata",oai_id)
-            continue #TODO
+            if skip:
+                continue
+            else:
+                raise Exception("No metadata in {}".format(oai_id))
         if 'dc' in originalMetadata.keys(): #3112
             convertedMetadataDC = c.convertDC(originalMetadata['dc'], oai_id)
         if 'record' in originalMetadata.keys(): #358, žádný průnik
@@ -114,12 +120,15 @@ def convert(dspace_admin_passwd, dspace_admin_username, test):
         test = False #TODO
         if test:
             click.clear()
+            print("converting ",oai_id)
+            print("originalMetadata:\n")
             for i in originalMetadata:
                 print(i)
-            print()
+            print("convertedMetadata:\n")
+            print("attachements:\n")
             print(attachements)
-            #if not click.confirm("Is converting OK?", default=True):
-            #    problems.append(oai_id)
+            if not click.confirm("Is converting OK?", default=True):
+                problems.append(oai_id)
         else:
             pass
             #ds.new_item(273,converted_metadata,[("lorem-ipsum.pdf","application/pdf","Dokument")])
