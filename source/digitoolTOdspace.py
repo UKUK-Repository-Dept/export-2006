@@ -41,20 +41,9 @@ def categorize(label, skip): #TODO at zvladne vic nez jen opomenute soubory a ma
 
     forgot = list(forgot_attachements(attachements,xml_dirname+"/ls_streams.txt"))
 
-    ingests = ["ksp", "mff", "psy", "Dousova", "uisk", "Hubl", "smes", "nadm_velikost", "12345"] 
-    notes = [["HTF"],["FFUk","FF","FF UK","FFUK"],["etf","ETF"],["MFF"],["PF"],["FTVS"],["2LF","LF2","2LF -"],["FSV","FSV IMS","FSV_IKSZ","FSV ISS","FSV IPS"],["FHS"],["3LF"]]
-   
     c = Categorize(dtx)
-    category = c.categorize_ingest(forgot,ingests)
-    if label == 'note':
-        category = c.categorize_note(category['None'],notes)
-    
-    sum = 0
-    for tag, list_id in category.items():
-        sum += len(list_id)
-        print(tag,len(list_id))
-    print("celkem",sum)
-
+    category = c.categorize(forgot)
+    c.print()
 
 @cli.command()
 @click.option('--dspace_admin_username', prompt='email', help='Dspace admin email')
