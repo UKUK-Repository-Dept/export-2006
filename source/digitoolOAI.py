@@ -5,7 +5,7 @@ import xml.etree.ElementTree as ET
 
 def tag(root,tag):
     try:
-        subtree=list(r for r in root if tag in r.tag)[0]
+        subtree=list(child for child in root if tag in child.tag)[0]
     except:
         raise Exception("No tag {}".format(tag))
     return subtree
@@ -43,6 +43,16 @@ class Digitool:
                 else:
                     raise "Unknown tag"
         self.list = list(recursion(url,None))
+
+    def get_item(self, oai_id):
+        url = ( "http://" + self.server + "/OAI-PUB?" +  
+            "verb=GetRecord" + 
+            "&metadataPrefix=" + self.metadataPrefix + 
+            "&identifier=" + self.identifierPrefix + str(oai_id) )
+        response = requests.get(url)
+        root = ET.fromstring(response.text)
+        record = tag(tag(root,"GetRecord"),"record")
+        return record
 
     def get_oai_id(self, record):
         header=tag(record,"header")
