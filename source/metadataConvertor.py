@@ -1,6 +1,6 @@
 # TODO kodovani
 class MetadataConvertor:
-    purl = [ 
+    typesDC = [ 
             '{http://purl.org/dc/elements/1.1/}title', # na konci je všude [rukopis], před tím to je ok
             '{http://purl.org/dc/elements/1.1/}creator', #vice hodnot katedry by šlo teoreticky třídit
             '{http://purl.org/dc/elements/1.1/}type', # viz type_type, ale neoveřené bo kodování
@@ -64,7 +64,70 @@ class MetadataConvertor:
             #    print(value)
         return self.example_return
     
+    recordTags = [
+            ]
+
+    typesRecord = [ 
+            '{http://purl.org/dc/elements/1.1/}title', 
+            '{http://purl.org/dc/elements/1.1/}creator', 
+            '{http://purl.org/dc/elements/1.1/}type', 
+            '{http://purl.org/dc/elements/1.1/}date', 
+            '{http://purl.org/dc/elements/1.1/}publisher', 
+            '{http://purl.org/dc/elements/1.1/}language', 
+            '{http://purl.org/dc/elements/1.1/}description', 
+            '{http://purl.org/dc/elements/1.1/}subject', 
+            '{http://purl.org/dc/elements/1.1/}identifier', 
+            '{http://purl.org/dc/elements/1.1/}rights', 
+            '{http://purl.org/dc/elements/1.1/}relation',
+            '{http://purl.org/dc/elements/1.1/}source',
+            '{http://purl.org/dc/elements/1.1/}format',
+            '{http://purl.org/dc/elements/1.1/}contributor',
+            '{http://purl.org/dc/elements/1.1/}coverage',
+            ]
     def convertRecord(self, record, oai_id):
-        #for tag, value in record:
-        #    print(tag,value)
+        for tag, value in record:
+            if tag == '{http://purl.org/dc/elements/1.1/}title': 
+                #print(value) # více hodnot, nadpis a mnoho []
+                pass
+            elif tag == '{http://purl.org/dc/elements/1.1/}creator': 
+                #print(value) # sousta prázdných
+                pass
+            elif tag == '{http://purl.org/dc/elements/1.1/}type': 
+                #print(value) #stejne jako DC
+                pass
+            elif tag == '{http://purl.org/dc/elements/1.1/}date': 
+                #print(value) #soupousta prazdnych pár celých datumu 
+                pass
+            elif tag == '{http://purl.org/dc/elements/1.1/}publisher': 
+                #print(value) # většinou Univerzita Karlova v Praze, sem tam None, fakulta
+                pass
+            elif tag == '{http://purl.org/dc/elements/1.1/}description': 
+                #print(value) # abscract nebo description nebo None 
+                pass
+            elif tag == '{http://purl.org/dc/elements/1.1/}subject': 
+                #print(value) # keywords, knivoni zarazeni, příjmeni, None
+                pass
+            elif tag == '{http://purl.org/dc/elements/1.1/}identifier': 
+                #print(value) # většinou None někdy 0361-5235
+                pass
+            elif tag == '{http://purl.org/dc/elements/1.1/}rights': 
+                #print(value) # 99%None sem tam Karlova universita
+                pass
+            elif tag == '{http://purl.org/dc/elements/1.1/}relation':
+                #print(value) # nazev journalu nebo None 
+                pass
+            elif tag == '{http://purl.org/dc/elements/1.1/}source':
+                #print(value) # většinou None sem tam 14260/13
+                pass
+            elif tag == '{http://purl.org/dc/elements/1.1/}format':
+                #print(value) # None application.pdf 871-876 1-12
+                pass
+            elif tag == '{http://purl.org/dc/elements/1.1/}contributor':
+                #print(value) # jméno či None
+                pass
+            elif tag == '{http://purl.org/dc/elements/1.1/}coverage':
+                #print(value) # None
+                pass
+            else:
+                raise Exception("Unknown tag")
         return self.example_return

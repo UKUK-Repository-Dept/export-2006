@@ -59,11 +59,5 @@ class Digitool:
             metadata_type = self.metadata_types[metadata.tag]
             res[metadata_type] = []
             for child in metadata:
-                if child.text == None:
-                    subMetadata = []
-                    for i in child:
-                        subMetadata.append((i.tag, i.text))
-                    res[metadata_type].append((child.tag, subMetadata))
-                else:
-                    res[metadata_type].append((child.tag, child.text))
+                res[metadata_type].append((child.tag, child.text))
         return res
