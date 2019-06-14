@@ -6,9 +6,11 @@ from digitoolXML import DigitoolXML
 from dspace import Dspace
 from filenameConvertor import FilenameConvertor
 from metadataConvertor import MetadataConvertor
+from categorize import Categorize
 import problematicGroup as bugs
 
 xml_dirname = "28.5.2019"
+digitool_category = "oai_kval"
 
 @click.group()
 def cli():
@@ -24,7 +26,7 @@ def categorize(label, skip): #TODO at zvladne vic nez jen opomenute soubory a ma
             if not row[:-1] in oai_attachements:
                 yield row[:-1]
     
-    dt = Digitool("oai_kval") 
+    dt = Digitool(digitool_category) 
     if skip:
         dtx = DigitoolXML(xml_dirname, skip_missing=True)
     else:
@@ -41,10 +43,11 @@ def categorize(label, skip): #TODO at zvladne vic nez jen opomenute soubory a ma
 
     ingests = ["ksp", "mff", "psy", "Dousova", "uisk", "Hubl", "smes", "nadm_velikost", "12345"] 
     notes = [["HTF"],["FFUk","FF","FF UK","FFUK"],["etf","ETF"],["MFF"],["PF"],["FTVS"],["2LF","LF2","2LF -"],["FSV","FSV IMS","FSV_IKSZ","FSV ISS","FSV IPS"],["FHS"],["3LF"]]
-    
-    category = dtx.categorize_ingest(forgot,ingests)
+   
+    c = Categorize(dtx)
+    category = c.categorize_ingest(forgot,ingests)
     if label == 'note':
-        category = dtx.categorize_note(category['None'],notes)
+        category = c.categorize_note(category['None'],notes)
     
     sum = 0
     for tag, list_id in category.items():
@@ -74,7 +77,7 @@ def dspace(dspace_admin_passwd, dspace_admin_username):
 @cli.command()
 @click.option('--skip/--no-skip', default=False, help='Skip items with known errors')
 def descriptions():
-    dt = Digitool("oai_kval") 
+    dt = Digitool(digitool_category) 
     dt.download_list()
     if skip:
         dtx = DigitoolXML(xml_dirname, skip_missing=True)
@@ -98,7 +101,7 @@ def descriptions():
         print(descriptions)
 
 def convertItem(oai_id, test, skip):
-    dt = Digitool("oai_kval") 
+    dt = Digitool(digitool_category) 
     record = dt.get_item(oai_id)
     if skip:
         dtx = DigitoolXML(xml_dirname, skip_missing=True)
@@ -144,7 +147,7 @@ def convert_item(item, test, skip):
 @click.option('--run/--no-run', default=False, help='Pushih converted data to server')
 @click.option('--skip/--no-skip', default=False, help='Skip items with known errors')
 def convert(dspace_admin_passwd, dspace_admin_username, test, run, skip):
-    dt = Digitool("oai_kval") 
+    dt = Digitool(digitool_category) 
     dt.download_list()
     if skip:
         dtx = DigitoolXML(xml_dirname, skip_missing=True)
