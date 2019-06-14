@@ -89,10 +89,11 @@ def descriptions():
 @cli.command()
 @click.option('--dspace_admin_username', prompt='email', help='Dspace admin email')
 @click.option('--dspace_admin_passwd', prompt='passwd', help='Dspace admin passwd')
-@click.option('--test/--run', default=True, help='Test print or pushing on server')
+@click.option('--test/--no-test', default=False, help='Ask user to check convert')
+@click.option('--run/--no-run', default=False, help='Pushih converted data to server')
 @click.option('--skip/--no-skip', default=False, help='Skip items with known errors')
 #TODO --yes operator by byl lepši než test
-def convert(dspace_admin_passwd, dspace_admin_username, test, skip):
+def convert(dspace_admin_passwd, dspace_admin_username, test, run, skip):
     dt = Digitool("oai_kval") 
     dt.download_list()
     #print(list(dt.get_attachement(104691))) #obyčejný #TODO tohle jako defaultni hodnotu prepinace 
@@ -103,8 +104,9 @@ def convert(dspace_admin_passwd, dspace_admin_username, test, skip):
     c = MetadataConvertor()
     ds = Dspace(dspace_admin_username,dspace_admin_passwd)
     
-    problems = []
-    for record in dt.list:
+    if test:
+        problems = []
+    for record in dt.list[:10]:
         oai_id = dt.get_oai_id(record)
         originalMetadata = dt.get_metadata(record)
         if originalMetadata is None:
@@ -117,7 +119,6 @@ def convert(dspace_admin_passwd, dspace_admin_username, test, skip):
         if 'record' in originalMetadata.keys(): #358, žádný průnik
             convertedMetadataRecord = c.convertRecord(originalMetadata['record'], oai_id)
         attachements = list(dtx.get_attachements(oai_id+".xml"))
-        test = False #TODO
         if test:
             click.clear()
             print("converting ",oai_id)
@@ -129,11 +130,11 @@ def convert(dspace_admin_passwd, dspace_admin_username, test, skip):
             print(attachements)
             if not click.confirm("Is converting OK?", default=True):
                 problems.append(oai_id)
-        else:
-            pass
-            #ds.new_item(273,converted_metadata,[("lorem-ipsum.pdf","application/pdf","Dokument")])
-    #click.clear()
-    #print("problems",problems)
+        if run:
+            ds.new_item(273,converted_metadata,[("lorem-ipsum.pdf","application/pdf","Dokument")])
+    if test:
+        click.clear()
+        print("problems",problems)
     ds.logout()
 
 if __name__ == '__main__':
